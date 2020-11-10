@@ -133,7 +133,7 @@ h3 {
   }
 }
 .cool-photo {
-  //background-image: url(http://lorempixel.com/1300/400/abstract);
+    background-image: url(http://lorempixel.com/1300/400/abstract);
     background-image: url(http://placekitten.com/1300/400);
 
 }

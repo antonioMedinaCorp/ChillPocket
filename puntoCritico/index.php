@@ -6,8 +6,9 @@
 </head>
 <body>
 
-<?php include("includes/design-top.php");?>
 <?php include("includes/navigation.php");?>
+<?php include("includes/design-top.php");?>
+
 
 
 <main>
