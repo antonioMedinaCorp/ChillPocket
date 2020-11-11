@@ -1,0 +1,22 @@
+{
+  "name": "chillpocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioMedinaCorp/ChillPocket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonioMedinaCorp/ChillPocket/issues"
+  },
+  "homepage": "https://github.com/antonioMedinaCorp/ChillPocket#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
