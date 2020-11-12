@@ -12,7 +12,7 @@ body {
   margin: 0 auto; }
 
 .header {
-  background: #FF6067;
+  background: #61d5d6;
   color: white;
   padding: 0.625em; }
 
@@ -200,3 +200,19 @@ h3 {
   color: #F7EE1A;
   text-decoration: none;
   border-bottom: 1px solid; }
+
+.btn-success {
+  background-color: #37a3a5 !important;
+  border-color: rgba(243, 245, 245, 0.979) !important;
+  color: black; }
+
+.btn-success:hover {
+  background-color: #61d5d6 !important;
+  border-color: white !important;
+  color: white; }
+
+#imgNav {
+  width: 9em; }
+
+.dropdown-menu a {
+  color: white !important; }
