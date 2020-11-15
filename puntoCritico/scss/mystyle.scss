@@ -223,14 +223,14 @@ body {
   }
   
   .footer {
-    background: #FF6067;
+    background: $color-primero;
     color: white;
     padding: 0.9375em;
     text-align: center;
     font-size: 0.8125em;
   }
   .footer a {
-    color: #F7EE1A;
+    color: $color-tercero;
     text-decoration: none;
     border-bottom: 1px solid;
   }

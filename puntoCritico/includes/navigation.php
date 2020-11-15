@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
         <!-- Para introducir el logo-->
         <a class="navbar-brand" href="#">
             <img src="media/LogoSinFondo.png" alt="Logo" id="imgNav">
@@ -8,8 +8,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
-        <div class="navbar-collapse collapse" id="collapsingNavbar">
-            <ul class="navbar-nav">
+        <div class="navbar-collapse collapse " id="collapsingNavbar">
+            <ul class="navbar-nav ">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Películas</a>
@@ -28,19 +28,51 @@
                         <a class="dropdown-item" href="#">Documental</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Item 2</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Series</a>
+					<div class="dropdown-menu bg-dark ">
+                        <a class="dropdown-item text-light" href="#">Acción</a>
+                        <a class="dropdown-item" href="#">Animación</a>
+                        <a class="dropdown-item" href="#">Aventuras</a>
+						<a class="dropdown-item" href="#">Bélico</a>
+                        <a class="dropdown-item" href="#">Comedia</a>
+                        <a class="dropdown-item" href="#">Ciencia Ficción</a>
+						<a class="dropdown-item" href="#">Drama</a>
+                        <a class="dropdown-item" href="#">Infantil</a>
+                        <a class="dropdown-item" href="#">Terror</a>
+						<a class="dropdown-item" href="#">Musical</a>
+                        <a class="dropdown-item" href="#">Romántica</a>
+                        <a class="dropdown-item" href="#">Documental</a>
+                    </div>
                 </li>
 
                 <!-- Menú desplegable -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Item 3(tipo dropdown)
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Item 3.1</a>
-                        <a class="dropdown-item" href="#">Item 3.2</a>
-                        <a class="dropdown-item" href="#">Item 3.3</a>
+					Libros</a>
+					<div class="dropdown-menu bg-dark ">
+                        <a class="dropdown-item text-light" href="#">Aventuras</a>
+                        <a class="dropdown-item" href="#">Bélico</a>
+                        <a class="dropdown-item" href="#">Histórico</a>
+						<a class="dropdown-item" href="#">Ciencia ficción</a>
+                        <a class="dropdown-item" href="#">Humor</a>
+                        <a class="dropdown-item" href="#">Superhéroes </a>
+						<a class="dropdown-item" href="#">Infantil</a>
+                        <a class="dropdown-item" href="#">Sobrenatural</a>
+                        <a class="dropdown-item" href="#">Novela negra</a>
+						<a class="dropdown-item" href="#">Underground</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Quienes somos</a>
+					<div class="dropdown-menu bg-dark ">
+                        <a class="dropdown-item text-light" href="#">Presentación</a>
+                        <a class="dropdown-item" href="#">Condiciones</a>
                     </div>
                 </li>
             </ul>
