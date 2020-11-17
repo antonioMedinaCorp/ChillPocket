@@ -83,7 +83,7 @@
                     <input class="form-control m-2" type="text" placeholder="Search">
                     <button class="btn btn-success" type="submit">Buscar</button>
                 </form>-->
-				<button class="btn btn-success" type="submit">Login</button>
+				<button class="btn btn-success text-light" type="submit">Login</button>
             </div>
         </div>
     </nav>

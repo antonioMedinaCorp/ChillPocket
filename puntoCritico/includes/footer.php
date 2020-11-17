@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer bg-dark">
   <div class="container">
 <<<<<<< Updated upstream
     <p>&copy; <?php print date("Y");?> ChillPocket.</p>
