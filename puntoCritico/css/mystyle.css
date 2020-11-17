@@ -1,5 +1,5 @@
 body {
-  background: #D7F7FE;
+  background: white;
   font-family: "Nunito", sans-serif;
   color: #222; }
 
@@ -34,7 +34,7 @@ body {
     margin: 0; } }
 
 .site-title, h1, h2, h3 {
-  font-family: "Pacifico", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.625em;
   color: #024654; }
 
@@ -190,14 +190,13 @@ h3 {
   font-size: 1.75em; }
 
 .footer {
-  background: #FF6067;
   color: white;
   padding: 0.9375em;
   text-align: center;
   font-size: 0.8125em; }
 
 .footer a {
-  color: #F7EE1A;
+  color: #007476;
   text-decoration: none;
   border-bottom: 1px solid; }
 
@@ -216,3 +215,12 @@ h3 {
 
 .dropdown-menu a {
   color: white !important; }
+
+.card-img-overlay {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear; }
+
+.card:hover > .card-img-overlay {
+  visibility: visible;
+  opacity: 1; }
