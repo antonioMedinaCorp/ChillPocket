@@ -1,6 +1,39 @@
-<header class="header">
-    <div class="container">
-      <h1 class="site-title">Super Cool PHP Website!</h1>
-    <span class="site-tagline">Because flexbox and php is super cool!</span>
+<header class="header container-fluid">
+
+<div id="myCarousel" class="carousel slide " data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner container-fluid">
+    <div class="carousel-item active ">
+      <img src="media/images/joker.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="media/images/joker.jpg" alt="Chicago"  >
+    </div>
+    <div class="carousel-item">
+      <img src="media/images/joker.jpg" alt="New York">
+    </div>
   </div>
+
+
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
 </header>
+

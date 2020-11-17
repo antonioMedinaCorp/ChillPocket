@@ -12,11 +12,9 @@ body {
   margin: 0 auto; }
 
 .header {
-  background: #61d5d6;
-  color: white;
-  padding: 0.625em; }
+  background: white; }
 
-.header .container {
+.header .container-fluid {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,8 +26,7 @@ body {
 
 @media (max-width: 700px) {
   .header .site-title, .header .site-tagline {
-    width: 100%;
-    text-align: center; }
+    width: 100%; }
   .header .site-title {
     margin: 0; } }
 
@@ -216,6 +213,7 @@ h3 {
 .dropdown-menu a {
   color: white !important; }
 
+
 .card-img-overlay {
   visibility: hidden;
   opacity: 0;
@@ -224,3 +222,12 @@ h3 {
 .card:hover > .card-img-overlay {
   visibility: visible;
   opacity: 1; }
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%; }
+
+.container-fluid {
+  padding: 0%;
+  height: 35rem; }
+
