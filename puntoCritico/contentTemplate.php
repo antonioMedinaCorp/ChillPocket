@@ -17,7 +17,7 @@
     </div>
     <div class="row d-flex justify-content-around">
 
-      <div class="col-3 mw-75 p-0 card">
+      <div class="col-3 w-75 p-0 card">
         <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
         <div class="card-img-overlay">
           <h5 class="card-title">Título de película</h5>
@@ -51,6 +51,115 @@
 
 
     </div>
+    <div class="row d-flex justify-content-around">
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row d-flex justify-content-around">
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row d-flex justify-content-around">
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+      <div class="col-3 w-75 p-0 card">
+        <img class="card-img-top img-fluid" src="https://picsum.photos/400/400" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Título de película</h5>
+          <p class="card-text">Subtítulo</p>
+        </div>
+      </div>
+
+
+    </div>
+
   </div>
 
   <?php include("includes/footer.php"); ?>
