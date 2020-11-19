@@ -12,13 +12,16 @@
 
 
 <main>
-<section class="content">
-  <div class="full-bleed cool-photo">
-  </div>
+<section>
+<?php include("includes/bodyDesign.php");?>
 </section>
+<div>
+<?php include("includes/footer.php");?>
+</div>
+
 </main>
 
-<?php include("includes/footer.php");?>
+
 
 </body>
 </html>
