@@ -3,10 +3,12 @@ body {
   font-family: "Nunito", sans-serif;
   color: #222; }
 
-* {
-  transition: all .65s ease;
-  box-sizing: border-box; }
-
+/*  
+  * {
+    transition: all .65s ease;
+    box-sizing: border-box;
+  }
+ */
 .container {
   max-width: 75em;
   margin: 0 auto; }
@@ -222,9 +224,3 @@ h3 {
   padding: 0%;
   height: 35rem; }
 
-img.tarjeta {
-  height: 10.5em;
-  width: 18em;
-  display: block;
-  margin: auto;
-  padding: 5%; }
