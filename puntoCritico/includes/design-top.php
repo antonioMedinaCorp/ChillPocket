@@ -12,13 +12,13 @@
   <!-- The slideshow -->
   <div class="carousel-inner container-fluid">
     <div class="carousel-item active ">
-      <img src="media/images/joker.jpg" alt="Los Angeles">
+      <img src="media/images/joker.jpg" alt="pelicula">
     </div>
     <div class="carousel-item">
-      <img src="media/images/joker.jpg" alt="Chicago"  >
+      <img src="media/images/joker.jpg" alt="serie">
     </div>
     <div class="carousel-item">
-      <img src="media/images/joker.jpg" alt="New York">
+      <img src="media/images/joker.jpg" alt="comic">
     </div>
   </div>
 

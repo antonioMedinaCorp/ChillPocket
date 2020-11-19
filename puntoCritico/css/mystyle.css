@@ -14,13 +14,6 @@ body {
 .header {
   background: white; }
 
-.header .container-fluid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
-
 .header .site-title, .header .site-tagline {
   font-weight: 400; }
 
