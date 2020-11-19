@@ -3,10 +3,12 @@ body {
   font-family: "Nunito", sans-serif;
   color: #222; }
 
-* {
-  transition: all .65s ease;
-  box-sizing: border-box; }
-
+/*  
+  * {
+    transition: all .65s ease;
+    box-sizing: border-box;
+  }
+ */
 .container {
   max-width: 75em;
   margin: 0 auto; }
@@ -213,7 +215,6 @@ h3 {
 .dropdown-menu a {
   color: white !important; }
 
-
 .card-img-overlay {
   visibility: hidden;
   opacity: 0;
@@ -230,4 +231,3 @@ h3 {
 .container-fluid {
   padding: 0%;
   height: 35rem; }
-
