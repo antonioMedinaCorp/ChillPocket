@@ -3,15 +3,14 @@ body {
   font-family: "Nunito", sans-serif;
   color: #222; }
 
+
 /*  
   * {
     transition: all .65s ease;
     box-sizing: border-box;
   }
  */
-.container {
-  max-width: 75em;
-  margin: 0 auto; }
+
 
 .header {
   background: white; }
@@ -223,4 +222,9 @@ h3 {
 .container-fluid {
   padding: 0%;
   height: 35rem; }
+
+#imgContenMain img {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%; }
 
