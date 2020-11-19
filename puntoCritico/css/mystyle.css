@@ -16,13 +16,6 @@ body {
 .header {
   background: white; }
 
-.header .container-fluid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
-
 .header .site-title, .header .site-tagline {
   font-weight: 400; }
 
@@ -33,7 +26,6 @@ body {
     margin: 0; } }
 
 .site-title, h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
   font-size: 2.625em;
   color: #024654; }
 
@@ -231,3 +223,4 @@ h3 {
 .container-fluid {
   padding: 0%;
   height: 35rem; }
+

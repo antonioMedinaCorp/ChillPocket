@@ -19,16 +19,8 @@ body {
   
   .header {
     background:white;    
-       
   }
-  .header .container-fluid {
-   display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    
-  }
+
   .header .site-title, .header .site-tagline {
     font-weight: 400;
   }
@@ -43,7 +35,7 @@ body {
   }
   
   .site-title, h1, h2, h3 {
-    font-family: "Montserrat", sans-serif;
+  
     font-size: 2.625em;
     color: #024654;
   }
@@ -277,7 +269,13 @@ body {
   height: 35rem;
 }
 
-
+img.tarjeta{
+  height: 10.5em;
+  width: 18em;
+  display: block;
+  margin: auto;
+  padding: 5%;
+}
 
 
 
