@@ -7,8 +7,5 @@
     <i class="fab fa-facebook-square" aria-hidden="true"></i>
     <i class="fas fa-share-alt"></i>
 
-
-  
-
   </div>
 </footer>
