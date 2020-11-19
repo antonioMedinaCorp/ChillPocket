@@ -12,10 +12,7 @@ body {
     box-sizing: border-box;
   }
   
-  .container {
-    max-width: 75em;
-    margin: 0 auto;
-  }
+ 
   
   .header {
     background:white;    
@@ -285,5 +282,13 @@ img.tarjeta{
   padding: 5%;
 }
 
+#imgContenMain{
+  width: 100%;
+}
 
+#imgContenMain img {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+} 
 
