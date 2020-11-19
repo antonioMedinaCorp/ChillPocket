@@ -31,7 +31,6 @@ body {
     margin: 0; } }
 
 .site-title, h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
   font-size: 2.625em;
   color: #024654; }
 
@@ -213,7 +212,6 @@ h3 {
 .dropdown-menu a {
   color: white !important; }
 
-
 .card-img-overlay {
   visibility: hidden;
   opacity: 0;
@@ -231,3 +229,9 @@ h3 {
   padding: 0%;
   height: 35rem; }
 
+img.tarjeta {
+  height: 10.5em;
+  width: 18em;
+  display: block;
+  margin: auto;
+  padding: 5%; }
