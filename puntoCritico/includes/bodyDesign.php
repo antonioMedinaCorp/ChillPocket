@@ -1,153 +1,220 @@
 <div class="container">
-    <div>
-        <h2>PELÍCULAS</h2>
-        <div class="card-group">
-            <div class="col-md-3">
-                <div class="card p-0">
-                    <div class="card-body">
-                        <h2 class="card-title">Peli 1</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Peli 2</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Peli 3</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">Peli 4</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <h2>series</h2>
-        <div class="card-group">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">serie 1</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">serie 2</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">serie 3</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">serie 4</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <h2>comics</h2>
-        <div class="card-group">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">comic 1</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">comic 2</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">comic <i class="fab fa-signal-alt-3"></i></h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">comic 4</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <h2>libros</h2>
-        <div class="card-group">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">libro 1</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">libro 2</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">libro 3</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">libro 4</h2>
-                    </div>
-                    <img src="media/images/foto1.jpg" alt="Imagen peli1" class="tarjeta">
-                </div>
-            </div>
-        </div>
-    </div>
+    <h2>Películas</h2>
+    <!-- fila con 4 columnas -->
+    <div class="row">
 
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de película</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de película</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de película</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de película</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr width=50%  >
+    
+    <h2>Series</h2>
+    <!-- fila con 4 columnas -->
+    <div class="row">
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/serie2.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/serie2.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr width=50%  >
+    
+    <h2>Comics</h2>
+    <!-- fila con 4 columnas -->
+    <div class="row">
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/comic2.jpeg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/comic2.jpeg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr width=50%  >
+    
+    <h2>Libros</h2>
+    <!-- fila con 4 columnas -->
+    <div class="row">
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/libro1.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/libro1.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3 p-3">
+            <div class="card text-white text-bold">
+                <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="mt-auto">
+                        <h5 class="card-title">Título de la serie</h5>
+                        <p class="card-text">Subtítulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
-
-
