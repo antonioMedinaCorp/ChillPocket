@@ -66,13 +66,13 @@
               <strong>Jeremy Irons</strong>
             </div>
             <div class="stars users col-6">
-              <strong>Puntos Usuarios: 4.5</strong>
+              <strong>Puntos Usuarios: 5</strong>
               <span data-stars="num4">
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
               </span>
             </div>
           </div>
@@ -86,7 +86,7 @@
               <strong>Iron Man</strong>
             </div>
             <div class="stars users col-6">
-              <strong>Puntos Usuarios: 4.5</strong>
+              <strong>Puntos Usuarios: 2</strong>
               <span data-stars="num4">
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
