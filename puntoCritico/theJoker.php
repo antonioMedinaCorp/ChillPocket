@@ -3,23 +3,54 @@
 <html>
 
 <head>
-    <?php include("includes/head-tag-contents.php"); ?>
+  <?php include("includes/head-tag-contents.php"); ?>
 </head>
 
 <body>
-<?php include("includes/navigation.php");?>
-<div class="jumbotron jumbotron-fluid">
-  <div id="imgContenMain">
-    
-    <img src="media/images/joker.jpg" alt="Foto pelicula" >
+  <?php include("includes/navigation.php"); ?>
+
+  <div class="jumbotron" id="jumbo"> </div>
+
+
+
+  <div class="container" id="center">
+    <h4>Sinopsis</h4>
+    <p>Arthur Fleck (Phoenix) vive en Gotham con su madre, y su única motivación en la vida es hacer reír a la gente. Actúa haciendo de payaso en pequeños trabajos, pero tiene problemas mentales que hacen que la gente le vea como un bicho raro. Su gran sueño es actuar como cómico delante del público, pero una serie de trágicos acontecimientos le hará ir incrementando su ira contra una sociedad que le ignora.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h4>Critica</h4>
+    <p>Ha arrasado. No tiene rival. 'Joker' es la película del año y ha puesto de acuerdo a los espectadores del mundo, aunque la crítica se ha mostrado bastante más dividida. Mientras se acerca a los 300 millones de dólares en su primera semana, convertida ya en un fenómeno de masas, intentaré explicar las razones por las que, sinceramente, pienso que nos estamos dejando llevar por el entusiasmo.</p>
+    <p>Cuando se anunció el proyecto, se vendió solo y de manera inmediata: "Martin Scorsese estará detrás de una película para adultos (eso ha sonado porno) sobre el Joker ambientada en los setenta". Wow, desde ese momento DC ya había ganado una batalla. A partir de ahí, un desfile de nombres con posibilidades de usar el blanco maquillaje del protagonista, hasta que Joaquin Phoenix se confirmó a las órdenes de Todd Phillips, el cerebro detrás de la jugada maestra.</p>
+    <p>El director de la trilogía de 'Resacón en Las Vegas', 'Aquellas juergas universitarias' o 'Starsky & Hutch' (por aquello de seguir en los setenta), se marcaba un reto imposible de creer hace unos años si no tenemos en cuenta su muy tenue intento de cambiar de registro con 'Juego de armas', una película que ya intentó jugar en la liga del Scorsese más moderno, pero cuyo resultado ni siquiera se aproximó al (excelso) trabajo de Michael Bay en 'Pain & Gain', curiosamente, mucho más goodfelliana, mucho más Scorsese que la película de moda.</p>
+    <p>La famosa incompatibilidad de agendas hollywoodiense impidió la participación del director de 'Taxi Driver' en la producción, pero la maniobra salió bien, y ahora no hay nadie que no mencione sus trabajos más obvios (porque en 'Joker' casi todo es bastante obvio) a la salida de la proyección de la película.</p>
   </div>
-</div>
- 
-<div class="container">
-  <p>Comentario pelicula</p>      
-  <p>más texto</p>      
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, quisquam corrupti earum ea a accusantium labore repellat, iusto consequuntur deleniti vero voluptate quas. Maxime animi delectus natus esse? Harum, exercitationem.
-</div>
+  <section class="rating">
+    <div class="container">
+      <div class="row">
+        <div class="stars col-6">
+          <strong>Puntos Criticos: 4</strong>
+          <span data-stars="num4">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </span>
+       </div>
+        <div class="stars users col-6">
+          <strong>Puntos Usuario: 4</strong>
+          <span data-stars="num4">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+           <i class="fa fa-star" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
 </body>
 
 </html>
