@@ -30,26 +30,76 @@
         <div class="stars col-6">
           <strong>Puntos Criticos: 4</strong>
           <span data-stars="num4">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
           </span>
-       </div>
+        </div>
         <div class="stars users col-6">
-          <strong>Puntos Usuario: 4</strong>
+          <strong>Puntos Usuarios: 4.5</strong>
           <span data-stars="num4">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-           <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
           </span>
         </div>
       </div>
     </div>
-    
+  </section>
+
+  <hr width=70%>
+
+  <section>
+    <div id="center">
+      <h3>Opiniones de los usuarios</h3>
+    </div>
+    <div class="container" id="center">
+      <div class="row">
+        <div class="col-6">
+          <p> Gran película. Muy recomendable. El protagonista hace un gran papel interpretando a este sádico personaje.</p></p>
+          <div class="row">
+            <div class="col-6">
+              <strong>Jeremy Irons</strong>
+            </div>
+            <div class="stars users col-6">
+              <strong>Puntos Usuarios: 4.5</strong>
+              <span data-stars="num4">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-6">
+          <p>Se echa de menos alguna aparción de Batman, porque qúe es el Joker sin Batman. Más acciónn le hubiera dado otro toque.</p>
+          <div class="row">
+            <div class="col-6">
+              <strong>Iron Man</strong>
+            </div>
+            <div class="stars users col-6">
+              <strong>Puntos Usuarios: 4.5</strong>
+              <span data-stars="num4">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 </body>
 

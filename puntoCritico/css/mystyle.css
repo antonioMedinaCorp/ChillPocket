@@ -22,14 +22,14 @@ body {
   .header .site-title {
     margin: 0; } }
 
-.site-title, h1, h2, h3 {
+.site-title, h1, h2 {
   font-size: 2.625em;
   color: #024654; }
 
-h3 {
-  font-size: 2em;
-  color: #f7686e; }
-
+/*h3 {
+    font-size: 2em;
+    color: #f7686e;
+  }*/
 .site-title {
   color: white; }
 
