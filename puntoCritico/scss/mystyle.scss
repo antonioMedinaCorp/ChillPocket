@@ -275,9 +275,6 @@ img.tarjeta{
   padding: 5%;
 }
 
-#imgContenMain{
-  width: 100%;
-}
 
 #imgContenMain img {
   padding: 0;
@@ -295,8 +292,10 @@ img.tarjeta{
     background-size: cover;
   width: 100%;
   height: 200%;
- 
   overflow: hidden;
+  //La propiedad CSS overflow  especifica: si recortar contenido, 
+  //dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.
+  //El contenido es recortado y no se muestran barras de posición.
 }
 
 #jumbo{
