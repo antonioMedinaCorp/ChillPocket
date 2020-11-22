@@ -9,39 +9,37 @@
 <body>
   <?php include("includes/navigation.php"); ?>
 
-  <div class="jumbotron" id="jumbo" style="background-image:url('/media/images/principito.jpeg');  min-height: 400px;"> </div>
+  <div class="jumbotron" id="jumbo" style="background-image:url('/media/images/elprincipito.jpg');  min-height: 400px;"> </div>
 
   <div class="container" id="center">
     <h4>Sinopsis</h4>
-    <p>The Umbrella Academy sigue a los miembros separados de una familia disfuncional de superhéroes, nacidos en circunstancias extrañas, llamada The Umbrella Academy — The Spaceboy, The Kraken, The Rumor, The Séance, The Boy, The Horror y White Violin—, que trabajan juntos para resolver la misteriosa muerte de su padre (the monocle) mientras se enfrentan a muchas dificultades, debido a sus personalidades y habilidades divergentes.2​ Además, deben enfrentarse a la amenaza del apocalipsis</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KHucKOK-Vik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h4>Critica</h4>
-    <p>De entre todas las adaptaciones que iban a llegar este año en forma de serie, probablemente la de ‘The Umbrella Academy’ sea una de las que, a priori, capta más la atención. Basada en el cómic homónimo de Gerard Way, vocalista de My Chemichal Romance y Gabriel Bá, la serie llegará a Netflix el próximo 15 de febrero y en Espinof ya hemos podido ver la mitad de su primera temporada de 10 episodios.</p>
-    <p>El encargado de desarrollar para televisión ‘The Umbrella Academy’ es Steve Blackman, que cuenta con unos créditos de guionista bastante eclécticos trabajando en dramas médicos como ‘Sin cita previa’, la criminal ‘Fargo’ y la ciencia ficción de ‘Altered Carbon’. Series tan distintas entre sí que no nos da una pista clara sobre lo que nos podríamos encontrar aquí.</p>
-    <p>Y ver el primer episodio no ayuda a crearnos una imagen clara. Pero no nos adelantemos a los acontecimientos y hagamos una pequeña recapitulación, sin spoilers, de esta primera mitad de la temporada. La serie comienza con la muerte de Sir Reginald Hargreeves (Colm Feore), un extraño y millonario filántropo que hace 17 años presentó en sociedad la Academia Umbrella, un grupo de niños superhéroes con algo en común.</p>
-    <p>Forman parte del grupo de 43 niños que nacieron en extrañas circunstancias (ninguna de sus madres estaba embarazada cuando se puso de parto) en 1989. Hargreeves se dedicó a rastrear y a comprar siete de estos niños, que resultaron tener habilidades especiales excepto Vanya (Ellen Page) que, literalmente, “no hay nada de extraordinario” en ella.</p>
-    <p>Este grupo de superhéroes, una especie de X-Men en alma, se disolvió durante los años de la adolescencia, después de la desaparición de Cinco (Aidan Gallagher) y la muerte de Seis. Cada uno decidió llevar una nueva vida separado de los demás hasta que llegó el funeral de “su padre”, que reúne a tan disfuncional familia, con rencillas y rencores pendientes mientras se avecina el Apocalipsis.</p>
+    <p>Un aviador queda incomunicado en el desierto tras sufrir una avería en su avión a mil millas de cualquier región habitada. Allí se encontrará con un pequeño príncipe de cabellos de oro que afirma vivir en el asteroide B 612 (donde hay una rosa y tres volcanes) con el que no tardará en congeniar. En sus conversaciones, el principito le relatará su visión sobre la vida y la gente, de esa sabiduría que se pierde cuando las personas abandonamos la infancia.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_LyQH01rfo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <h4>Critica</h4>
+    <p>La historia de la génesis de El principito quizás sea una de mis favoritas de todos los tiempos, a la altura de la propia obra, si se me permite. Tras ser llamado a filas en 1939 y participar en varias arriesgadas misiones aéreas, Antoine de Saint-Exupéry  abandona Francia una vez producida la ocupación alemana, instalándose en Estados Unidos con el firme objetivo de convencer a los norteamericanos para que entren en el conflicto mundial. El autor francés será requerido por el ejército cuatro años después, pero en ese lapso, aparte de incesantes intentos por volver al frente, Antoine escribió El principito.</p>
+    <p>No se me ocurre un momento mejor (o quizás sea más preciso decir idóneo) para escribir una obra de la sensibilidad y el calado filosófico de El principito que durante una guerra. Imagino que pocos contextos deben trastocarnos tanto por dentro como una contienda de la magnitud de la Segunda Guerra Mundial. El estado emocional de aquellos que lo vivieron desde dentro se me antoja inaccesible, y quizás por ello no deja de fascinarme que de una situación tan horripilante puedan nacer historias tan hermosas como la que Saint-Exupéry cuenta en El principito.</p>
+    <p>El principito es la historia de los niños y las personas grandes, del extenso mundo que nos rodea, de los pequeños mundos en los que a veces aterrizamos. Una oda a la vida, una crítica a esas cosas que tanto nos preocupan y que tanto nos limitan cuando llegamos a la edad adulta. Es el mundo visto desde los ojos de un niño, el que somos o el que fuimos, también el que siempre seremos por dentro.</p>
+    <p>Un catálogo de inspiradoras frases, hermosas metáforas y surrealistas escenas en las que se suceden variados y capitales temas universales tales como la amistad, el amor, la inocencia, la responsabilidad o la relación del ser humano con la naturaleza. Una historia tan entrañable como rica en sabiduría, apta para todas las edades y que no caduca ni pasa de moda. Un clásico con todas las letras que es capaz de acariciarnos el alma.</p>   
   </div>
   <section class="rating">
     <div class="container">
       <div class="row">
         <div class="stars col-6">
-          <strong>Puntos Criticos: 4.5</strong>
+          <strong>Puntos Criticos: 5</strong>
           <span data-stars="num4.4">
             <i class="fas fa-star" aria-hidden="true"></i>
             <i class="fas fa-star" aria-hidden="true"></i>
             <i class="fas fa-star" aria-hidden="true"></i>
             <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
           </span>
         </div>
         <div class="stars users col-6">
-          <strong>Puntos Usuarios: 3</strong>
+          <strong>Puntos Usuarios: 4</strong>
           <span data-stars="num4">
             <i class="fas fa-star" aria-hidden="true"></i>
             <i class="fas fa-star" aria-hidden="true"></i>
             <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="far fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
             <i class="far fa-star" aria-hidden="true"></i>
           </span>
         </div>
@@ -58,20 +56,20 @@
     <div class="container" id="center">
       <div class="row">
         <div class="col-6">
-          <p> Si hay que definirla en una palabra, diría peculiar. El argumento es extraño y hasta que no has avanzado bastante no terminas de entender de qué va. Y aún necesitas más para entender porqué cada personaje actúa de esa manera. Con esto no digo que sea mala.</p>
+          <p>Tachado o relegado sólo a cuento infantil, cuando tiene grandes reflexiones que sólo puedes entender en la edad adulta. Aunque visto con los ojos de un niño o niña brilla con otra luz. Parte de mi colección desde hace tiempo, y además en más de un idioma.</p>
           </p>
           <div class="row">
             <div class="col-6">
-              <strong>Jeremy Irons</strong>
+              <strong>Emilia Pardo Bazán</strong>
             </div>
             <div class="stars users col-6">
-              <strong>Puntos Usuarios: 4</strong>
+              <strong>Puntos Usuarios: 5</strong>
               <span data-stars="num4">
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
               </span>
             </div>
           </div>
@@ -79,19 +77,19 @@
         </div>
 
         <div class="col-6">
-          <p>Si te aburres mucho, y no tienes nada mejor que ver... Ok, hazlo... para el aburrimiento, bien, pero si buscas un gran argumento... busca otra serie. Aunque he de reconocer que aunque sea solo por curiosidad, la vi entera.</p>
+          <p>Uno de esos títulos que no puede faltarle a ningún lector en su haber, de esos que lees varias veces a lo largo de la vida y cada vez lo ves con ojos distintos.</p>
           <div class="row">
             <div class="col-6">
-              <strong>Iron Man</strong>
+              <strong>Juan Ramón Jiménez</strong>
             </div>
             <div class="stars users col-6">
-              <strong>Puntos Usuarios: 2</strong>
+              <strong>Puntos Usuarios: 5</strong>
               <span data-stars="num4">
                 <i class="fas fa-star" aria-hidden="true"></i>
                 <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
               </span>
             </div>
           </div>
