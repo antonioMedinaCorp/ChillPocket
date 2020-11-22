@@ -75,7 +75,7 @@ body {
   .main-nav ul a {
     padding: 0.9375em 2.1875em;
     display: flex;
-    text-transform: uppercase;
+   // text-transform: uppercase;
   }
   .main-nav ul a:hover, .main-nav ul a:focus {
     background: #fbf795;
@@ -220,9 +220,10 @@ body {
     font-size: 0.8125em;
   }
   .footer a {
-    color: $color-tercero;
+    color: white;
     text-decoration: none;
-    border-bottom: 1px solid;
+    text-align: right;
+   // border-bottom: 1px solid;
   }
 
   .btn-success {

@@ -9,7 +9,7 @@
         </button>
         <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
         <div class="navbar-collapse collapse " id="collapsingNavbar">
-            <ul class="navbar-nav ">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 					Películas</a>
@@ -79,17 +79,6 @@
                         <a class="dropdown-item" href="#">Novela negra</a>
                         <a class="dropdown-item" href="#">Romances</a>
                         <a class="dropdown-item" href="#">Viajes</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-					Quienes somos</a>
-					<div class="dropdown-menu bg-dark ">
-                        <a class="dropdown-item text-light" href="#">Presentación</a>
-                        <a class="dropdown-item" href="#">Condiciones</a>
                     </div>
                 </li>
             </ul>
