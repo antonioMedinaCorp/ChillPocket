@@ -3,15 +3,13 @@ body {
   font-family: "Nunito", sans-serif;
   color: #222; }
 
-
 /*  
   * {
     transition: all .65s ease;
     box-sizing: border-box;
   }
+
  */
-
-
 .header {
   background: white; }
 
@@ -24,14 +22,14 @@ body {
   .header .site-title {
     margin: 0; } }
 
-.site-title, h1, h2, h3 {
+.site-title, h1, h2 {
   font-size: 2.625em;
   color: #024654; }
 
-h3 {
-  font-size: 2em;
-  color: #f7686e; }
-
+/*h3 {
+    font-size: 2em;
+    color: #f7686e;
+  }*/
 .site-title {
   color: white; }
 
@@ -47,9 +45,13 @@ h3 {
   color: #1A577F;
   text-decoration: none; }
 
+nav ul {
+  display: flex;
+  justify-content: space-between; }
+
 .main-nav ul, .main-nav li {
   list-style: none;
-  margin: 0;
+  margin: 2em;
   padding: 0; }
 
 .main-nav ul {
@@ -61,8 +63,7 @@ h3 {
 
 .main-nav ul a {
   padding: 0.9375em 2.1875em;
-  display: flex;
-  text-transform: uppercase; }
+  display: flex; }
 
 .main-nav ul a:hover, .main-nav ul a:focus {
   background: #fbf795;
@@ -101,13 +102,6 @@ h3 {
 @media (max-width: 700px) {
   .full-bleed {
     min-height: 175px; } }
-
-.cool-photo {
-  background-image: url(http://placekitten.com/1300/400); }
-
-.cool-photo2 {
-  background-image: url(http://lorempixel.com/1300/400/food);
-  background-image: url(http://placekitten/1300/400); }
 
 .post {
   padding: 1.875em; }
@@ -186,9 +180,9 @@ h3 {
   font-size: 0.8125em; }
 
 .footer a {
-  color: #007476;
+  color: white;
   text-decoration: none;
-  border-bottom: 1px solid; }
+  text-align: right; }
 
 .btn-success {
   background-color: #37a3a5 !important;
@@ -201,7 +195,7 @@ h3 {
   color: white; }
 
 #imgNav {
-  width: 9em; }
+  width: 10em; }
 
 .dropdown-menu a {
   color: white !important; }
@@ -223,8 +217,73 @@ h3 {
   padding: 0%;
   height: 35rem; }
 
+img.tarjeta {
+  height: 10.5em;
+  width: 18em;
+  display: block;
+  margin: auto;
+  padding: 5%; }
+
 #imgContenMain img {
   padding: 0;
   margin: 0 auto;
   width: 100%; }
 
+.jumbotron {
+  position: relative;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200%;
+  overflow: hidden; }
+
+#jumbo {
+  height: 40em; }
+
+#center {
+  text-align: center; }
+
+p {
+  text-align: justify; }
+
+.ratings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.stars {
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 33%;
+  text-align: center;
+  background: #f3f3f3; }
+
+.stars span {
+  display: block;
+  font-size: 1.3em;
+  margin: 0 0 10px !important;
+  color: #007476 !important; }
+
+.stars.users span {
+  display: block;
+  font-size: 1.3em;
+  margin: 0 0 10px !important;
+  color: #61d5d6 !important; }
+
+[data-satrs^="num"] {
+  color: #e9e9e9 !important;
+  letter-spacing: 2px;
+  right: 0;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 700;
+  display: block;
+  margin: 0 0 20px; }
+
+#withMargin {
+  margin-left: 3em; }
