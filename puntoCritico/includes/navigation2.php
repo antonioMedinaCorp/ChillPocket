@@ -9,9 +9,9 @@
         </button>
         <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
         <div class="navbar-collapse collapse " id="collapsingNavbar">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
 					Películas</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Acción</a>
@@ -29,7 +29,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
 					Series</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Acción</a>
@@ -49,7 +49,7 @@
 
                 <!-- Menú desplegable -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
 					Cómics</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Aventuras</a>
@@ -65,7 +65,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
 					Libros</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Aventuras</a>

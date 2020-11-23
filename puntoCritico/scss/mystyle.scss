@@ -67,8 +67,8 @@ body {
   }
 
   nav li{
-    margin-left: 5em;
-    margin-right: 1em;
+    //margin-left: 5em;
+   // margin-right: 1em;
    
   }
   .main-nav ul, .main-nav li {
@@ -136,16 +136,7 @@ body {
       min-height: 175px;
     }
   }
-  .cool-photo {
-    //background-image: url(http://lorempixel.com/1300/400/abstract);
-      background-image: url(http://placekitten.com/1300/400);
-  
-  }
-  
-  .cool-photo2 {
-    background-image: url(http://lorempixel.com/1300/400/food);
-  background-image: url(http://placekitten/1300/400);
-  }
+
   
   .post {
     padding: 1.875em;
@@ -250,7 +241,7 @@ body {
 }
 
 #imgNav{
-  width:9em;
+  width:10em;
 }
 
 .dropdown-menu a{
@@ -368,7 +359,7 @@ p{
 }
 
 #withMargin{
-  margin-left: 5em;
+  margin-left: 3em;
   
 }
 

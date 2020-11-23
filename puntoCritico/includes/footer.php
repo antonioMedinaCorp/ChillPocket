@@ -3,7 +3,7 @@
     <ul class="nav justify-content-center">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">¿Quiénes somos?</a>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu bg-dark">
           <a class="dropdown-item text-light" href="">Presentación</a>
           <a class="dropdown-item" href="">Condiciones de uso</a>
         </div>

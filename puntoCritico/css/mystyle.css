@@ -49,10 +49,6 @@ nav ul {
   display: flex;
   justify-content: space-between; }
 
-nav li {
-  margin-left: 5em;
-  margin-right: 1em; }
-
 .main-nav ul, .main-nav li {
   list-style: none;
   margin: 2em;
@@ -106,13 +102,6 @@ nav li {
 @media (max-width: 700px) {
   .full-bleed {
     min-height: 175px; } }
-
-.cool-photo {
-  background-image: url(http://placekitten.com/1300/400); }
-
-.cool-photo2 {
-  background-image: url(http://lorempixel.com/1300/400/food);
-  background-image: url(http://placekitten/1300/400); }
 
 .post {
   padding: 1.875em; }
@@ -206,7 +195,7 @@ nav li {
   color: white; }
 
 #imgNav {
-  width: 9em; }
+  width: 10em; }
 
 .dropdown-menu a {
   color: white !important; }
@@ -297,4 +286,4 @@ p {
   margin: 0 0 20px; }
 
 #withMargin {
-  margin-left: 5em; }
+  margin-left: 3em; }

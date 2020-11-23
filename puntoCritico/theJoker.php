@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <?php include("includes/navigation.php"); ?>
+  <?php include("includes/navigation2.php"); ?>
 
   <div class="jumbotron" id="jumbo" style="background-image:url('/media/images/joker.jpg');"> </div>
 
