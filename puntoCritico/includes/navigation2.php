@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
         <!-- Para introducir el logo-->
         <a class="navbar-brand" href="#">
-            <img src="media/LogoSinFondo.png" alt="Logo" id="imgNav">
+            <img src="media/images/LogoSinFondoRecortado.png" alt="Logo" id="imgNav">
         </a>
         <!-- Para colapsar el menú en un botón al disminuir la pantalla en dispositivos pequeños Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
