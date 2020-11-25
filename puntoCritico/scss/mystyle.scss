@@ -6,31 +6,7 @@ body {
     font-family: "Nunito", sans-serif;
     color: #222;
   }
-/*  
-  * {
-    transition: all .65s ease;
-    box-sizing: border-box;
-  }
 
- */ 
-
-  
-  .header {
-    background:white;    
-  }
-
-  .header .site-title, .header .site-tagline {
-    font-weight: 400;
-  }
-  @media (max-width: 700px) {
-    .header .site-title, .header .site-tagline {
-      width: 100%;
-      
-    }
-    .header .site-title {
-      margin: 0;
-    }
-  }
   
   .site-title, h1, h2 {
   
@@ -42,100 +18,15 @@ body {
     font-size: 2em;
     color: #f7686e;
   }*/
-  
-  .site-title {
-    color: white;
-  }
-  
-  .site-tagline {
-    font-size: 1.125em;
-    font-style: italic;
-  }
-  
-  .main-nav {
-    background: #F7EE1A;
-    color: white;
-  }
-  .main-nav a {
-    color: #1A577F;
-    text-decoration: none;
-  }
 
-  nav ul{
-    display: flex;
-    justify-content: space-between;
-  }
 
-  nav li{
-    //margin-left: 5em;
-   // margin-right: 1em;
-   
-  }
-  .main-nav ul, .main-nav li {
-    list-style: none;
-    margin: 2em;
-    padding: 0;
-  }
-  .main-nav ul {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  .main-nav ul a {
-    padding: 0.9375em 2.1875em;
-    display: flex;
-   // text-transform: uppercase;
-  }
-  .main-nav ul a:hover, .main-nav ul a:focus {
-    background: #fbf795;
-    color: #419cd8;
-  }
-  .main-nav ul .mobile-button a {
-    position: absolute;
-    left: -99999em;
-  }
-  @media (max-width: 700px) {
-    .main-nav ul {
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-    .main-nav ul a {
-      position: absolute;
-      left: -99999em;
-    }
-    .main-nav ul.open li {
-      width: 100%;
-    }
-    .main-nav ul.open li.mobile-button a {
-      background: #fbf78d;
-      color: #0e3447;
-    }
-    .main-nav ul.open a {
-      position: static;
-    }
-    .main-nav ul .mobile-button a {
-      position: static;
-    }
-    .main-nav a {
-      width: 100%;
-    }
-  }
-  
-  .full-bleed {
-    background-size: cover;
-    min-height: 300px;
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  @media (max-width: 700px) {
-    .full-bleed {
-      min-height: 175px;
-    }
-  }
+
+
+
+
+ 
+
+
 
   
   .post {

@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
-        <div class="navbar-collapse collapse " id="collapsingNavbar">
+        <div class="navbar-collapse collapse  " id="collapsingNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
