@@ -9,28 +9,26 @@
         </button>
         <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
         <div class="navbar-collapse collapse  " id="collapsingNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
-					Películas</a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle h5 pt-2" href="#" id="navbardrop" data-toggle="dropdown">Películas</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Acción</a>
-                        <a class="dropdown-item" href="#">Animación</a>
-                        <a class="dropdown-item" href="#">Aventuras</a>
-						<a class="dropdown-item" href="#">Bélico</a>
-                        <a class="dropdown-item" href="#">Comedia</a>
-                        <a class="dropdown-item" href="#">Ciencia Ficción</a>
-						<a class="dropdown-item" href="#">Drama</a>
-                        <a class="dropdown-item" href="#">Infantil</a>
-                        <a class="dropdown-item" href="#">Terror</a>
-						<a class="dropdown-item" href="#">Musical</a>
-                        <a class="dropdown-item" href="#">Romántica</a>
-                        <a class="dropdown-item" href="#">Documental</a>
+                        <a class="dropdown-item text-light" href="#">Animación</a>
+                        <a class="dropdown-item text-light" href="#">Aventuras</a>
+						<a class="dropdown-item text-light" href="#">Bélico</a>
+                        <a class="dropdown-item text-light" href="#">Comedia</a>
+                        <a class="dropdown-item text-light" href="#">Ciencia Ficción</a>
+						<a class="dropdown-item text-light" href="#">Drama</a>
+                        <a class="dropdown-item text-light" href="#">Infantil</a>
+                        <a class="dropdown-item text-light" href="#">Terror</a>
+						<a class="dropdown-item text-light" href="#">Musical</a>
+                        <a class="dropdown-item text-light" href="#">Romántica</a>
+                        <a class="dropdown-item " href="#">Documental</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
-					Series</a>
+                    <a class="nav-link dropdown-toggle h5 " href="#" id="navbardrop" data-toggle="dropdown">Series</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Acción</a>
                         <a class="dropdown-item" href="#">Animación</a>
@@ -49,8 +47,7 @@
 
                 <!-- Menú desplegable -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
-					Cómics</a>
+                    <a class="nav-link dropdown-toggle h5 " href="#" id="navbardrop" data-toggle="dropdown">Cómics</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Aventuras</a>
                         <a class="dropdown-item" href="#">Bélico</a>
@@ -65,8 +62,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
-					Libros</a>
+                    <a class="nav-link dropdown-toggle h5 " href="#" id="navbardrop" data-toggle="dropdown">Libros</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Aventuras</a>
                         <a class="dropdown-item" href="#">Biográficos</a>
