@@ -103,10 +103,18 @@ body {
   color: white; }
 
 #imgNav {
-  width: 10em; }
+  width: 10em;
+  padding-bottom: 0.5em; }
 
 .dropdown-menu a {
   color: white !important; }
+
+.dropdown-menu a:hover {
+  color: white !important;
+  background-color: #007476 !important; }
+
+.navbar-nav .nav-link {
+  padding-top: 0.5em !important; }
 
 .card-img-overlay {
   visibility: hidden;
