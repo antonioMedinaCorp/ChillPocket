@@ -1,9 +1,12 @@
 <div class="container">
-    <h2>Películas</h2>
+    <a href="peliculas.php">
+        <h2>Películas</h2>
+    </a>
+
     <!-- fila con 4 columnas -->
     <div class="row">
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theJoker.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
@@ -17,7 +20,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theJoker.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
@@ -31,7 +34,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theJoker.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
@@ -45,7 +48,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theJoker.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
@@ -66,7 +69,7 @@
     <!-- fila con 4 columnas -->
     <div class="row">
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theUmbrellaAc.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
@@ -80,7 +83,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theUmbrellaAc.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/serie2.jpg alt="">
@@ -94,7 +97,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <div class="card text-white text-bold">
                 <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
                 <div class="card-img-overlay d-flex flex-column">
@@ -106,7 +109,7 @@
             </div>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theUmbrellaAc.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/serie2.jpg alt="">
@@ -127,7 +130,7 @@
     <!-- fila con 4 columnas -->
     <div class="row">
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theKingdom.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
@@ -141,7 +144,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theKingdom.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/comic2.jpeg alt="">
@@ -155,7 +158,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theKingdom.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
@@ -169,7 +172,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="theKingdom.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/comic2.jpeg alt="">
@@ -190,7 +193,7 @@
     <!-- fila con 4 columnas -->
     <div class="row">
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="principito.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/portadaPrincipito(2).jpg alt="">
@@ -204,7 +207,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="principito.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">
@@ -218,7 +221,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="principito.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/libro1.jpg alt="">
@@ -232,7 +235,7 @@
             </a>
         </div>
 
-        <div class="col-3 p-3">
+        <div class="col-md-3 p-3">
             <a href="principito.php">
                 <div class="card text-white text-bold">
                     <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">

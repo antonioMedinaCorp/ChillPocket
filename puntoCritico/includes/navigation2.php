@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
         <!-- Para introducir el logo-->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img src="media/images/LogoSinFondoRecortado.png" alt="Logo" id="imgNav">
         </a>
         <!-- Para colapsar el menú en un botón al disminuir la pantalla en dispositivos pequeños Toggler/collapsibe Button -->
@@ -8,10 +8,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
-        <div class="navbar-collapse collapse  " id="collapsingNavbar">
+        <div class="navbar-collapse collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle h5" href="peliculas.php" id="navbardrop" data-toggle="dropdown">
 					Películas</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Acción</a>
