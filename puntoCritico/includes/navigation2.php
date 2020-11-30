@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
         <!-- Para introducir el logo-->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img src="media/images/LogoSinFondoRecortado.png" alt="Logo" id="imgNav">
         </a>
         <!-- Para colapsar el menú en un botón al disminuir la pantalla en dispositivos pequeños Toggler/collapsibe Button -->
@@ -8,27 +8,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
-        <div class="navbar-collapse collapse  " id="collapsingNavbar">
-            <ul class="nav navbar-nav">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle h5 pt-2" href="#" id="navbardrop" data-toggle="dropdown">Películas</a>
+        <div class="navbar-collapse collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle h5" href="peliculas.php" id="navbardrop" data-toggle="dropdown">
+					Películas</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Acción</a>
-                        <a class="dropdown-item text-light" href="#">Animación</a>
-                        <a class="dropdown-item text-light" href="#">Aventuras</a>
-						<a class="dropdown-item text-light" href="#">Bélico</a>
-                        <a class="dropdown-item text-light" href="#">Comedia</a>
-                        <a class="dropdown-item text-light" href="#">Ciencia Ficción</a>
-						<a class="dropdown-item text-light" href="#">Drama</a>
-                        <a class="dropdown-item text-light" href="#">Infantil</a>
-                        <a class="dropdown-item text-light" href="#">Terror</a>
-						<a class="dropdown-item text-light" href="#">Musical</a>
-                        <a class="dropdown-item text-light" href="#">Romántica</a>
-                        <a class="dropdown-item " href="#">Documental</a>
+                        <a class="dropdown-item" href="#">Animación</a>
+                        <a class="dropdown-item" href="#">Aventuras</a>
+						<a class="dropdown-item" href="#">Bélico</a>
+                        <a class="dropdown-item" href="#">Comedia</a>
+                        <a class="dropdown-item" href="#">Ciencia Ficción</a>
+						<a class="dropdown-item" href="#">Drama</a>
+                        <a class="dropdown-item" href="#">Infantil</a>
+                        <a class="dropdown-item" href="#">Terror</a>
+						<a class="dropdown-item" href="#">Musical</a>
+                        <a class="dropdown-item" href="#">Romántica</a>
+                        <a class="dropdown-item" href="#">Documental</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5 " href="#" id="navbardrop" data-toggle="dropdown">Series</a>
+                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
+					Series</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Acción</a>
                         <a class="dropdown-item" href="#">Animación</a>
@@ -47,7 +49,8 @@
 
                 <!-- Menú desplegable -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5 " href="#" id="navbardrop" data-toggle="dropdown">Cómics</a>
+                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
+					Cómics</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Aventuras</a>
                         <a class="dropdown-item" href="#">Bélico</a>
@@ -62,7 +65,8 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5 " href="#" id="navbardrop" data-toggle="dropdown">Libros</a>
+                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
+					Libros</a>
 					<div class="dropdown-menu bg-dark ">
                         <a class="dropdown-item text-light" href="#">Aventuras</a>
                         <a class="dropdown-item" href="#">Biográficos</a>
