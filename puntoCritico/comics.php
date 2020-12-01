@@ -8,7 +8,7 @@
 
 <body>
 
-  <?php include("includes/navigation.php"); ?>
+  <?php include("includes/navigation2.php"); ?>
   <div class="container">
     <div class="row mt-3">
       <div class="col-12">
