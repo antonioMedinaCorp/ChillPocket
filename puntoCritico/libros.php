@@ -162,7 +162,7 @@
                         <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
+                                <h5 class="card-title">Título del libro</h5>
                                 <p class="card-text">Subtítulo</p>
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                         <img class="card-img-top img-fluid" src=media/images/libro1.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
+                                <h5 class="card-title">Título del libro</h5>
                                 <p class="card-text">Subtítulo</p>
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                         <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
+                                <h5 class="card-title">Título del libro</h5>
                                 <p class="card-text">Subtítulo</p>
                             </div>
                         </div>
