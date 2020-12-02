@@ -3,7 +3,12 @@ body {
   font-family: "Nunito", sans-serif;
   color: #222; }
 
-.site-title, h1, h2 {
+img {
+  border-radius: .2em; }
+
+.site-title,
+h1,
+h2 {
   font-size: 2.625em;
   color: #024654; }
 
@@ -39,22 +44,26 @@ body {
 .columns .item .item-image {
   max-width: 100%; }
 
-.columns .item:hover, .columns .item:focus {
+.columns .item:hover,
+.columns .item:focus {
   background: #e8f4fa;
   border-bottom-color: #FF6067; }
 
-.columns .item:hover .social, .columns .item:focus .social {
+.columns .item:hover .social,
+.columns .item:focus .social {
   position: absolute;
   bottom: -21px;
   height: auto;
   z-index: 5;
   padding: 10px 0; }
 
-.columns .item:hover .social .fa, .columns .item:focus .social .fa {
+.columns .item:hover .social .fa,
+.columns .item:focus .social .fa {
   color: #FF6067;
   padding: 0 0.3125em; }
 
-.columns .item:hover .social .fa:hover, .columns .item:focus .social .fa:hover {
+.columns .item:hover .social .fa:hover,
+.columns .item:focus .social .fa:hover {
   color: #769ab2; }
 
 @media (max-width: 660px) {
@@ -237,13 +246,15 @@ p {
 .we .uppercase {
   text-transform: uppercase; }
 
-.we .team-member, .team-member .team-img {
+.we .team-member,
+.team-member .team-img {
   position: relative; }
 
 .we .team-member {
   overflow: hidden; }
 
-.we .team-member, .team-member .team-img {
+.we .team-member,
+.team-member .team-img {
   position: relative; }
 
 .we .team-hover {
@@ -262,7 +273,9 @@ p {
 .we .team-member:hover .team-hover .desk {
   top: 35%; }
 
-.we .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+.we .team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .s-link {
   opacity: 1; }
 
 .we .team-hover .desk {
@@ -277,14 +290,18 @@ p {
   transition: all 0.3s 0.2s;
   padding: 0 20px; }
 
-.we .desk, .desk h4, .team-hover .s-link a {
+.we .desk,
+.desk h4,
+.team-hover .s-link a {
   text-align: center;
   color: #222; }
 
 .we .team-member:hover .team-hover .s-link {
   bottom: 10%; }
 
-.we .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+.we .team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .s-link {
   opacity: 1; }
 
 .we .team-hover .s-link {
@@ -300,7 +317,9 @@ p {
   transition: all 0.3s 0.2s;
   font-size: 35px; }
 
-.we .desk, .desk h4, .team-hover .s-link a {
+.we .desk,
+.desk h4,
+.team-hover .s-link a {
   text-align: center;
   color: #222; }
 
