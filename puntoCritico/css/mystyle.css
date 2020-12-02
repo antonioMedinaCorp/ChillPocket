@@ -167,6 +167,9 @@ img.tarjeta {
 #jumbo {
   height: 40em; }
 
+.gradiente {
+  background: linear-gradient(transparent, #000000); }
+
 #center {
   text-align: center; }
 

@@ -8,10 +8,10 @@
 
 <body>
   <?php include("includes/navigation2.php"); ?>
-
-  <div class="jumbotron" id="jumbo" style="background-image:url('/media/images/joker.jpg');"> 
-  <div class="h-100 gradiente">
-      <div class="position-absolute" style="bottom: 0;">
+  
+  <div class="jumbotron p-0" id="jumbo" style="background-image:url('/media/images/joker.jpg');"> 
+  <div class="h-100 ">
+      <div class="position-absolute gradiente w-100 pl-5" style="bottom: 0;">
         <h1 class="text-light">Título de la película</h1>
         <p class="text-light pl-2">subtítulo se la película</p>
 
