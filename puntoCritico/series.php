@@ -49,15 +49,17 @@
       </div>
 
       <div class="col-md-3 p-3">
-        <div class="card text-white text-bold">
-          <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
-          <div class="card-img-overlay d-flex flex-column">
-            <div class="mt-auto">
-              <h5 class="card-title">Título de la serie</h5>
-              <p class="card-text">Subtítulo</p>
+        <a href="theUmbrellaAc.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de la serie</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-md-3 p-3">
@@ -107,15 +109,17 @@
       </div>
 
       <div class="col-md-3 p-3">
-        <div class="card text-white text-bold">
-          <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
-          <div class="card-img-overlay d-flex flex-column">
-            <div class="mt-auto">
-              <h5 class="card-title">Título de la serie</h5>
-              <p class="card-text">Subtítulo</p>
+        <a href="theUmbrellaAc.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de la serie</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-md-3 p-3">
@@ -165,15 +169,17 @@
       </div>
 
       <div class="col-md-3 p-3">
-        <div class="card text-white text-bold">
-          <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
-          <div class="card-img-overlay d-flex flex-column">
-            <div class="mt-auto">
-              <h5 class="card-title">Título de la serie</h5>
-              <p class="card-text">Subtítulo</p>
+        <a href="theUmbrellaAc.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de la serie</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-md-3 p-3">
@@ -223,15 +229,17 @@
       </div>
 
       <div class="col-md-3 p-3">
-        <div class="card text-white text-bold">
-          <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
-          <div class="card-img-overlay d-flex flex-column">
-            <div class="mt-auto">
-              <h5 class="card-title">Título de la serie</h5>
-              <p class="card-text">Subtítulo</p>
+        <a href="theUmbrellaAc.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de la serie</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-md-3 p-3">
