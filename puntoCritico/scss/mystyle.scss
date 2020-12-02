@@ -308,7 +308,6 @@ p {
 }
 
 .login-container{
-  
   display: flex;
   align-items: center;
   flex-direction: column; 
@@ -317,7 +316,6 @@ p {
   min-height: 100%;
   padding: 20px;
   box-shadow: 2px 2px 5px black;
-  
 }
 
 #fill-round-div{
@@ -332,7 +330,6 @@ p {
 
 form.user .custom-checkbox.small label {
   line-height: 1.5rem;
-
 }
 
 form.user .form-control-user {
@@ -362,6 +359,12 @@ form.user .btn-user {
   font-size: 0.8rem;
   border-radius: 10rem;
   padding: 0.75rem 1rem;
+}
+
+.txt-register{
+  font-family: 'Montserrat', sans-serif;
+  
+}
 
 // para el conócenos
 .we {
