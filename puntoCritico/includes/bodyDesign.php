@@ -2,6 +2,7 @@
 
     <div class="container">
 
+        <!-- Título de películas -->
         <div class="row mt-3">
             <div class="col-12">
                 <a href="peliculas.php">
@@ -9,7 +10,7 @@
                 </a>
             </div>
         </div>
-        <!-- fila con 4 columnas -->
+        <!-- Sección de películas -->
         <div class="row">
 
             <div class="col-md-3 p-3">
@@ -71,6 +72,8 @@
         </div>
         <hr width=50%>
 
+        <!-- Título de series -->
+
         <div class="row mt-3">
             <div class="col-12">
                 <a href="series.php">
@@ -78,7 +81,7 @@
                 </a>
             </div>
         </div>
-        <!-- fila con 4 columnas -->
+        <!-- Sección de series-->
         <div class="row">
 
             <div class="col-md-3 p-3">
@@ -110,15 +113,18 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <div class="card text-white text-bold">
-                    <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
-                    <div class="card-img-overlay d-flex flex-column">
-                        <div class="mt-auto">
-                            <h5 class="card-title">Título de la serie</h5>
-                            <p class="card-text">Subtítulo</p>
+                <a href="theUmbrellaAc.php">
+                    <div class="card text-white text-bold">
+                        <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="mt-auto">
+                                <h5 class="card-title">Título de la serie</h5>
+                                <p class="card-text">Subtítulo</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
             </div>
 
             <div class="col-md-3 p-3">
@@ -138,6 +144,8 @@
         </div>
         <hr width=50%>
 
+        <!--Título de cómics-->
+
         <div class="row mt-3">
             <div class="col-12">
                 <a href="comics.php">
@@ -145,7 +153,7 @@
                 </a>
             </div>
         </div>
-        <!-- fila con 4 columnas -->
+        <!-- Sección de cómics -->
         <div class="row">
 
             <div class="col-md-3 p-3">
@@ -207,6 +215,7 @@
         </div>
         <hr width=50%>
 
+        <!-- Título de libros -->
         <div class="row mt-3">
             <div class="col-12">
                 <a href="libros.php">
@@ -214,7 +223,7 @@
                 </a>
             </div>
         </div>
-        <!-- fila con 4 columnas -->
+        <!-- Sección de libros -->
         <div class="row">
 
             <div class="col-md-3 p-3">
