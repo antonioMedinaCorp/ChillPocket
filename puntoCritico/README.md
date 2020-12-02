@@ -2,6 +2,8 @@
 Explanation for organizing the file structure
 pasos a seguir para instalar node-sass:
 
+INSTALAR NODE.JS EN TU PC
+
 1.-Abrir la carpeta que quieras, en este caso puntocritico. No vale abrir chillpocket.
 
 2.- Terminal-> New terminal y antes de escribir nada comprobar la ruta en la consola
