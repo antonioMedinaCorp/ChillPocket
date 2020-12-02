@@ -15,7 +15,7 @@
         <div class="we">
             <div class="row">
                 <div class="heading-title text-center">
-                    <h3 class="text-uppercase">Los cradores</h3>
+                    <h3 class="text-uppercase">Los creadores</h3>
                     <p class="p-top-30 half-txt">Nuestros creadores diseñan y dan contenido a esta página. Las críticas no son más que meras opiniones personales sin tabúes ni filtros y sin ánimo de ofender.</p>
                 </div>
 
