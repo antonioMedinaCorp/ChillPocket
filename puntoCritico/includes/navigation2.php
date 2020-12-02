@@ -88,8 +88,8 @@
 				<!-- <form class="form-inline" action="/action_page.php">
                     <input class="form-control m-2" type="text" placeholder="Search">
                     <button class="btn btn-success" type="submit">Buscar</button>
-                </form>-->
-				<button class="btn btn-success text-light" type="submit">Login</button>
+                </form>-->                
+				<button class="btn btn-success text-light" type="submit" onclick="window.location.href='/login.php'">Login</button>
             </div>
         </div>
     </nav>
