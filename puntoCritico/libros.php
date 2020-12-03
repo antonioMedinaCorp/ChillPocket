@@ -8,8 +8,8 @@
 
 <body>
 
-    <?php include("includes/navigation2.php"); ?>
     <div class="container">
+        <?php include("includes/navigation2.php"); ?>
         <div class="row mt-3">
             <div class="col-12">
                 <h2>Libros</h2>
