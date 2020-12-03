@@ -9,7 +9,7 @@
 <body>
 
     <?php include("includes/navigation2.php"); ?>
-    <div class="jumbotron" id="jumbo" style="background-image:url('/media/images/conocenosJumbo.jpeg');"> </div>
+    <div class="jumbotron" id="jumbo" style="background-image:url('/media/images/fotoCartoon1.jpeg');"> </div>
 
     <div class="container">
         <div class="we">
