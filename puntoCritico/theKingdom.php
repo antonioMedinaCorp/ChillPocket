@@ -123,7 +123,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <textarea name="opinion" id="" cols="30" rows="10"></textarea>
+            <textarea name="opinion" id="" cols="30" rows="4"></textarea>
           </div>
           <div class="col-md-6">
           <div class="stars users col-6">
