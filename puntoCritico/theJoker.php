@@ -60,51 +60,46 @@
   <hr width=70%>
 
   <section>
-    <div id="center">
-      <h3>Opiniones de los usuarios</h3>
-    </div>
-    <div class="container" id="center">
-      <div class="row">
-        <div class="col-6">
-          <p> Gran película. Muy recomendable. El protagonista hace un gran papel interpretando a este sádico personaje.</p></p>
-          <div class="row">
-            <div class="col-6">
-              <strong>Jeremy Irons</strong>
-            </div>
-            <div class="stars users col-6">
-              <strong>Puntos Usuarios: 5</strong>
-              <span data-stars="num4">
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-              </span>
+
+
+    <div class="container">
+      
+      <form action="" method="POST">
+        <div class="row">
+          <div class=" w-100 d-flex flex-row ">
+
+            <div class="col-md-11 ml-auto">
+            <h3>Deja tu opinión</h3>
+              <textarea name="opinion" id="" cols="100" rows="10"></textarea>
             </div>
           </div>
 
+
         </div>
 
-        <div class="col-6">
-          <p>Se echa de menos alguna aparción de Batman, porque qúe es el Joker sin Batman. Más acciónn le hubiera dado otro toque.</p>
-          <div class="row">
-            <div class="col-6">
-              <strong>Iron Man</strong>
-            </div>
-            <div class="stars users col-6">
-              <strong>Puntos Usuarios: 2</strong>
+        <div class="row">
+          <div class="d-flex flex-row "></div>
+          <div class="col-md-7 ml-auto mr-4">
+            <div class="stars users ">
+              <strong>Puntos Usuarios: </strong>
               <span data-stars="num4">
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
                 <i class="far fa-star" aria-hidden="true"></i>
                 <i class="far fa-star" aria-hidden="true"></i>
                 <i class="far fa-star" aria-hidden="true"></i>
               </span>
+
+
             </div>
+            <button type="submit" name="enviar" class="btn btn-success text-light ml-5">Guardar</button>
           </div>
         </div>
-      </div>
+
+       
+      </form>
     </div>
+
   </section>
   <div>
 <?php include("includes/footer.php");?>

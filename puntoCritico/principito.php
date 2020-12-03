@@ -59,52 +59,46 @@
   <hr width=70%>
 
   <section>
-    <div id="center">
-      <h3>Opiniones de los usuarios</h3>
-    </div>
-    <div class="container" id="center">
-      <div class="row">
-        <div class="col-6">
-          <p>Tachado o relegado sólo a cuento infantil, cuando tiene grandes reflexiones que sólo puedes entender en la edad adulta. Aunque visto con los ojos de un niño o niña brilla con otra luz. Parte de mi colección desde hace tiempo, y además en más de un idioma.</p>
-          </p>
-          <div class="row">
-            <div class="col-6">
-              <strong>Emilia Pardo Bazán</strong>
-            </div>
-            <div class="stars users col-6">
-              <strong>Puntos Usuarios: 5</strong>
-              <span data-stars="num4">
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-              </span>
+
+
+    <div class="container">
+      
+      <form action="" method="POST">
+        <div class="row">
+          <div class=" w-100 d-flex flex-row ">
+
+            <div class="col-md-11 ml-auto">
+            <h3>Deja tu opinión</h3>
+              <textarea name="opinion" id="" cols="100" rows="10"></textarea>
             </div>
           </div>
 
+
         </div>
 
-        <div class="col-6">
-          <p>Uno de esos títulos que no puede faltarle a ningún lector en su haber, de esos que lees varias veces a lo largo de la vida y cada vez lo ves con ojos distintos.</p>
-          <div class="row">
-            <div class="col-6">
-              <strong>Juan Ramón Jiménez</strong>
-            </div>
-            <div class="stars users col-6">
-              <strong>Puntos Usuarios: 5</strong>
+        <div class="row">
+          <div class="d-flex flex-row "></div>
+          <div class="col-md-7 ml-auto mr-4">
+            <div class="stars users ">
+              <strong>Puntos Usuarios: </strong>
               <span data-stars="num4">
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
               </span>
+
+
             </div>
+            <button type="submit" name="enviar" class="btn btn-success text-light ml-5">Guardar</button>
           </div>
         </div>
-      </div>
+
+       
+      </form>
     </div>
+
   </section>
   <div>
     <?php include("includes/footer.php"); ?>
