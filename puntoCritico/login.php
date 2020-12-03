@@ -1,3 +1,10 @@
+
+<?php 
+if (isset($_POST['entrar']) && !empty($_POST['usuOrEmail']) && !empty($_POST['pass'])) {
+  header("Location: index.php");
+}
+?>
+
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
 <html>
@@ -14,14 +21,14 @@
                   <div class="text-center pb-4">
                    <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png"></a>
                   </div>
-                  <form class="user">
+                  <form class="user" action="" method="POST">
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="usuOrEmail" aria-describedby="emailHelp" placeholder="Usuario o correo electr&oacute;nico">
+                      <input type="email" class="form-control form-control-user" name="usuOrEmail" id="usuOrEmail" aria-describedby="emailHelp" placeholder="Usuario o correo electr&oacute;nico">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="pass" placeholder="Contrase&ntilde;a">
+                      <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contrase&ntilde;a">
                     </div>                    
-                    <button type="button" class="btn btn-dark btn-user btn-block" id="btnEntrar">                      
+                    <button type="submit" class="btn btn-dark btn-user btn-block" name="entrar" id="btnEntrar">                      
                       Entrar
                     </button> 
                   </form>
