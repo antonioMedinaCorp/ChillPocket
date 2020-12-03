@@ -216,7 +216,6 @@ p {
 #withMargin {
   margin-left: 3em; }
 
-
 .title-login {
   font-family: 'Baloo Tammudu 2', cursive;
   font-weight: bold;
@@ -277,6 +276,9 @@ form.user .btn-user {
   font-size: 0.8rem;
   border-radius: 10rem;
   padding: 0.75rem 1rem; }
+
+.txt-register {
+  font-family: 'Montserrat', sans-serif; }
 
 .we {
   line-height: 1.5;
@@ -410,4 +412,3 @@ form.user .btn-user {
   text-transform: uppercase;
   color: #a5a5a5;
   letter-spacing: 1px; }
-
