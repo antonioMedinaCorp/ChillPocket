@@ -35,7 +35,7 @@
   <section class="rating">
     <div class="container">
       <div class="row">
-        <div class="stars col-6">
+        <div class="stars col-5 mr-5 ml-5">
           <strong>Puntos Criticos: 5</strong>
           <span data-stars="num4.4">
             <i class="fas fa-star" aria-hidden="true"></i>
@@ -46,7 +46,7 @@
             <!--<i class="fas fa-star-half-alt" aria-hidden="true"></i>-->
           </span>
         </div>
-        <div class="stars users col-6">
+        <div class="stars users col-5 mr-8 ml-8">
           <strong>Puntos Usuarios: 5</strong>
           <span data-stars="num4">
             <i class="fas fa-star" aria-hidden="true"></i>

@@ -1,3 +1,8 @@
+<?php 
+if(isset($_POST['registrar'])&&!empty($_POST['usu'])&&!empty($_POST['email'])&&!empty($_POST['pass'])){
+  header('Location: index.php');
+}
+?>
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
 <html>
@@ -14,24 +19,20 @@
                   <div class="text-center pb-4">
                    <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png"></a>
                   </div>
-                  <form class="user">
-                    <div class="form-group">
-                      <label class="txt-register">Nombre de usuario:</label>
-                      <input type="text" class="form-control form-control-user" id="usuOrEmail" aria-describedby="emailHelp" >
+                  <form class="user" action="" method="post">
+                    <div class="form-group">                      
+                      <input type="text" class="form-control form-control-user" name="usu"  placeholder="Nombre de usuario">
                     </div>
                     <div class="form-group">
-                      <label class="txt-register">Email</label>
-                      <input type="email" class="form-control form-control-user" id="usuOrEmail" aria-describedby="emailHelp" >
+                      <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico" >
                     </div>
                     <div class="form-group">
-                      <label class="txt-register">Contraseña</label>
-                      <input type="password" class="form-control form-control-user" id="pass" >
+                      <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contraseña" >
                     </div>
                     <div class="form-group">
-                      <label class="txt-register">Repite la contraseña</label>
-                      <input type="password" class="form-control form-control-user" id="pass" >
+                      <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Repite la contraseña" >
                     </div>                     
-                    <button type="button" class="btn btn-dark btn-user btn-block" >                      
+                    <button type="submit" name="registrar" class="btn btn-dark btn-user btn-block" >                      
                       Registrarme
                     </button> 
                     <hr>
