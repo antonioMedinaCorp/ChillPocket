@@ -1,7 +1,7 @@
 body {
   background: white;
   font-family: "Nunito", sans-serif;
-  color: #222; }
+  color: black; }
 
 img {
   border-radius: .2em; }
@@ -10,7 +10,7 @@ img {
 h1,
 h2 {
   font-size: 2.625em;
-  color: #024654; }
+  color: #37a3a5; }
 
 /*h3 {
     font-size: 2em;
@@ -103,7 +103,7 @@ h2 {
 
 .btn-success {
   background-color: #37a3a5 !important;
-  border-color: rgba(243, 245, 245, 0.979) !important;
+  border-color: white !important;
   color: black; }
 
 .btn-success:hover {
@@ -168,7 +168,7 @@ img.tarjeta {
   height: 40em; }
 
 .gradiente {
-  background: linear-gradient(transparent, #000000); }
+  background: linear-gradient(transparent, black); }
 
 #center {
   text-align: center; }
@@ -266,7 +266,7 @@ form.user .form-control-user {
   font-weight: 400;
   line-height: 1.5;
   color: #6e707e;
-  background-color: #fff;
+  background-color: white;
   background-clip: padding-box;
   border: 1px solid #d1d3e2;
   border-radius: 0.35rem;
@@ -412,3 +412,34 @@ form.user .btn-user {
   text-transform: uppercase;
   color: #a5a5a5;
   letter-spacing: 1px; }
+
+#containerTerms {
+  margin: 2rem; }
+
+.title-Legals-Terms {
+  margin-top: 1rem;
+  text-align: center;
+  color: #007476;
+  font-family: "Baloo Tammudu 2", cursive;
+  font-size: 3.5rem; }
+
+.sectionOfTerms {
+  margin-bottom: 2rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.title-Terms {
+  font-family: "Baloo Tammudu 2", cursive;
+  text-decoration: underline; }
+
+.terms-list li {
+  color: #37a3a5; }
+
+.terms-list li p {
+  color: black; }
+
+.negrita {
+  font-weight: bold; }

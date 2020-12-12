@@ -1,11 +1,9 @@
-$color-primero:#37a3a5;
-$color-segundo: #61d5d6;
-$color-tercero: #007476;
+@import "variables";
 
 body {
-  background: white;
+  background: $white;
   font-family: "Nunito", sans-serif;
-  color: #222;
+  color: $black;
 }
 
 img {
@@ -15,9 +13,9 @@ img {
 .site-title,
 h1,
 h2 {
-
+  
   font-size: 2.625em;
-  color: #024654;
+  color: $color-primero;
 }
 
 /*h3 {
@@ -126,7 +124,7 @@ h2 {
 }
 
 .footer a {
-  color: white;
+  color: $white;
   text-decoration: none;
   text-align: right;
   // border-bottom: 1px solid;
@@ -134,14 +132,14 @@ h2 {
 
 .btn-success {
   background-color: $color-primero !important;
-  border-color: rgba(243, 245, 245, 0.979) !important;
-  color: black;
+  border-color: $white !important;
+  color: $black;
 }
 
 .btn-success:hover {
   background-color: $color-segundo !important;
-  border-color: white !important;
-  color: white;
+  border-color: $white !important;
+  color: $white;
 }
 
 #imgNav {
@@ -150,12 +148,12 @@ h2 {
 }
 
 .dropdown-menu a {
-  color: white !important;
+  color: $white !important;
 
 }
 
 .dropdown-menu a:hover {
-  color: white !important;
+  color: $white !important;
   background-color: $color-tercero !important;
 
 }
@@ -225,7 +223,7 @@ img.tarjeta {
 }
 
 .gradiente{
-  background: linear-gradient(transparent , #000000 );
+  background: linear-gradient(transparent , $black );
 }
 
 #center {
@@ -290,7 +288,7 @@ p {
   
   font-family: 'Baloo Tammudu 2', cursive;
   font-weight: bold;
-  color: white;
+  color: $white;
 }
 
 .bg-login-image {
@@ -315,11 +313,11 @@ p {
   width: 100%;
   min-height: 100%;
   padding: 20px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px $black;
 }
 
 #fill-round-div{
-  background-color: rgba(207, 207, 207, 0.904);
+  background-color: $backgroundLogin;
   border-radius: 5rem ;
 }
 #logo-login{
@@ -346,10 +344,10 @@ form.user .form-control-user {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6e707e;
-  background-color: #fff;
+  color: $grayFormControl;
+  background-color: $white;
   background-clip: padding-box;
-  border: 1px solid #d1d3e2;
+  border: 1px solid $borderFormControl;
   border-radius: 0.35rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -521,5 +519,45 @@ form.user .btn-user {
   text-transform: uppercase;
   color: #a5a5a5;
   letter-spacing: 1px;
+}
+
+//ESTILO TERMINOS LEGALES
+
+#containerTerms{
+  margin: 2rem;
+}
+
+.title-Legals-Terms{
+  margin-top: 1rem;
+  text-align: center;
+  color: $color-tercero;
+  font-family: $title;
+  font-size: 3.5rem;
+}
+
+.sectionOfTerms{  
+  margin-bottom: 2rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $text;
+  color: $black;
+}
+
+.title-Terms{
+  font-family: $title;
+  text-decoration: underline;
+}
+
+.terms-list li{
+  color: $color-primero;
+}
+
+.terms-list li p {
+  color: $black;
+}
+
+.negrita{
+  font-weight: bold;
 }
 
