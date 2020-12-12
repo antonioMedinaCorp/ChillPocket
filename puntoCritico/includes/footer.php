@@ -13,6 +13,12 @@
       <li class="nav-item">
         <a class="nav-link" href="privacidad.php">Privacidad</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="terminosLegales.php">Términos Legales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="politicaCookies.php">Política de Cookies</a>
+      </li>
     </ul>
   </div>
 
