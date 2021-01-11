@@ -8,7 +8,7 @@
 
 <body>   
     <div class="container-fluid">
-    <?php include("includes/navigation2.php"); ?>
+    <?php include("includes/navbar.php"); ?>
         <div id="containerTerms">
         <h1 class="title-Legals-Terms">Términos legales</h1>
         <div class="sectionOfTerms">

@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<?php include("includes/navigation2.php");?>
+<?php include("includes/navbar.php");?>
 <?php include("includes/design-top.php");?>
 
 

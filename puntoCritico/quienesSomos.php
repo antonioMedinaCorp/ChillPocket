@@ -8,7 +8,7 @@
 
 <body>
 
-    <?php include("includes/navigation2.php"); ?>
+    <?php include("includes/navbar.php"); ?>
     <div class="jumbotron" id="jumbo" style="background-image:url('/media/images/fotoCartoon1.jpeg');"> </div>
 
     <div class="container">
