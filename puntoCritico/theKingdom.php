@@ -129,9 +129,9 @@
         <div class="row">
           <div class=" w-100 d-flex flex-row ">
 
-            <div class="col-md-11 ml-auto">
+          <div class="col-md-6">
             <h3>Deja tu opinión</h3>
-              <textarea name="opinion" id="" cols="100" rows="10"></textarea>
+              <textarea name="opinion" id="" cols="105" rows="10"></textarea>
             </div>
           </div>
 
