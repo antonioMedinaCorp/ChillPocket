@@ -69,10 +69,10 @@
         <div class="row">
           <div class=" w-100 d-flex flex-row ">
 
-            << class="col-md-6">
+          <div class="col-md-6">
             <h3>Deja tu opinión</h3>
               <textarea name="opinion" id="" cols="105" rows="10"></textarea>
-            </>
+            </div>
           </div>
 
 
