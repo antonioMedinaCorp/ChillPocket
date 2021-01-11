@@ -7,17 +7,20 @@
 </head>
 
 <body>
-  <?php include("includes/navbar.php"); ?>
 
-  <div class="jumbotron p-0" id="jumbo" style="background-image:url('/media/images/elprincipito.jpg');  min-height: 400px;">
-    <div class="h-100">
-      <div class="position-absolute gradiente w-100 pl-5" style="bottom: 0;">
-        <h1 class="text-light">Título de la película</h1>
-        <p class="text-light pl-2">subtítulo se la película</p>
+<?php include("includes/navbar.php"); ?>
+  
+    <div class="jumbotron p-0" id="jumbo" style="background-image:url('/media/images/elprincipito.jpg');  min-height: 400px;">
+      <div class="h-100">
+        <div class="position-absolute gradiente w-100 pl-5" style="bottom: 0;">
+          <h1 class="text-light">Título de la película</h1>
+          <p class="text-light pl-2">subtítulo se la película</p>
 
+
+
+        </div>
       </div>
     </div>
-  </div>
 
   <div class="container" id="center">
     <h4>Sinopsis</h4>

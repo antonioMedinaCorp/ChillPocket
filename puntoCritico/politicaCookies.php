@@ -7,8 +7,10 @@
 </head>
 
 <body>
+
     <div class="container-fluid">
         <?php include("includes/navbar.php"); ?>
+
 
         <div id="containerTerms">
             <h1 class="title-Legals-Terms">Política de cookies</h1>
@@ -59,10 +61,11 @@
         
 
         <div>
-            <?php include("includes/footer.php"); ?>
+            
         </div>
-
+        <?php include("includes/footer.php"); ?>
     </div>
+    
 
 
 </body>
