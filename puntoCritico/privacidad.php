@@ -7,8 +7,9 @@
 </head>
 
 <body>
+<?php include("includes/navigation2.php"); ?>
     <div class="container-fluid">
-        <?php include("includes/navigation2.php"); ?>
+        
 
         <div id="containerTerms">
             <h1 class="title-Legals-Terms">Política de privacidad</h1>

@@ -11,7 +11,8 @@ if(isset($_POST['registrar'])&&!empty($_POST['usu'])&&!empty($_POST['email'])&&!
   <?php include("includes/head-tag-contents.php"); ?>
 </head>
 
-<body class="bg-login">  
+<body class="bg-login">
+        <div class="container">  
             <div class="row mt-2  login-container">
              
               <div class="col-lg-4 col-md-12 col-sm-12 " id="fill-round-div">
@@ -43,12 +44,8 @@ if(isset($_POST['registrar'])&&!empty($_POST['usu'])&&!empty($_POST['email'])&&!
                 </div>
               </div>
             </div>
-          </div>
         </div>
+       
 
-      </div>
-
-    </div>
-
-  </div>
+  
 </body>
