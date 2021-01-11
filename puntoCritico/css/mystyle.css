@@ -1,94 +1,14 @@
 body {
   background: white;
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: black; }
 
 img {
   border-radius: .2em; }
 
-.site-title,
-h1,
-h2 {
+h1, h2 {
   font-size: 2.625em;
   color: #37a3a5; }
-
-/*h3 {
-    font-size: 2em;
-    color: #f7686e;
-  }*/
-.post {
-  padding: 1.875em; }
-
-.columns {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-
-.columns .item {
-  padding: 1.5625em;
-  max-width: 47%;
-  background: #b1dbf0;
-  color: #1A577F;
-  border-bottom: 5px solid #F7EE1A;
-  margin-bottom: 2.1875em;
-  position: relative;
-  overflow: hidden; }
-
-.columns .item .item-title {
-  color: #011d23;
-  font-size: 24px;
-  margin: 0 0 5px 0;
-  font-family: "Righteous", sans-serif; }
-
-.columns .item .item-image {
-  max-width: 100%; }
-
-.columns .item:hover,
-.columns .item:focus {
-  background: #e8f4fa;
-  border-bottom-color: #FF6067; }
-
-.columns .item:hover .social,
-.columns .item:focus .social {
-  position: absolute;
-  bottom: -21px;
-  height: auto;
-  z-index: 5;
-  padding: 10px 0; }
-
-.columns .item:hover .social .fa,
-.columns .item:focus .social .fa {
-  color: #FF6067;
-  padding: 0 0.3125em; }
-
-.columns .item:hover .social .fa:hover,
-.columns .item:focus .social .fa:hover {
-  color: #769ab2; }
-
-@media (max-width: 660px) {
-  .columns .item {
-    max-width: 100%;
-    width: 100%; } }
-
-.columns.thirds .item {
-  max-width: 31%; }
-
-@media (max-width: 770px) {
-  .columns.thirds .item {
-    max-width: 48%; } }
-
-@media (max-width: 770px) and (max-width: 660px) {
-  .columns.thirds .item {
-    max-width: 100%;
-    width: 100%; } }
-
-.columns .social {
-  position: absolute;
-  bottom: -60px;
-  height: 0;
-  z-index: -1;
-  font-size: 1.75em; }
 
 .footer {
   color: white;
@@ -142,7 +62,7 @@ h2 {
   padding: 0%;
   height: 35rem; }
 
-img.tarjeta {
+img .tarjeta {
   height: 10.5em;
   width: 18em;
   display: block;
@@ -217,7 +137,7 @@ p {
   margin-left: 3em; }
 
 .title-login {
-  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: "Baloo Tammudu 2", cursive;
   font-weight: bold;
   color: white; }
 
