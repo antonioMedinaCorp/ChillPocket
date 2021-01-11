@@ -7,7 +7,7 @@
 <body>
 
 
-<?php include("includes/navigation2.php");?>
+<?php include("includes/navbar.php");?>
 
 <div class="container" id="main-content">
 	<main>

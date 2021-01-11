@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <?php include("includes/navigation2.php"); ?>
+  <?php include("includes/navbar.php"); ?>
 
   <div class="jumbotron p-0" id="jumbo" style="background-image:url('/media/images/serie2.jpg');">
     <div class="h-100">
