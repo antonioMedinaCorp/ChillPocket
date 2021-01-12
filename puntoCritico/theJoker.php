@@ -66,11 +66,13 @@
       
       <form action="" method="POST">
         <div class="row">
-          <div class=" w-100 d-flex flex-row ">
+          <div class=" w-100 d-flex flex-column ">
 
-            <div class="col-md-6">
-            <h3>Deja tu opinión</h3>
-              <textarea name="opinion" id="" cols="105" rows="10"></textarea>
+            <div class="col-md-12">
+              <h3>Deja tu opinión</h3>
+            </div>
+            <div class="col-md-12">
+              <textarea name="opinion" id="" cols="" rows="10"></textarea>
             </div>
           </div>
 
