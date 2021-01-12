@@ -27,18 +27,20 @@
     -->
     <div id="video-container">
       <!-- Video -->
-      <video id="video" width="640" height="365">
-        <source src="videos/mikethefrog.webm" type="video/webm">
+      <video id="video" width="560" height="315">
+      <!--
+        <source src="media/mikethefrog.webm" type="video/webm">
         <source src="videos/mikethefrog.ogv" type="video/ogv">
-        <source src="videos/mikethefrog.mp4" type="video/mp4">
+      -->  
+        <source src="media/Joker.mp4" type="video/mp4">
         <p>
           Your browser doesn't support HTML5 video.
-          <a href="videos/mikethefrog.mp4">Download</a> the video instead.
+          <a href="videos/Joker.mp4">Download</a> the video instead.
         </p>
       </video>
       <!-- Video Controls -->
 
-      <div id="video-controls">
+      <div id="video">
         <button type="button" id="play-pause">Play</button>
         <input type="range" id="seek-bar" value="0">
         <button type="button" id="mute">Mute</button>
