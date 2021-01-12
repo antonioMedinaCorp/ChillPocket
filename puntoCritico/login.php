@@ -14,6 +14,7 @@ if (isset($_POST['entrar']) && !empty($_POST['usuOrEmail']) && !empty($_POST['pa
 </head>
 
 <body class="bg-login">  
+      <div class="container">
             <div class="row mt-5 login-container">
              
               <div class="col-lg-4 col-md-12 col-sm-12 " id="fill-round-div">
@@ -42,12 +43,5 @@ if (isset($_POST['entrar']) && !empty($_POST['usuOrEmail']) && !empty($_POST['pa
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
       </div>
-
-    </div>
-
-  </div>
 </body>
