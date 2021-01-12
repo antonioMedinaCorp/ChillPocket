@@ -31,7 +31,7 @@ h1, h2 {
 
 .btn-success {
   background-color: $color-primero !important;
-  border-color: $white !important;
+  
   color: $black;
 }
 
@@ -481,18 +481,18 @@ form.user .btn-user {
 	-o-transition: opacity .3s;
 	-ms-transition: opacity .3s;
 	transition: opacity .3s;
-	background-image: linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
-	background-image: -o-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
-	background-image: -moz-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
-	background-image: -webkit-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
-	background-image: -ms-linear-gradient(bottom, rgb(3,113,168) 13%, rgb(0,136,204) 100%);
+	background-image: linear-gradient(bottom, $color-primero 13%, $color-segundo 100%);
+	background-image: -o-linear-gradient(bottom, $color-primero 13%, $color-segundo 100%);
+	background-image: -moz-linear-gradient(bottom,  $color-primero 13%, $color-segundo 100%);
+	background-image: -webkit-linear-gradient(bottom,  $color-primero 13%, $color-segundo 100%);
+	background-image: -ms-linear-gradient(bottom, $color-primero 13%, $color-segundo 100%);
 
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
 		left top,
-		color-stop(0.13, rgb(3,113,168)),
-		color-stop(1, rgb(0,136,204))
+		color-stop(0.13, $color-primero),
+		color-stop(1,  $color-segundo)
 	);
 }
 
@@ -501,7 +501,7 @@ form.user .btn-user {
 }
 
 button {
-	background: rgba(0,0,0,.5);
+	background:  $color-tercero;
 	border: 0;
 	color: #EEE;
 	-webkit-border-radius: 3px;

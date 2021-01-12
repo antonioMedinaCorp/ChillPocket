@@ -23,7 +23,6 @@ h1, h2 {
 
 .btn-success {
   background-color: #37a3a5 !important;
-  border-color: white !important;
   color: black; }
 
 .btn-success:hover {
@@ -381,18 +380,18 @@ form.user .btn-user {
   -o-transition: opacity .3s;
   -ms-transition: opacity .3s;
   transition: opacity .3s;
-  background-image: linear-gradient(bottom, #0371a8 13%, #0088cc 100%);
-  background-image: -o-linear-gradient(bottom, #0371a8 13%, #0088cc 100%);
-  background-image: -moz-linear-gradient(bottom, #0371a8 13%, #0088cc 100%);
-  background-image: -webkit-linear-gradient(bottom, #0371a8 13%, #0088cc 100%);
-  background-image: -ms-linear-gradient(bottom, #0371a8 13%, #0088cc 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #0371a8), color-stop(1, #0088cc)); }
+  background-image: linear-gradient(bottom, #37a3a5 13%, #61d5d6 100%);
+  background-image: -o-linear-gradient(bottom, #37a3a5 13%, #61d5d6 100%);
+  background-image: -moz-linear-gradient(bottom, #37a3a5 13%, #61d5d6 100%);
+  background-image: -webkit-linear-gradient(bottom, #37a3a5 13%, #61d5d6 100%);
+  background-image: -ms-linear-gradient(bottom, #37a3a5 13%, #61d5d6 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #37a3a5), color-stop(1, #61d5d6)); }
 
 #video-container:hover #video-controls {
   opacity: .9; }
 
 button {
-  background: rgba(0, 0, 0, 0.5);
+  background: #007476;
   border: 0;
   color: #EEE;
   -webkit-border-radius: 3px;
