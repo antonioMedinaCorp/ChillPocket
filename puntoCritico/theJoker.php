@@ -4,17 +4,17 @@
 
 <head>
   <?php include("includes/head-tag-contents.php"); ?>
+  <script src="js/video.js"></script>
 </head>
 
 <body>
   <?php include("includes/navbar.php"); ?>
-  
-  <div class="jumbotron p-0" id="jumbo" style="background-image:url('/media/images/joker.jpg');"> 
-  <div class="h-100 ">
-      <div class="position-absolute gradiente w-100 pl-5" style="bottom: 0;">
-        <h1 class="text-light">Título de la película</h1>
-        <p class="text-light pl-2">subtítulo se la película</p>
 
+  <div class="jumbotron p-0" id="jumbo" style="background-image:url('/media/images/joker.jpg');">
+    <div class="h-100 ">
+      <div class="position-absolute gradiente w-100 pl-5" style="bottom: 0;">
+        <h1 class="text-light">The Joker</h1>
+        <p class="text-light pl-2">Cónoce el origen de este mítico villano</p>
       </div>
     </div>
   </div>
@@ -22,9 +22,33 @@
   <div class="container" id="center">
     <h4>Sinopsis</h4>
     <p>Arthur Fleck (Phoenix) vive en Gotham con su madre, y su única motivación en la vida es hacer reír a la gente. Actúa haciendo de payaso en pequeños trabajos, pero tiene problemas mentales que hacen que la gente le vea como un bicho raro. Su gran sueño es actuar como cómico delante del público, pero una serie de trágicos acontecimientos le hará ir incrementando su ira contra una sociedad que le ignora.</p>
+    <!--
     <iframe width="560" height="315" src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    -->
+    <div id="video-container">
+      <!-- Video -->
+      <video id="video" width="560" height="315">
+      <!--
+        <source src="media/mikethefrog.webm" type="video/webm">
+        <source src="videos/mikethefrog.ogv" type="video/ogv">
+      -->  
+        <source src="media/Joker.mp4" type="video/mp4">
+        <p>
+          Your browser doesn't support HTML5 video.
+          <a href="videos/Joker.mp4">Download</a> the video instead.
+        </p>
+      </video>
+      <!-- Video Controls -->
 
-      <h4>Crítica</h4>
+      <div id="video">
+        <button type="button" id="play-pause">Play</button>
+        <input type="range" id="seek-bar" value="0">
+        <button type="button" id="mute">Mute</button>
+        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+        <button type="button" id="full-screen">Full-Screen</button>
+      </div>
+    </div>
+    <h4>Crítica</h4>
     <p>Ha arrasado. No tiene rival. 'Joker' es la película del año y ha puesto de acuerdo a los espectadores del mundo, aunque la crítica se ha mostrado bastante más dividida. Mientras se acerca a los 300 millones de dólares en su primera semana, convertida ya en un fenómeno de masas, intentaré explicar las razones por las que, sinceramente, pienso que nos estamos dejando llevar por el entusiasmo.</p>
     <p>Cuando se anunció el proyecto, se vendió solo y de manera inmediata: "Martin Scorsese estará detrás de una película para adultos (eso ha sonado porno) sobre el Joker ambientada en los setenta". Wow, desde ese momento DC ya había ganado una batalla. A partir de ahí, un desfile de nombres con posibilidades de usar el blanco maquillaje del protagonista, hasta que Joaquin Phoenix se confirmó a las órdenes de Todd Phillips, el cerebro detrás de la jugada maestra.</p>
     <p>El director de la trilogía de 'Resacón en Las Vegas', 'Aquellas juergas universitarias' o 'Starsky & Hutch' (por aquello de seguir en los setenta), se marcaba un reto imposible de creer hace unos años si no tenemos en cuenta su muy tenue intento de cambiar de registro con 'Juego de armas', una película que ya intentó jugar en la liga del Scorsese más moderno, pero cuyo resultado ni siquiera se aproximó al (excelso) trabajo de Michael Bay en 'Pain & Gain', curiosamente, mucho más goodfelliana, mucho más Scorsese que la película de moda.</p>
@@ -63,16 +87,14 @@
 
 
     <div class="container">
-      
+
       <form action="" method="POST">
         <div class="row">
           <div class=" w-100 d-flex flex-column ">
 
-            <div class="col-md-12">
+            <div class="col-md-6">
               <h3>Deja tu opinión</h3>
-            </div>
-            <div class="col-md-12">
-              <textarea name="opinion" id="" cols="" rows="10"></textarea>
+              <textarea name="opinion" id="" cols="105" rows="10"></textarea>
             </div>
           </div>
 
@@ -98,14 +120,14 @@
           </div>
         </div>
 
-       
+
       </form>
     </div>
 
   </section>
   <div>
-<?php include("includes/footer.php");?>
-</div>
+    <?php include("includes/footer.php"); ?>
+  </div>
 </body>
 
 </html>
