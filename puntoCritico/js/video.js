@@ -11,10 +11,8 @@ window.onload = function() {
     // Sliders
     var seekBar = document.getElementById("seek-bar");
     var volumeBar = document.getElementById("volume-bar");
-  
-}
 
-// Event listener for the play/pause button
+    // Event listener for the play/pause button
 playButton.addEventListener("click", function() {
     if (video.paused == true) {
       // Play the video
@@ -29,7 +27,7 @@ playButton.addEventListener("click", function() {
       // Update the button text to 'Play'
       playButton.innerHTML = "Play";
     }
-}); 
+});
 
 // Event listener for the mute button
 muteButton.addEventListener("click", function() {
@@ -92,5 +90,10 @@ volumeBar.addEventListener("change", function() {
     // Update the video volume
     video.volume = volumeBar.value;
 });
+
+  
+}
+
+ 
 
 
