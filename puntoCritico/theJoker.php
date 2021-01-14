@@ -4,7 +4,7 @@
 
 <head>
   <?php include("includes/head-tag-contents.php"); ?>
-  <script src="js/video.js"></script>
+
 </head>
 
 <body>
@@ -22,32 +22,33 @@
   <div class="container" id="center">
     <h4>Sinopsis</h4>
     <p>Arthur Fleck (Phoenix) vive en Gotham con su madre, y su única motivación en la vida es hacer reír a la gente. Actúa haciendo de payaso en pequeños trabajos, pero tiene problemas mentales que hacen que la gente le vea como un bicho raro. Su gran sueño es actuar como cómico delante del público, pero una serie de trágicos acontecimientos le hará ir incrementando su ira contra una sociedad que le ignora.</p>
-    <!--
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    -->
-    <div id="video-container">
-      <!-- Video -->
-      <video id="video" width="560" height="315">
-      <!--
-        <source src="media/mikethefrog.webm" type="video/webm">
-        <source src="videos/mikethefrog.ogv" type="video/ogv">
-      -->  
-        <source src="media/Joker.mp4" type="video/mp4">
-        <p>
-          Your browser doesn't support HTML5 video.
-          <a href="videos/Joker.mp4">Download</a> the video instead.
-        </p>
-      </video>
-      <!-- Video Controls -->
 
-      <div id="video">
-        <button type="button" id="play-pause">Play</button>
-        <input type="range" id="seek-bar" value="0">
-        <button type="button" id="mute">Mute</button>
-        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-        <button type="button" id="full-screen">Full-Screen</button>
+
+    <div class="d-flex justify-content-center">
+      <div id="video-container">
+        <!-- Video -->
+        <video id="video" width="640" height="365">
+
+          <source src="media/Joker.mp4" type="video/mp4">
+          <p>
+            Your browser doesn't support HTML5 video.
+            <a href="media/Joker.mp4">Download</a> the video instead.
+          </p>
+        </video>
+        <!-- Video Controls -->
+        <div id="video-controls">
+          <button type="button" id="play-pause">Play</button>
+          <input type="range" id="seek-bar" value="0">
+          <button type="button" id="mute">Mute</button>
+          <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+          <button type="button" id="full-screen"><i class="fas fa-expand-arrows-alt"></i></button>
+        </div>
       </div>
     </div>
+
+
+
+
     <h4>Crítica</h4>
     <p>Ha arrasado. No tiene rival. 'Joker' es la película del año y ha puesto de acuerdo a los espectadores del mundo, aunque la crítica se ha mostrado bastante más dividida. Mientras se acerca a los 300 millones de dólares en su primera semana, convertida ya en un fenómeno de masas, intentaré explicar las razones por las que, sinceramente, pienso que nos estamos dejando llevar por el entusiasmo.</p>
     <p>Cuando se anunció el proyecto, se vendió solo y de manera inmediata: "Martin Scorsese estará detrás de una película para adultos (eso ha sonado porno) sobre el Joker ambientada en los setenta". Wow, desde ese momento DC ya había ganado una batalla. A partir de ahí, un desfile de nombres con posibilidades de usar el blanco maquillaje del protagonista, hasta que Joaquin Phoenix se confirmó a las órdenes de Todd Phillips, el cerebro detrás de la jugada maestra.</p>
@@ -90,7 +91,7 @@
 
       <form action="" method="POST">
         <div class="row">
-          <div class=" w-100 d-flex flex-row ">
+          <div class=" w-100 d-flex flex-column ">
 
             <div class="col-md-6">
               <h3>Deja tu opinión</h3>
@@ -128,6 +129,7 @@
   <div>
     <?php include("includes/footer.php"); ?>
   </div>
+  <script src="js/video.js"></script>
 </body>
 
 </html>
