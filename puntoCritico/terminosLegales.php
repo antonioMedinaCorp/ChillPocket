@@ -129,39 +129,34 @@
                 </thead>
                 <tbody>
                         <tr>
-                            <td>Inicio</td>
-                            <td>Páginas y redes sociales de sus respectivos dueños</td>
-                            <td>Reconocimiento - No Comercial</td>
+                            <td>Joker</td>
+                            <td>http://policies.warnerbros.com/terms/es-es/html/terms_es-es_1.1.0.html</td>
+                            <td>Reconocimiento  No Comercial</td>
                         </tr>
                         <tr>
-                            <td>Peliculas</td>
-                            <td>Páginas y redes sociales de sus respectivos dueños</td>
-                            <td>Reconocimiento - No Comercial </td>
+                            <td>Kingdom</td>
+                            <td>https://www.dccomics.com/copyright</td>
+                            <td>Reconocimiento  No Comercial </td>
                         </tr>
                         <tr>
-                            <td>Libros</td>
-                            <td>Páginas y redes sociales de sus respectivos dueños</td>
-                            <td>Reconocimiento - No Comercial </td>
-                        </tr>
-                        <tr>
-                            <td>Cómics</td>
-                            <td>Páginas y redes sociales de sus respectivos dueños</td>
-                            <td>Reconocimiento - No Comercial </td>
+                            <td>theUmbrellaAc</td>
+                            <td>https://www.nbcuniversal.com/privacy/spanish#accordionheader1</td>
+                            <td>Reconocimiento  No Comercial </td>
                         </tr>
                         <tr>
                             <td>¿Quiénes Somos?</td>
                             <td>Fotos de los propios integrantes del equipo, tomadas por ellos</td>
-                            <td>Reconocimiento - No Comercial</td>
+                            <td>Reconocimiento  No Comercial</td>
                         </tr>
                         <tr>
                             <td>Login</td>
-                            <td>Páginas y redes sociales de sus respectivos dueños</td>
-                            <td>Reconocimiento - No Comercial</td>
+                            <td>https://es.hboespana.com/terms-and-conditions</td>
+                            <td>Reconocimiento  No Comercial</td>
                         </tr>
                         <tr>
                             <td>Registro</td>
-                            <td>Páginas y redes sociales de sus respectivos dueños</td>
-                            <td>Reconocimiento - No Comercial</td>
+                            <td>https://es.hboespana.com/terms-and-conditions</td>
+                            <td>Reconocimiento  No Comercial</td>
                         </tr>
                 </tbody>
             </table>
