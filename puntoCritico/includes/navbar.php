@@ -81,6 +81,9 @@
                         <a class="dropdown-item" href="libros.php">Viajes</a>
                     </div>
                 </li>
+                <li>
+                    <a href="juegos.php" class="nav-link h5" id="navbardrop">Juegos</a>
+                </li>
             </ul>
             <!--Búsqueda-->
             <div class="ml-auto">
