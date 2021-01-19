@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
         <!-- Para introducir el logo-->
         <a class="navbar-brand" href="index.php">
             <img src="media/images/LogoSinFondoRecortado.png" alt="Logo" id="imgNav">
