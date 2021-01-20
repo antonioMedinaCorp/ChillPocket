@@ -1,0 +1,21 @@
+body {
+    background: #ccc;
+    color: #333;
+    font: 14px 'Arial',sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+canvas {
+    box-shadow: 0 0 30px #000;
+}
+
+a {
+    color: white;
+}
