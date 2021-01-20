@@ -501,7 +501,9 @@ form.user .btn-user {
 
 button {
 	background:  $color-tercero;
-	border: 0;
+  border: 0;
+  border-color: $color-tercero !important;
+  
 	color: #EEE;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -513,10 +515,69 @@ button:hover {
 	cursor: pointer;
 }
 
+button:active{
+  box-shadow: 0 0 0 0.2rem $color-tercero !important;
+}
+
 #seek-bar {
 	width: 360px;
 }
 
 #volume-bar {
 	width: 60px;
+}
+
+// peliculas2
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,100%);
+  overflow:hidden;
+  scroll-behavior: smooth;
+
+  section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+    
+    .item {
+            
+      transition: 250ms all;  
+    }
+
+    .arrow__btn {
+      position: absolute;
+      color: $white;
+      text-decoration: none;
+      font-size: 6em;
+      background:rgb(0,0,0);
+      width: 80px; 
+      z-index: 1;
+      
+    }
+
+    .left-arrow {      
+      top:0; bottom:0; left: 0;
+      background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    }
+    
+    .right-arrow {
+      top:0; bottom:0; right: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    }
+  }
+}
+ .item .card:hover { 
+  margin:0, 20px;
+  transform: scale(1.2);
+}
+
+a:hover{
+  color: $color-primero;
+}
+
+.sub{
+text-decoration: underline;
 }
