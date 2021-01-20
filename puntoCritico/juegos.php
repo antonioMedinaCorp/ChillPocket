@@ -11,7 +11,7 @@
     <div class="container" id="center">
         <div class="row mt-5">
             <div class="col-sm-4">
-                <div class="card">
+                <div class="card games">
                     <img class="card-img-top" src="/media/images/juegoPopcorn2.jpeg" alt="" style="max-height: 400px;">
                     <div class="card-body">
                         <h4 class="card-title">Popcorn</h4>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-            <div class="card">
+            <div class="card games">
                     <img class="card-img-top" src="/media/images/juegoVirus2.jpeg" alt="" style="max-height: 400px;">
                     <div class="card-body">
                         <h4 class="card-title">Virus</h4>
@@ -30,7 +30,7 @@
                     </div>
                 </div></div>
             <div class="col-sm-4">
-            <div class="card">
+            <div class="card games">
                     <img class="card-img-top" src="/media/images/Annmm2.png" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Juego 1</h4>

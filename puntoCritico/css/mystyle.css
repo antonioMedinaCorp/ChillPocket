@@ -400,6 +400,12 @@ button {
   -o-border-radius: 3px;
   border-radius: 3px; }
 
+.games .btn-success {
+  border-color: #37a3a5 !important; }
+
+.games .btn-success:active {
+  box-shadow: 0 0 0 0.2rem #37a3a5 !important; }
+
 button:hover {
   cursor: pointer; }
 
