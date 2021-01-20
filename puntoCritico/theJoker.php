@@ -36,10 +36,10 @@
           </p>
         </video>
         <!-- Video Controls -->
-        <div id="video-controls">
-          <button type="button" id="play-pause"><i class="far fa-play-circle"></i></button>
+        <div id="video-controls" class="d-flex justify-content-between">
+          <button type="button" id="play-pause">&#x23f5;</button>
           <input type="range" id="seek-bar" value="0">
-          <button type="button" id="mute"><i class="fas fa-volume-mute"></i></button>
+          <button type="button" id="mute">&#128264;</button>
           <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
           <button type="button" id="full-screen"><i class="fas fa-expand-arrows-alt"></i></button>
         </div>

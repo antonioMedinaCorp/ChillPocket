@@ -19,13 +19,13 @@ playButton.addEventListener("click", function() {
       video.play();
   
       // Update the button text to 'Pause'
-      playButton.innerHTML = "Pause";
+      playButton.innerHTML = "&#x23f8;";
     } else {
       // Pause the video
       video.pause();
   
       // Update the button text to 'Play'
-      playButton.innerHTML = "Play";
+      playButton.innerHTML = "&#x23f5;";
     }
 });
 
@@ -36,13 +36,13 @@ muteButton.addEventListener("click", function() {
       video.muted = true;
   
       // Update the button text
-      muteButton.innerHTML = "Unmute";
+      muteButton.innerHTML = "&#128266;";
     } else {
       // Unmute the video
       video.muted = false;
   
       // Update the button text
-      muteButton.innerHTML = "Mute";
+      muteButton.innerHTML = "&#128264;";
     }
 });
 
