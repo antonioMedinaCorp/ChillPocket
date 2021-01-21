@@ -519,7 +519,7 @@
     <a href="#sl3-section2" class="arrow__btn right-arrow">›</a>
   </section>
 
-  <section id="sl3-section2">
+  <div id="sl3-section2">
     <a href="#sl3-section1" class="arrow__btn left-arrow">‹</a>
     <div class="item">
     <a href="theJoker.php">
@@ -588,9 +588,9 @@
     </div>
     
     <a href="#sl3-section3" class="arrow__btn right-arrow">›</a>
-  </section>
+  </div>
 
-  <section id="sl3-section3">
+  <div id="sl3-section3">
     <a href="#sl3-section2" class="arrow__btn left-arrow">‹</a>
     <div class="item">
     <a href="theJoker.php">
@@ -659,13 +659,13 @@
     </div>
       
     <a href="#sl3-section1" class="arrow__btn right-arrow">›</a>
-    </section>
+</div>
     </div><!-- fin slider 3 -->
     <!-- slider 4 -->
 
     <h4 class="sub">Ciencia Ficción</h4>
      <div class="wrapper" id="slider4">   
-        <section id="sl4-section1" >
+        <div id="sl4-section1" >
         <a href="#sl4-section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
         <div class="item">
         <a href="theJoker.php">
@@ -735,7 +735,7 @@
         </a>
     </div>
     <a href="#sl4-section2" class="arrow__btn right-arrow">›</a>
-  </section>
+  </div>
 
   <section id="sl4-section2">
     <a href="#sl4-section1" class="arrow__btn left-arrow">‹</a>
@@ -808,7 +808,7 @@
     <a href="#sl4-section3" class="arrow__btn right-arrow">›</a>
   </section>
 
-  <section id="sl4-section3">
+  <div id="sl4-section3">
     <a href="#sl4-section2" class="arrow__btn left-arrow">‹</a>
     <div class="item">
     <a href="theJoker.php">
@@ -877,7 +877,7 @@
     </div>
       
     <a href="#sl4-section1" class="arrow__btn right-arrow">›</a>
-    </section>
+    </div>
     </div><!-- fin slider 4 -->
 
 
