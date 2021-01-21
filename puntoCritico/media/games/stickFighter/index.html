@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Fighter</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        canvas {
+            border: 1px solid #000;
+
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-crisp-edges;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        kbd {
+            border: 1px solid #888;
+            border-radius: 3px;
+            font-family: Arial;
+            font-size: 11pt;
+            padding: 2px 6px;
+        }
+
+        .container {
+            margin: auto;
+            width: 800px;
+        }
+
+        #game {
+            margin-bottom: 15px;
+        }
+
+        #health-bars,
+        #controls {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .health-label {
+            line-height: 1.5em;
+        }
+
+        .health {
+            background: #ccc;
+            height: 20px;
+            position: relative;
+            width: 320px;
+        }
+
+        .fill {
+            background: #0a0;
+            display: block;
+            height: 20px;
+            position: absolute;
+            transition: width 0.5s;
+        }
+
+        #controls {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5px;
+        }
+
+        #p1-health {
+            left: 0;
+            width: 0%;
+        }
+
+        #p2-health {
+            right: 0;
+            width: 0%;
+        }
+
+        #p1-ctrls,
+        #p2-ctrls {
+            display: flex;
+            flex-direction: row;
+            flex: 0 0 50%;
+        }
+
+        #p2-ctrls {
+            justify-content: flex-end;
+        }
+
+        #keys {
+            display: flex;
+            flex-direction: row;
+            flex: 0 0 50%;
+            justify-content: space-between;
+        }
+
+        #p1-keys kbd:nth-of-type(1) {
+            margin-left: 35px;
+        }
+
+        #p1-keys kbd:nth-of-type(2) {
+            margin-left: 60px
+        }
+
+        #p1-keys kbd:nth-of-type(3) {
+            margin-left: 65px
+        }
+
+        #p1-keys kbd:nth-of-type(4) {
+            margin-left: 45px
+        }
+
+        #p2-keys {
+            justify-content: flex-end;
+        }
+
+        #p2-keys kbd:nth-of-type(1) {
+            margin-right: 60px;
+        }
+
+        #p2-keys kbd:nth-of-type(2) {
+            margin-right: 60px
+        }
+
+        #p2-keys kbd:nth-of-type(3) {
+            margin-right: 65px
+        }
+
+        #p2-keys kbd:nth-of-type(4) {
+            margin-right: 35px
+        }
+
+        .move,
+        .a-btn,
+        .b-btn {
+            border-radius: 50%;
+            cursor: pointer;
+            display: block;
+            font-size: 30pt;
+            margin: 5px;
+            width: 80px;
+            height: 80px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .a-btn,
+        .b-btn {
+            color: #fff;
+            line-height: 2em;
+            text-align: center;
+        }
+
+        .arrow-left,
+        .arrow-right {
+            display: block;
+            margin: 15px auto;
+        }
+
+        .arrow-left {
+            width: 0;
+            height: 0;
+            border-bottom: 25px solid transparent;
+            border-top: 25px solid transparent;
+            border-right: 25px solid #2f2f2f;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .arrow-right {
+            width: 0;
+            height: 0;
+            border-bottom: 25px solid transparent;
+            border-top: 25px solid transparent;
+            border-left: 25px solid #2f2f2f;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .move {
+            background: #888;
+        }
+
+        .move:active {
+            background: #666;
+        }
+
+        .a-btn {
+            background: #04c;
+        }
+
+        .a-btn:active {
+            background: #028;
+        }
+
+        .b-btn {
+            background: #080;
+        }
+
+        .b-btn:active {
+            background: #040;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center flex-column">
+        <div id="game">
+            <canvas id="canvas"></canvas>
+            <div id="health-bars">
+                <div class="health-label">
+                    <strong>Player 1</strong><br><span id="p1-kills">0</span> KO(s)
+                </div>
+                <div class="health">
+                    <span class="fill" id="p1-health"></span>
+                </div>
+                <div class="health">
+                    <span class="fill" id="p2-health"></span>
+                </div>
+                <div class="health-label">
+                    <strong>Player 2</strong><br><span id="p2-kills">0</span> KO(s)
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <div id="p1-ctrls">
+                <div class="move" id="p1-left"><span class="arrow-left"></span></div>
+                <div class="move" id="p1-right"><span class="arrow-right"></span></div>
+                <div class="a-btn" id="p1-up">A</div>
+                <div class="b-btn" id="p1-atk">B</div>
+            </div>
+            <div id="p2-ctrls">
+                <div class="move" id="p2-left"><span class="arrow-left"></span></div>
+                <div class="move" id="p2-right"><span class="arrow-right"></span></div>
+                <div class="a-btn" id="p2-up">A</div>
+                <div class="b-btn" id="p2-atk">B</div>
+            </div>
+        </div>
+        <div id="keys">
+            <div id="p1-keys">
+                <kbd>A</kbd>
+                <kbd>D</kbd>
+                <kbd>W</kbd>
+                <kbd>Shift</kbd>
+            </div>
+            <div id="p2-keys">
+                <kbd>&#8592;</kbd>
+                <kbd>&#8594;</kbd>
+                <kbd>&#8593;</kbd>
+                <kbd>;</kbd>
+            </div>
+        </div>
+
+        <button id="refrescar" class="btn btn-info text-light mx-auto col-3" type="submit" onclick="window.location.href='/juegos.php'">Volver a Juegos</button>
+
+    </div>
+
+
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
