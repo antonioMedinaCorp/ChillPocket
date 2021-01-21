@@ -10,7 +10,7 @@
 
   <?php include("includes/navbar.php"); ?>
     <div class="container">
-        <h2>Peliculas</h2>
+        <h2>Películas</h2>
         <h4 class="sub">Acción</h4>
      <div class="wrapper" id="slider1">   
         <section id="section1" >
