@@ -85,7 +85,7 @@
         </div>
         <div class="sectionOfTerms">
             <h3 class="title-Terms">Propiedad intelectual e industrial</h3>
-            <p>Todos los derechos están reservados.<br>Todo acceso a este sitio Web está sujeto a las siguientes condiciones: la reproducción, almacenaje permanente y la difusión de los contenidos o cualquier otro uso que tenga finalidad pública o comercial queda expresamente prohibida sin el consentimiento previo expreso y por escrito de Titular.</p>
+            <p>Todo acceso a este sitio Web está sujeto a las siguientes condiciones: la reproducción, almacenaje permanente y la difusión de los contenidos o cualquier otro uso que tenga finalidad pública o comercial queda expresamente prohibida sin el consentimiento previo expreso y por escrito de Titular.</p>
              
         </div>
         <div class="sectionOfTerms">
