@@ -9,46 +9,42 @@
 <body>
 
   <?php include("includes/navbar.php"); ?>
-  <div class="container">
-    <div class="row mt-3">
-      <div class="col-12">
-        <h2>Películas</h2>
-      </div>
+    <div class="container">
+        <h2>Peliculas</h2>
+        <h4 class="sub">Acción</h4>
+     <div class="wrapper" id="slider1">   
+        <section id="section1" >
+        <a href="#section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
+        <div class="item">
+        <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+    <div class="item">
+
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
     </div>
-  </div>
-  <div class="container">
-    <!-- fila con 4 columnas -->
-    <div class="row d-flex flex-row flex-nowrap overflow-auto">
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">The Joker</h5>
-                <p class="card-text">Conoce al villano de Gotham</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
+    <div class="item">
+      
+    <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
             <div class="card-img-overlay d-flex flex-column">
@@ -59,190 +55,184 @@
             </div>
           </div>
         </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">The Joker</h5>
-                <p class="card-text">Conoce al villano de Gotham</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">The Joker</h5>
-                <p class="card-text">Conoce al villano de Gotham</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">The Joker</h5>
-                <p class="card-text">Conoce al villano de Gotham</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
-          <div class="card text-white text-bold">
-            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="mt-auto">
-                <h5 class="card-title">Título de película</h5>
-                <p class="card-text">Subtítulo</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
     </div>
-    <!-- fila con 4 columnas -->
-    <div class="row">
-      <div class="col-md-3 p-3">
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <a href="#section2" class="arrow__btn right-arrow">›</a>
+  </section>
+
+  <section id="section2">
+    <a href="#section1" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    
+    <a href="#section3" class="arrow__btn right-arrow">›</a>
+  </section>
+
+  <section id="section3">
+    <a href="#section2" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+        <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+      
+    <a href="#section1" class="arrow__btn right-arrow">›</a>
+    </section>
+    </div><!--fin slider 1-->
+    <!-- slider 2-->
+    <h4 class="sub">Comedia</h4>
+     <div class="wrapper" id="slider2">   
+        <section id="sl2-section1" >
+        <a href="#sl2-section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
+        <div class="item">
         <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
@@ -254,10 +244,10 @@
             </div>
           </div>
         </a>
-      </div>
+        </div>
+    <div class="item">
 
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
+    <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
             <div class="card-img-overlay d-flex flex-column">
@@ -268,10 +258,10 @@
             </div>
           </div>
         </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
+    </div>
+    <div class="item">
+      
+    <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
             <div class="card-img-overlay d-flex flex-column">
@@ -282,9 +272,162 @@
             </div>
           </div>
         </a>
-      </div>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <a href="#sl2-section2" class="arrow__btn right-arrow">›</a>
+  </section>
 
-      <div class="col-md-3 p-3">
+  <section id="sl2-section2">
+    <a href="#sl2-section1" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    
+    <a href="#sl2-section3" class="arrow__btn right-arrow">›</a>
+  </section>
+
+  <section id="sl2-section3">
+    <a href="#sl2-section2" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
         <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
@@ -296,11 +439,17 @@
             </div>
           </div>
         </a>
-      </div>
     </div>
-    <!-- fila con 4 columnas -->
-    <div class="row">
-      <div class="col-md-3 p-3">
+      
+    <a href="#sl2-section1" class="arrow__btn right-arrow">›</a>
+    </section>
+    </div><!-- fin slider 2 -->
+    <!-- slider 3 -->
+    <h4 class="sub">Aventuras</h4>
+     <div class="wrapper" id="slider3">   
+        <section id="sl3-section1" >
+        <a href="#sl3-section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
+        <div class="item">
         <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
@@ -312,10 +461,10 @@
             </div>
           </div>
         </a>
-      </div>
+        </div>
+    <div class="item">
 
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
+    <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
             <div class="card-img-overlay d-flex flex-column">
@@ -326,10 +475,10 @@
             </div>
           </div>
         </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
+    </div>
+    <div class="item">
+      
+    <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
             <div class="card-img-overlay d-flex flex-column">
@@ -340,9 +489,162 @@
             </div>
           </div>
         </a>
-      </div>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <a href="#sl3-section2" class="arrow__btn right-arrow">›</a>
+  </section>
 
-      <div class="col-md-3 p-3">
+  <section id="sl3-section2">
+    <a href="#sl3-section1" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    
+    <a href="#sl3-section3" class="arrow__btn right-arrow">›</a>
+  </section>
+
+  <section id="sl3-section3">
+    <a href="#sl3-section2" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
         <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
@@ -354,11 +656,18 @@
             </div>
           </div>
         </a>
-      </div>
     </div>
-    <!-- fila con 4 columnas -->
-    <div class="row">
-      <div class="col-md-3 p-3">
+      
+    <a href="#sl3-section1" class="arrow__btn right-arrow">›</a>
+    </section>
+    </div><!-- fin slider 3 -->
+    <!-- slider 4 -->
+
+    <h4 class="sub">Ciencia Ficción</h4>
+     <div class="wrapper" id="slider4">   
+        <section id="sl4-section1" >
+        <a href="#sl4-section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
+        <div class="item">
         <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
@@ -370,10 +679,10 @@
             </div>
           </div>
         </a>
-      </div>
+        </div>
+    <div class="item">
 
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
+    <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
             <div class="card-img-overlay d-flex flex-column">
@@ -384,10 +693,10 @@
             </div>
           </div>
         </a>
-      </div>
-
-      <div class="col-md-3 p-3">
-        <a href="theJoker.php">
+    </div>
+    <div class="item">
+      
+    <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
             <div class="card-img-overlay d-flex flex-column">
@@ -398,9 +707,162 @@
             </div>
           </div>
         </a>
-      </div>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <a href="#sl4-section2" class="arrow__btn right-arrow">›</a>
+  </section>
 
-      <div class="col-md-3 p-3">
+  <section id="sl4-section2">
+    <a href="#sl4-section1" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">The Joker</h5>
+                <p class="card-text">Conoce al villano de Gotham</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    
+    <a href="#sl4-section3" class="arrow__btn right-arrow">›</a>
+  </section>
+
+  <section id="sl4-section3">
+    <a href="#sl4-section2" class="arrow__btn left-arrow">‹</a>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
+    <a href="theJoker.php">
+          <div class="card text-white text-bold">
+            <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="mt-auto">
+                <h5 class="card-title">Título de película</h5>
+                <p class="card-text">Subtítulo</p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="item">
         <a href="theJoker.php">
           <div class="card text-white text-bold">
             <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
@@ -412,13 +874,17 @@
             </div>
           </div>
         </a>
-      </div>
     </div>
-  </div>
+      
+    <a href="#sl4-section1" class="arrow__btn right-arrow">›</a>
+    </section>
+    </div><!-- fin slider 4 -->
 
 
-  <?php include("includes/footer.php"); ?>
+    </div> <!-- DIV CONTAINER -->   
+   
+    <?php include("includes/footer.php"); ?>
 
 </body>
-
 </html>
+
