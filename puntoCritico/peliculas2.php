@@ -12,10 +12,8 @@
     <div class="container">
         <h2>Peliculas</h2>
         <h4 class="sub">Acción</h4>
-
-     <div class="wrapper" id="slider1">   
-        <div id="section1" >
-
+     <div class="wrapper" id="carousel1">   
+        <section id="section1" >
         <a href="#section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
         <div class="item">
         <a href="theJoker.php">
@@ -85,9 +83,9 @@
         </a>
     </div>
     <a href="#section2" class="arrow__btn right-arrow">›</a>
-  </div>
+  </section>
 
-  <div id="section2">
+  <section id="section2">
     <a href="#section1" class="arrow__btn left-arrow">‹</a>
     <div class="item">
     <a href="theJoker.php">
@@ -156,9 +154,9 @@
     </div>
     
     <a href="#section3" class="arrow__btn right-arrow">›</a>
-  </div>
+  </section>
 
-  <div id="section3">
+  <section id="section3">
     <a href="#section2" class="arrow__btn left-arrow">‹</a>
     <div class="item">
     <a href="theJoker.php">
@@ -227,12 +225,12 @@
     </div>
       
     <a href="#section1" class="arrow__btn right-arrow">›</a>
-    </div>
+    </section>
     </div><!--fin slider 1-->
     <!-- slider 2-->
     <h4 class="sub">Comedia</h4>
      <div class="wrapper" id="slider2">   
-        <div id="sl2-section1" >
+        <section id="sl2-section1" >
         <a href="#sl2-section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
         <div class="item">
         <a href="theJoker.php">
@@ -302,9 +300,9 @@
         </a>
     </div>
     <a href="#sl2-section2" class="arrow__btn right-arrow">›</a>
-  <div>
+  </section>
 
-  <div id="sl2-section2">
+  <section id="sl2-section2">
     <a href="#sl2-section1" class="arrow__btn left-arrow">‹</a>
     <div class="item">
     <a href="theJoker.php">
@@ -373,9 +371,9 @@
     </div>
     
     <a href="#sl2-section3" class="arrow__btn right-arrow">›</a>
-  </div>
+  </section>
 
-  <div id="sl2-section3">
+  <section id="sl2-section3">
     <a href="#sl2-section2" class="arrow__btn left-arrow">‹</a>
     <div class="item">
     <a href="theJoker.php">
@@ -444,12 +442,12 @@
     </div>
       
     <a href="#sl2-section1" class="arrow__btn right-arrow">›</a>
-    </div>
+    </section>
     </div><!-- fin slider 2 -->
     <!-- slider 3 -->
     <h4 class="sub">Aventuras</h4>
      <div class="wrapper" id="slider3">   
-        <div id="sl3-section1" >
+        <section id="sl3-section1" >
         <a href="#sl3-section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
         <div class="item">
         <a href="theJoker.php">
@@ -666,7 +664,7 @@
     <!-- slider 4 -->
 
     <h4 class="sub">Ciencia Ficción</h4>
-     <div class="wrapper" id="slider4">   
+     <div class="wrapper" id="slider2">   
         <section id="sl4-section1" >
         <a href="#sl4-section3" class="arrow__btn left-arrow justify-content text-center">‹</a> 
         <div class="item">
