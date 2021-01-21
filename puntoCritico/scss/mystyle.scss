@@ -511,12 +511,28 @@ button {
 	border-radius: 3px;
 }
 
+.games .btn-success{
+  border-color: $color-primero !important;
+}
+
+.games .btn-success:active {
+  box-shadow: 0 0 0 0.2rem $color-primero !important;
+}
+
 button:hover {
 	cursor: pointer;
 }
 
 button:active{
   box-shadow: 0 0 0 0.2rem $color-tercero !important;
+}
+
+.games .btn-success{
+  border-color: $color-primero !important;
+}
+
+.games .btn-success:active {
+  box-shadow: 0 0 0 0.2rem $color-primero !important;
 }
 
 #seek-bar {
@@ -551,11 +567,10 @@ button:active{
       position: absolute;
       color: $white;
       text-decoration: none;
-      font-size: 6em;
+      font-size: 4em;
       background:rgb(0,0,0);
       width: 80px; 
       z-index: 1;
-      
     }
 
     .left-arrow {      
@@ -576,6 +591,51 @@ button:active{
 
 a:hover{
   color: $color-primero;
+}
+
+@media screen and (max-width: 600px) {
+  .arrow__btn {
+    position: absolute;
+    color: $white;
+    text-decoration: none;
+    font-size: 6em;
+    background:rgb(0,0,0);
+    width: 80px;     
+    z-index: 1;
+    
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5,100%);
+    overflow:hidden;
+    scroll-behavior: smooth;
+  
+    section {
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, 100%);
+      margin: 20px 0;
+      
+      .item {
+              
+        transition: 250ms all;  
+      }
+  
+      .left-arrow { 
+        margin-top: 50px;     
+        top:0; bottom:0; left: 0;
+        background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      
+      .right-arrow {
+        margin-top: 50px;
+        top:0; bottom:0; right: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+    }
+  }
 }
 
 .sub{
