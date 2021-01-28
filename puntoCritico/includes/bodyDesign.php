@@ -5,7 +5,7 @@
         <!-- Título de películas -->
         <div class="row mt-3">
             <div class="col-12">
-                <a href="peliculas2.php">
+                <a href="peliculas.php">
                     <h2>Películas</h2>
                 </a>
             </div>
