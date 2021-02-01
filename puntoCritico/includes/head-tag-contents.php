@@ -32,3 +32,5 @@
 
 
 <link rel="stylesheet" href="css/mystyle.css">
+
+<meta name="google-site-verification" content="V-7a6SrlD6OPJlfdFX66feiYWV7Y2Co7lJ9mWzk2-QA" />

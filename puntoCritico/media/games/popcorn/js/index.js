@@ -17,9 +17,10 @@ var game = (function () {
         popX = 25,
         popY = 25;
 
-        //Declaramos array de obstaculos
+        //Declaramos array de obstaculos, y los arrays de donde sacaremos números aleatorios
+        // que son las coordenadas X de inicio de las palomitas
         obst = [];
-        var lastRandomValue, exampleArray = [-84,-56,-28,0,28,56,84,112,140,168,196,224,252,280,308,336,364,392,420,448,476,504,532,560,588,616,644,672,700,728,756,784,812,840,868,896,924,952,980,1008,1036,1064,1092,1120];
+        var lastRandomValue, exampleArray = [0,28,56,84,112,140,168,196,224,252,280,308,336,364,392,420,448,476,504,532,560,588,616,644,672,700,728,756,784,812,840,868,896,924,952,980,1008,1036,1064,1092,1120];
 
   
 
@@ -27,6 +28,7 @@ var game = (function () {
         var CoorX = 510;
         var CoorY = 580;
 
+        // estas variables de tiempo ponen valor predeterminado
         var tiempoDeJuego = 6000;
         var totalTime = 600;
         var seconds = 60;
@@ -73,7 +75,6 @@ var game = (function () {
         // asignar colores y pintar primitivas, imágenes, textos, etc.
         ctx = canvas.getContext("2d");
        
-
          // Empezamos el primer frame
          gameLoop();
         
@@ -88,7 +89,6 @@ var game = (function () {
         getTransitoryItems();
         getCollisions();
       
-       
 
         window.requestAnimationFrame(gameLoop);
         //console.log(canvas.width);

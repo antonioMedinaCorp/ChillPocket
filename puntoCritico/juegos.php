@@ -9,7 +9,7 @@
 <body>
     <?php include("includes/navbar.php"); ?>
     <div class="container" id="center">
-        <div class="row mt-5">
+        <div class="row mt-2 mb-2">
             <div class="col-sm-4">
                 <div class="card games">
                     <img class="card-img-top" src="/media/images/juegoPopcorn2.jpeg" alt="" style="max-height: 400px;">
