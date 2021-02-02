@@ -1,19 +1,15 @@
 {
-  "name": "chillpocket",
+  "name": "puntocritico",
   "version": "1.0.0",
-  "description": "",
+  "description": "Explanation for organizing the file structure",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antonioMedinaCorp/ChillPocket.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/antonioMedinaCorp/ChillPocket/issues"
+  "dependencies": {
+    "node-sass": "^5.0.0"
   },
-  "homepage": "https://github.com/antonioMedinaCorp/ChillPocket#readme"
+  "devDependencies": {}
 }
