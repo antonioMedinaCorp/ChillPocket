@@ -570,8 +570,3 @@ platforms.push({
     width: 180,
     height: platThickness
 });
-
-/* Platformer game tutorial by Loktar (twitter.com/loktar00)
-somethinghitme.com/2013/01/09/creating-a-canvas-platformer-tutorial-part-one/
-somethinghitme.com/2013/04/16/creating-a-canvas-platformer-tutorial-part-tw/
-*/
