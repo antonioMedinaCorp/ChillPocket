@@ -1,11 +1,11 @@
-
+<?php include("includes/a_config.php"); ?>
 <?php 
 if (isset($_POST['entrar']) && !empty($_POST['usuOrEmail']) && !empty($_POST['pass'])) {
   header("Location: index.php");
 }
 ?>
 
-<?php include("includes/a_config.php"); ?>
+
 <!DOCTYPE html>
 <html>
 
