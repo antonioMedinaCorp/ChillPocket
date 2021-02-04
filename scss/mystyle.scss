@@ -641,3 +641,25 @@ a:hover{
 .sub{
 text-decoration: underline;
 }
+
+// clases del div, color texto y clase imagen del botón de google
+.g-signin2{
+  width: 60%;
+  height: 60%;
+  text-align: justify;
+  margin-left: 25%;
+  
+}
+
+.text-a{
+  text-decoration: none !important;
+  color: $white;
+}
+.text-a:hover{
+  text-decoration: none !important;
+  color: $white;
+}
+.g-signin3{
+  width: 30%;
+  height: 30%;
+}
