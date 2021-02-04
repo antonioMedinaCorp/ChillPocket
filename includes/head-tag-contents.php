@@ -33,5 +33,9 @@
 <!-- Libreria para logueo con google 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
--->
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 <script type="text/javascript" src="googleSign/"></script>
+-->
+
+
+

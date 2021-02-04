@@ -412,6 +412,12 @@ button:hover {
 button:active {
   box-shadow: 0 0 0 0.2rem #007476 !important; }
 
+.games .btn-success {
+  border-color: #37a3a5 !important; }
+
+.games .btn-success:active {
+  box-shadow: 0 0 0 0.2rem #37a3a5 !important; }
+
 #seek-bar {
   width: 360px; }
 
@@ -494,3 +500,21 @@ a:hover {
 
 .sub {
   text-decoration: underline; }
+
+.g-signin2 {
+  width: 60%;
+  height: 60%;
+  text-align: justify;
+  margin-left: 25%; }
+
+.text-a {
+  text-decoration: none !important;
+  color: white; }
+
+.text-a:hover {
+  text-decoration: none !important;
+  color: white; }
+
+.g-signin3 {
+  width: 30%;
+  height: 30%; }
