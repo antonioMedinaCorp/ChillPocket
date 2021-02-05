@@ -167,6 +167,12 @@ form.user .form-control-user {
   border-radius: 10rem;
   padding: 1rem 1rem; }
 
+#select {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
 .form-control {
   display: block;
   width: 100%;

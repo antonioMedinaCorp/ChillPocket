@@ -8,9 +8,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 
-<!--
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
--->
+<meta name="keywords" content="peliculas, criticas, series, comics, cine, accion, aventura, novedad"/>
+<meta name="description" content="Criticas de peliculas, comics, libros y series, donde puedes particpar con tus comentarios"/>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
