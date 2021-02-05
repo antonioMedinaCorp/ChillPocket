@@ -1,3 +1,14 @@
+<?php 
+
+require_once 'model/ValoracionController.php';
+
+if (isset($_POST['enviar'] ) && !empty($_POST['quill-html']) ) {
+
+  ValoracionController::setValoracion(1,1,$_POST['rating'], $_POST['quill-html']);
+
+}
+?>
+
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
 <html>
@@ -62,7 +73,7 @@
 
     <section>
 
-      <form action="" method="POST">
+      <form action="" method="POST" id="formCritica">
         <div class="row">
           <div class=" w-100 d-flex flex-row ">
 
@@ -93,7 +104,6 @@
 
               <div class="mx-auto" style="max-width: 700px;">
                 <div id="editorCriticas" style="height: 350px;">
-
                 </div>
               </div>
             </div>
@@ -102,10 +112,11 @@
 
         </div>
 
+        <input type="hidden" name="quill-html" id="quill-html">
         <div class="row pt-5 pb-5">
           <div class="col-md-12 ">
             <span class="h4">Enviar opinión</span>
-            <button type="submit" name="enviar" class="btn btn-success text-light ml-5">Guardar</button>
+            <button type="submit" name="enviar" class="btn btn-success text-light ml-5" onclick="submitCriticaConQuill()">Guardar</button>
           </div>
         </div>
 
