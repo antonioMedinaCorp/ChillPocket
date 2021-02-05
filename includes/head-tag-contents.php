@@ -8,6 +8,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 
+<meta name="keywords" content="peliculas, criticas, series, comics, cine, accion, aventura, novedad"/>
+<meta name="description" content="Criticas de peliculas, comics, libros y series, donde puedes particpar con tus comentarios"/>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">

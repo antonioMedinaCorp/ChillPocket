@@ -180,7 +180,7 @@ p {
 
 }
 
-
+// Login y registro
 .title-login{
   
   font-family: $title;
@@ -231,6 +231,13 @@ form.user .form-control-user {
   font-size: 0.8rem;
   border-radius: 10rem;
   padding: 1rem 1rem;
+}
+
+ #select {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .form-control {
