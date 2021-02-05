@@ -158,6 +158,11 @@
                             <td>https://es.hboespana.com/terms-and-conditions</td>
                             <td>Reconocimiento  No Comercial</td>
                         </tr>
+                        <tr>
+                            <td>Icono Google</td>
+                            <td><a href="https://icons8.com/icon/110580/logo-de-google">Logo de Google icon by Icons8</a></td>
+                            <td>Reconocimiento  No Comercial</td>
+                        </tr>
                 </tbody>
             </table>
             <ul class="terms-list">

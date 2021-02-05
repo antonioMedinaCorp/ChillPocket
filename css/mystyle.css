@@ -557,3 +557,24 @@ a:hover {
 
 .star_rating a.on {
   color: #61d5d6; }
+
+.sub {
+  text-decoration: underline; }
+
+.g-signin2 {
+  width: 60%;
+  height: 60%;
+  text-align: justify;
+  margin-left: 25%; }
+
+.text-a {
+  text-decoration: none !important;
+  color: white; }
+
+.text-a:hover {
+  text-decoration: none !important;
+  color: white; }
+
+.g-signin3 {
+  width: 30%;
+  height: 30%; }
