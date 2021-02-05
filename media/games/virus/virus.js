@@ -152,10 +152,11 @@ var game = (function (){
     }
 
     function virusShoots() {
-        var num = getRandomNumber(300);
+        var num = getRandomNumber(200);
         
        if(num<2){          
             shotsV.push({'x':virus.posX + (virus.width/2), 'y':virus.posY});
+            
         }
             
         
