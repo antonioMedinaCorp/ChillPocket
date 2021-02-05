@@ -1,3 +1,14 @@
+<?php 
+
+require_once 'model/ValoracionController.php';
+
+if (isset($_POST['enviar'] ) && !empty($_POST['quill-html']) ) {
+
+  ValoracionController::setValoracion(1,1,$_POST['rating'], $_POST['quill-html']);
+
+}
+?>
+
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
 <html>
@@ -30,9 +41,9 @@
     <p>Y ver el primer episodio no ayuda a crearnos una imagen clara. Pero no nos adelantemos a los acontecimientos y hagamos una pequeña recapitulación, sin spoilers, de esta primera mitad de la temporada. La serie comienza con la muerte de Sir Reginald Hargreeves (Colm Feore), un extraño y millonario filántropo que hace 17 años presentó en sociedad la Academia Umbrella, un grupo de niños superhéroes con algo en común.</p>
     <p>Forman parte del grupo de 43 niños que nacieron en extrañas circunstancias (ninguna de sus madres estaba embarazada cuando se puso de parto) en 1989. Hargreeves se dedicó a rastrear y a comprar siete de estos niños, que resultaron tener habilidades especiales excepto Vanya (Ellen Page) que, literalmente, “no hay nada de extraordinario” en ella.</p>
     <p>Este grupo de superhéroes, una especie de X-Men en alma, se disolvió durante los años de la adolescencia, después de la desaparición de Cinco (Aidan Gallagher) y la muerte de Seis. Cada uno decidió llevar una nueva vida separado de los demás hasta que llegó el funeral de “su padre”, que reúne a tan disfuncional familia, con rencillas y rencores pendientes mientras se avecina el Apocalipsis.</p>
-  </div>
-  <section class="rating">
-    <div class="container">
+
+    <section class="rating">
+
       <div class="row">
         <div class="stars col-6">
           <strong>Puntos Criticos: 4.5</strong>
@@ -55,56 +66,90 @@
           </span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <hr width=70%>
+    </section>
 
-  <section>
+    <hr width=70%>
 
+    <section>
 
-    <div class="container">
-      
-      <form action="" method="POST">
+      <form action="" method="POST" id="formCritica">
         <div class="row">
           <div class=" w-100 d-flex flex-row ">
 
-          <div class="col-md-6">
-            <h3>Deja tu opinión</h3>
-              <textarea name="opinion" id="" cols="105" rows="10"></textarea>
+            <div class="col-md-12">
+              <div class="row w-75 mx-auto pl-5">
+                <div class="col-md-4">
+                  <h3>Deja tu opinión</h3>
+                </div>
+
+                <div class="col-md-5 ml-auto pl-5">
+
+                  <span class="star-cb-group">
+                    <input type="radio" id="rating-5" name="rating" value="5" />
+                    <label for="rating-5"></i></label>
+                    <input type="radio" id="rating-4" name="rating" value="4"/>
+                    <label for="rating-4"></label>
+                    <input type="radio" id="rating-3" name="rating" value="3" />
+                    <label for="rating-3"></label>
+                    <input type="radio" id="rating-2" name="rating" value="2" />
+                    <label for="rating-2"></label>
+                    <input type="radio" id="rating-1" name="rating" value="1" class="star-cb-clear"/>
+                    <label for="rating-1"></label>
+                    
+                  </span>
+                </div>
+              </div>
+
+
+              <div class="mx-auto" style="max-width: 700px;">
+                <div id="editorCriticas" style="height: 350px;">
+                </div>
+              </div>
             </div>
           </div>
 
 
         </div>
 
-        <div class="row">
-          <div class="d-flex flex-row "></div>
-          <div class="col-md-7 ml-auto mr-4">
-            <div class="stars users ">
-              <strong>Puntos Usuarios: </strong>
-              <span data-stars="num4">
-                <i class="far fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
-                <i class="far fa-star" aria-hidden="true"></i>
-              </span>
-
-
-            </div>
-            <button type="submit" name="enviar" class="btn btn-success text-light ml-5">Guardar</button>
+        <input type="hidden" name="quill-html" id="quill-html">
+        <div class="row pt-5 pb-5">
+          <div class="col-md-12 ">
+            <span class="h4">Enviar opinión</span>
+            <button type="submit" name="enviar" class="btn btn-success text-light ml-5" onclick="submitCriticaConQuill()">Guardar</button>
           </div>
         </div>
 
-       
+
       </form>
-    </div>
 
-  </section>
+
+    </section>
+
+
+  </div>
+
+
+
+
+
   <div>
     <?php include("includes/footer.php"); ?>
   </div>
+  <!-- Initialize Quill editor -->
+  <!-- Main Quill library -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+  <script src="/js/quill.js"></script>
+  <script>
+    var quill = new Quill('#editorCriticas', {
+      placeholder: 'Déjanos tu opinión',
+      theme: 'snow'
+    });
+  </script>
 </body>
 
 </html>
