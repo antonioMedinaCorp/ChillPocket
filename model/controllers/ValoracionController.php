@@ -52,5 +52,20 @@ class ValoracionController{
 
     }
 
+    public function setValoracion($id_usu, $id_obra, $point, $texto){
+      
+        try {
+            $conex = new Conexion();
+            $result = $conex->prepare("insert into valoracion (id_usu, id_obra, point, texto) values (?,?,?,?)");
+            $result->execute(array($id_usu, $id_obra, $point, $texto));
+
+            unset($result);
+            unset($conex);
+        } catch (PDOException $exc) {
+            $errores[] = $exc->getMessage();
+            die('Error en bbdd');
+        }
+    }
+
 
 }

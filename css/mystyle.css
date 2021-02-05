@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: white;
   font-family: "Montserrat", sans-serif;
@@ -6,7 +7,8 @@ body {
 img {
   border-radius: .2em; }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 2.625em;
   color: #37a3a5; }
 
@@ -99,17 +101,6 @@ p {
   display: flex;
   width: 100%;
   justify-content: space-between; }
-
-.stars {
-  overflow: hidden;
-  position: relative;
-  margin: 20px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 33%;
-  text-align: center;
-  background: #f3f3f3; }
 
 .stars span {
   display: block;
@@ -412,6 +403,12 @@ button:hover {
 button:active {
   box-shadow: 0 0 0 0.2rem #007476 !important; }
 
+.games .btn-success {
+  border-color: #37a3a5 !important; }
+
+.games .btn-success:active {
+  box-shadow: 0 0 0 0.2rem #37a3a5 !important; }
+
 #seek-bar {
   width: 360px; }
 
@@ -494,3 +491,69 @@ a:hover {
 
 .sub {
   text-decoration: underline; }
+
+.star-cb-group {
+  /* remove inline-block whitespace */
+  font-size: 0;
+  /* flip the order so we can use the + and ~ combinators */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  /* the hidden clearer */ }
+
+.star-cb-group * {
+  font-size: 2rem; }
+
+.star-cb-group > input {
+  display: none; }
+
+.star-cb-group > input + label {
+  /* only enough room for the star */
+  width: 1em;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.star-cb-group > input + label:before {
+  content: "☆";
+  color: #61d5d6; }
+
+.star-cb-group > input:checked ~ label:before,
+.star-cb-group > input + label:hover ~ label:before,
+.star-cb-group > input + label:hover:before {
+  content: "★";
+  color: #61d5d6;
+  text-shadow: 0 0 1px #333; }
+
+.star-cb-group > .star-cb-clear + label {
+  width: .5em; }
+
+.star-cb-group > .star-cb-clear + label:before {
+  width: .5em; }
+
+.star-cb-group:hover > input + label:before {
+  content: "☆";
+  color: #61d5d6;
+  text-shadow: none; }
+
+.star-cb-group:hover > input + label:hover ~ label:before,
+.star-cb-group:hover > input + label:hover:before {
+  content: "★";
+  color: #61d5d6;
+  text-shadow: 0 0 1px #333; }
+
+.star_rating {
+  font-size: 0;
+  letter-spacing: -4px; }
+
+.star_rating a {
+  font-size: 22px;
+  letter-spacing: 0;
+  display: inline-block;
+  margin-left: 2px;
+  color: #888;
+  text-decoration: none; }
+
+.star_rating a:first-child {
+  margin-left: 0; }
+
+.star_rating a.on {
+  color: #61d5d6; }
