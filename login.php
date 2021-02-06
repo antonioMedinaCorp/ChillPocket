@@ -1,7 +1,16 @@
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a_config.php"); 
+require_once "./model/UsuarioController.php";
+?>
 <?php 
-if (isset($_POST['entrar']) && !empty($_POST['usuOrEmail']) && !empty($_POST['pass'])) {
-  header("Location: index.php");
+if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass'])) {
+  $u = UsuarioController::findUserByUsernameAndPass($_POST['username'], $_POST['pass']);
+
+  if($u != null){
+    $_SESSION['username']= $u->username;
+
+    header("Location: index.php");
+  }
+  
 }
 ?>
 
@@ -83,7 +92,7 @@ if(!isset($_SESSION['access_token']))
 
                   <form class="user" action="" method="POST">
                     <div class="form-group">
-                      <input type="email" class="form-control form-control-user" name="usuOrEmail" id="usuOrEmail" aria-describedby="emailHelp" placeholder="Usuario o correo electr&oacute;nico">
+                      <input type="email" class="form-control form-control-user" name="username" id="usuOrEmail" aria-describedby="emailHelp" placeholder="Usuario o correo electr&oacute;nico">
                     </div>
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contrase&ntilde;a">
