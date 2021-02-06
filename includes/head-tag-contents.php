@@ -35,12 +35,7 @@
 
 <meta name="google-site-verification" content="V-7a6SrlD6OPJlfdFX66feiYWV7Y2Co7lJ9mWzk2-QA" />
 
-<!-- Libreria para logueo con google 
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 
-<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-<script type="text/javascript" src="googleSign/"></script>
--->
 
 
 <script src="/js/index.js"></script>
