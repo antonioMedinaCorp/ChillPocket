@@ -1,101 +1,146 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
-        <!-- Para introducir el logo-->
-        <a class="navbar-brand" href="index.php">
-            <img src="media/images/LogoSinFondoRecortado.png" alt="Logo" id="imgNav">
-        </a>
-        <!-- Para colapsar el menú en un botón al disminuir la pantalla en dispositivos pequeños Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
-        <div class="navbar-collapse collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="peliculas.php" id="navbardrop" data-toggle="dropdown">
-					Películas</a>
-					<div class="dropdown-menu bg-dark ">
-                        <a class="dropdown-item text-light" href="peliculas.php">Acción</a>
-                        <a class="dropdown-item" href="peliculas.php">Animación</a>
-                        <a class="dropdown-item" href="peliculas.php">Aventuras</a>
-						<a class="dropdown-item" href="peliculas.php">Bélico</a>
-                        <a class="dropdown-item" href="peliculas.php">Comedia</a>
-                        <a class="dropdown-item" href="peliculas.php">Ciencia Ficción</a>
-						<a class="dropdown-item" href="peliculas.php">Drama</a>
-                        <a class="dropdown-item" href="peliculas.php">Infantil</a>
-                        <a class="dropdown-item" href="peliculas.php">Terror</a>
-						<a class="dropdown-item" href="peliculas.php">Musical</a>
-                        <a class="dropdown-item" href="peliculas.php">Romántica</a>
-                        <a class="dropdown-item" href="peliculas.php">Documental</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="series.php" id="navbardrop" data-toggle="dropdown">
-					Series</a>
-					<div class="dropdown-menu bg-dark ">
-                        <a class="dropdown-item text-light" href="series.php">Acción</a>
-                        <a class="dropdown-item" href="series.php">Animación</a>
-                        <a class="dropdown-item" href="series.php">Aventuras</a>
-						<a class="dropdown-item" href="series.php">Bélico</a>
-                        <a class="dropdown-item" href="series.php">Comedia</a>
-                        <a class="dropdown-item" href="series.php">Ciencia Ficción</a>
-						<a class="dropdown-item" href="series.php">Drama</a>
-                        <a class="dropdown-item" href="series.php">Infantil</a>
-                        <a class="dropdown-item" href="series.php">Terror</a>
-						<a class="dropdown-item" href="series.php">Musical</a>
-                        <a class="dropdown-item" href="series.php">Romántica</a>
-                        <a class="dropdown-item" href="series.php">Documental</a>
-                    </div>
-                </li>
+<?php
+if (isset($_POST['logout'])) {
+    session_destroy();
+}
 
-                <!-- Menú desplegable -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
-					Cómics</a>
-					<div class="dropdown-menu bg-dark ">
-                        <a class="dropdown-item text-light" href="comics.php">Aventuras</a>
-                        <a class="dropdown-item" href="comics.php">Bélico</a>
-                        <a class="dropdown-item" href="comics.php">Histórico</a>
-						<a class="dropdown-item" href="comics.php">Ciencia ficción</a>
-                        <a class="dropdown-item" href="comics.php">Humor</a>
-                        <a class="dropdown-item" href="comics.php">Superhéroes </a>
-						<a class="dropdown-item" href="comics.php">Infantil</a>
-                        <a class="dropdown-item" href="comics.php">Sobrenatural</a>
-                        <a class="dropdown-item" href="comics.php">Serie negra</a>
-						<a class="dropdown-item" href="comics.php">Underground</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle h5" href="comics.php" id="navbardrop" data-toggle="dropdown">
-					Libros</a>
-					<div class="dropdown-menu bg-dark ">
-                        <a class="dropdown-item text-light" href="libros.php">Aventuras</a>
-                        <a class="dropdown-item" href="libros.php">Biográficos</a>
-                        <a class="dropdown-item" href="libros.php">Clásicos</a>
-						<a class="dropdown-item" href="libros.php">Ciencia ficción</a>
-                        <a class="dropdown-item" href="libros.php">Poesía</a>
-                        <a class="dropdown-item" href="libros.php">Juvenil </a>
-						<a class="dropdown-item" href="libros.php">Infantil</a>
-                        <a class="dropdown-item" href="libros.php">Terror</a>
-                        <a class="dropdown-item" href="libros.php">Novela negra</a>
-                        <a class="dropdown-item" href="libros.php">Romances</a>
-                        <a class="dropdown-item" href="libros.php">Viajes</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="juegos.php" class="nav-link h5" id="navbardrop">Juegos</a>
-                </li>
-            </ul>
-            <!--Búsqueda-->
-            <div class="ml-auto">
-                <!--La clase ml-auto "empuja a los demás elementos a la izquierda"-->
-				<!-- <form class="form-inline" action="/action_page.php">
+?>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+    <!-- Para introducir el logo-->
+    <a class="navbar-brand" href="index.php">
+        <img src="media/images/LogoSinFondoRecortado.png" alt="Logo" id="imgNav">
+    </a>
+    <!-- Para colapsar el menú en un botón al disminuir la pantalla en dispositivos pequeños Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
+    <div class="navbar-collapse collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle h5" href="peliculas.php" id="navbardrop" data-toggle="dropdown">
+                    Películas</a>
+                <div class="dropdown-menu bg-dark ">
+                    <a class="dropdown-item text-light" href="peliculas.php">Acción</a>
+                    <a class="dropdown-item" href="peliculas.php">Animación</a>
+                    <a class="dropdown-item" href="peliculas.php">Aventuras</a>
+                    <a class="dropdown-item" href="peliculas.php">Bélico</a>
+                    <a class="dropdown-item" href="peliculas.php">Comedia</a>
+                    <a class="dropdown-item" href="peliculas.php">Ciencia Ficción</a>
+                    <a class="dropdown-item" href="peliculas.php">Drama</a>
+                    <a class="dropdown-item" href="peliculas.php">Infantil</a>
+                    <a class="dropdown-item" href="peliculas.php">Terror</a>
+                    <a class="dropdown-item" href="peliculas.php">Musical</a>
+                    <a class="dropdown-item" href="peliculas.php">Romántica</a>
+                    <a class="dropdown-item" href="peliculas.php">Documental</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle h5" href="series.php" id="navbardrop" data-toggle="dropdown">
+                    Series</a>
+                <div class="dropdown-menu bg-dark ">
+                    <a class="dropdown-item text-light" href="series.php">Acción</a>
+                    <a class="dropdown-item" href="series.php">Animación</a>
+                    <a class="dropdown-item" href="series.php">Aventuras</a>
+                    <a class="dropdown-item" href="series.php">Bélico</a>
+                    <a class="dropdown-item" href="series.php">Comedia</a>
+                    <a class="dropdown-item" href="series.php">Ciencia Ficción</a>
+                    <a class="dropdown-item" href="series.php">Drama</a>
+                    <a class="dropdown-item" href="series.php">Infantil</a>
+                    <a class="dropdown-item" href="series.php">Terror</a>
+                    <a class="dropdown-item" href="series.php">Musical</a>
+                    <a class="dropdown-item" href="series.php">Romántica</a>
+                    <a class="dropdown-item" href="series.php">Documental</a>
+                </div>
+            </li>
+
+            <!-- Menú desplegable -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
+                    Cómics</a>
+                <div class="dropdown-menu bg-dark ">
+                    <a class="dropdown-item text-light" href="comics.php">Aventuras</a>
+                    <a class="dropdown-item" href="comics.php">Bélico</a>
+                    <a class="dropdown-item" href="comics.php">Histórico</a>
+                    <a class="dropdown-item" href="comics.php">Ciencia ficción</a>
+                    <a class="dropdown-item" href="comics.php">Humor</a>
+                    <a class="dropdown-item" href="comics.php">Superhéroes </a>
+                    <a class="dropdown-item" href="comics.php">Infantil</a>
+                    <a class="dropdown-item" href="comics.php">Sobrenatural</a>
+                    <a class="dropdown-item" href="comics.php">Serie negra</a>
+                    <a class="dropdown-item" href="comics.php">Underground</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle h5" href="comics.php" id="navbardrop" data-toggle="dropdown">
+                    Libros</a>
+                <div class="dropdown-menu bg-dark ">
+                    <a class="dropdown-item text-light" href="libros.php">Aventuras</a>
+                    <a class="dropdown-item" href="libros.php">Biográficos</a>
+                    <a class="dropdown-item" href="libros.php">Clásicos</a>
+                    <a class="dropdown-item" href="libros.php">Ciencia ficción</a>
+                    <a class="dropdown-item" href="libros.php">Poesía</a>
+                    <a class="dropdown-item" href="libros.php">Juvenil </a>
+                    <a class="dropdown-item" href="libros.php">Infantil</a>
+                    <a class="dropdown-item" href="libros.php">Terror</a>
+                    <a class="dropdown-item" href="libros.php">Novela negra</a>
+                    <a class="dropdown-item" href="libros.php">Romances</a>
+                    <a class="dropdown-item" href="libros.php">Viajes</a>
+                </div>
+            </li>
+            <li>
+                <a href="juegos.php" class="nav-link h5" id="navbardrop">Juegos</a>
+            </li>
+        </ul>
+        <!--Búsqueda-->
+        <div class="ml-auto">
+            <!--La clase ml-auto "empuja a los demás elementos a la izquierda"-->
+            <!-- <form class="form-inline" action="/action_page.php">
                     <input class="form-control m-2" type="text" placeholder="Search">
                     <button class="btn btn-success" type="submit">Buscar</button>
-                </form>-->                
-				<button class="btn btn-success text-light" type="submit" onclick="window.location.href='/login.php'">Login</button>
-            </div>
+                    <a href="logout.php"></a>
+                </form>-->
+            <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
+                <button class="btn btn-danger text-light" type="submit" onclick="window.location.href='/vistaAdministrador.php'">Administrador</button>
+                <?php } ?>    
+            <?php if (isset($_SESSION['user_email_address'])) { ?>
+
+                <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal"><?php echo $_SESSION['user_first_name'] ?></button>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">¿Qué quieres hacer?</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/index.php'">Perfil</button>
+                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/logout.php'">Loguot</button>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            <?php } else {
+            ?>
+                <button class="btn btn-success text-light" type="submit" onclick="window.location.href='/login.php'">Login</button>
+            <?php
+            } ?>
+
         </div>
-    </nav>
+    </div>
+</nav>
 
 
 
@@ -118,13 +163,13 @@
 <div class="container">
 	<ul class="nav nav-pills">
 	  <li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php">Home</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Index") { ?>active<?php } ?>" href="index.php">Home</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "About") {?>active<?php }?>" href="about.php">About Us</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "About") { ?>active<?php } ?>" href="about.php">About Us</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="contact.php">Contact</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") { ?>active<?php } ?>" href="contact.php">Contact</a>
 	  </li>
 	</ul>
 </div>

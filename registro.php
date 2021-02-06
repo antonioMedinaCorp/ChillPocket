@@ -2,6 +2,7 @@
 if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email']) && !empty($_POST['pass'])) {
   header('Location: index.php');
 }
+
 ?>
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
