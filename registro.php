@@ -9,6 +9,48 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
 
 <head>
   <?php include("includes/head-tag-contents.php"); ?>
+  <?php
+
+  session_destroy();
+  session_start();
+  $incorrecto = false;
+
+  $caracteres_permitidos = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+  function generar_cadena($input, $longitud) {
+      $input_lenght = strlen($input);
+      $random_string = '';
+      for ($i = 0; $i < $longitud; $i++) {
+          $random_character = $input[mt_rand(0, $input_lenght - 1)];
+          $random_string .= $random_character;
+      }
+      return $random_string;
+  }
+
+  // || isset($_POST['actualizar'])
+  if (!isset($_SESSION['captcha']) || isset($_POST['actualizar'])) {
+      $string_lenght = 6;
+      $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
+      $_SESSION['captcha'] = $captcha_string;
+  }
+  if (isset($_POST['code'])) {
+      if ($_POST['code'] == $_SESSION['captcha']) {
+          session_destroy();
+          echo "Captcha valido";
+          
+      } else {
+          echo "Captcha incorrecto";
+         $incorrecto == true;
+      }
+  }
+
+  if (isset ($_POST['registrar']) && isset ($_POST['email']) && isset ($_POST['pass']) && isset ($_POST['pass1']) &&
+  isset ($_POST['name']) && isset ($_POST['apel1']) && isset ($_POST['apel2']) && isset ($_POST['birth']) 
+  && isset ($_POST['country']) && isset ($_POST['cod_post']) && isset ($_POST['phone']) && ($_POST['code'] == $_SESSION['captcha'])) {
+    header("location:index.php");
+  }
+  //if (!isset($_POST['registrar']) || $captchaOK = true){
+  ?>
 </head>
 
 <body class="bg-login">
@@ -25,31 +67,51 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico" required>
+                  <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico"  required value="<?php
+                  if(isset($_POST["email"])){
+                    echo $_POST["email"];
+                  }
+                  ?>">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contraseña" required>
+                  <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contraseña" required >
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Repite la contraseña" required>
+                  <input type="password" class="form-control form-control-user" name="pass1" id="pass" placeholder="Repite la contraseña" required >
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" name="name" placeholder="Nombre de usuario" required>
+                  <input type="text" class="form-control form-control-user" name="name" placeholder="Nombre de usuario" required value="<?php
+                  if(isset($_POST["name"])){
+                    echo $_POST["name"];
+                  }
+                  ?>">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" name="apel1" placeholder="Primer apellido" required>
+                  <input type="text" class="form-control form-control-user" name="apel1" placeholder="Primer apellido" required value="<?php
+                  if(isset($_POST["apel1"])){
+                    echo $_POST["apel1"];
+                  }
+                  ?>">
                 </div>
               </div>
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" name="apel2" placeholder="Segundo apellido" required>
+                  <input type="text" class="form-control form-control-user" name="apel2" placeholder="Segundo apellido" required value="<?php
+                  if(isset($_POST["apel2"])){
+                    echo $_POST["apel2"];
+                  }
+                  ?>">
                 </div>
                 <div class="form-group">
-                  <input type="date" class="form-control form-control-user" name="birth" placeholder="Fecha de nacimiento" required>
+                  <input type="date" class="form-control form-control-user" name="birth" placeholder="Fecha de nacimiento" required value="<?php
+                  if(isset($_POST["birth"])){
+                    echo $_POST["birth"];
+                  }
+                  ?>">
                 </div>
                 <div class="form-group">
-                  <select name="country" class="form-control" id="select"  size="1" required>
+                  <select name="country" class="form-control" id="select" size="1" required>
                     <option value=" " selected> Selecciona un país</option>
                     <option value="AF">Afganistán</option>
                     <option value="AL">Albania</option>
@@ -288,18 +350,29 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
                   </select>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" name="cod_post" placeholder="Código postal" required>
+                  <input type="text" class="form-control form-control-user" name="cod_post" placeholder="Código postal" required value="<?php
+                  if(isset($_POST["cod_post"])){
+                    echo $_POST["cod_post"];
+                  }
+                  ?>">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" name="phone" placeholder="Teléfono" required>
+                  <input type="text" class="form-control form-control-user" name="phone" placeholder="Teléfono" required value="<?php
+                  if(isset($_POST["phone"])){
+                    echo $_POST["phone"];
+                  }
+                  ?>">
                 </div>
               </div>
             </div>
-
-
-
-
-
+            <div class="form-group">
+              <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
+              <p class="we text-center"> <?php echo $_SESSION['captcha']; ?> </p>
+              <p><input type="text" name="code" class="form-control form-control-user" required>
+               <!-- <button type="button" name="actualizar"><i class="fas fa-sync"></i></button> </p> -->
+               <p class="we text-center"><?php if (isset($_POST['code'])) echo "Captcha inocorrecto primo" ?></p>
+              
+            </div>
 
             <button type="submit" name="registrar" class="btn btn-dark btn-user btn-block">
               Registrarme
@@ -310,19 +383,22 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
             </div>
 
           </form>
+         
         </div>
       </div>
     </div>
   </div>
 
+  <?php //} ?>
+
   <script>
-    // Disable form submissions if there are invalid fields
+    // Deshabilita el envío de formularios si hay campos no válidos 
     (function() {
       'use strict';
       window.addEventListener('load', function() {
-        // Get the forms we want to add validation styles to
+        // Obtengo los formularios a los que queremos agregar estilos de validación 
         var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
+        // Hacemos un bucle sobre los campos para evitar la presentación
         var validation = Array.prototype.filter.call(forms, function(form) {
           form.addEventListener('submit', function(event) {
             if (form.checkValidity() === false) {
