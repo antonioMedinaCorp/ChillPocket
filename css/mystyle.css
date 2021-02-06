@@ -584,3 +584,6 @@ a:hover {
 .g-signin3 {
   width: 30%;
   height: 30%; }
+
+span {
+  color: red; }

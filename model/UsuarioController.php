@@ -35,13 +35,13 @@ require_once 'entities/Usuario.php';
                     
                     $row = $result->fetchObject();
                                       
-                    $u=new Usuario($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
+                    $u=new Usuario($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_post, $row->phone, $row->rol);
                     return $u;
                 } else
                     return false;
             } catch (PDOException $ex) {
                 $errores[] = $ex->getMessage();
-                die('Error en bbdd');
+                die($ex->getMessage());
             }
             unset($result);
             unset($conex);
