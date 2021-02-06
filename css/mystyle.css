@@ -412,6 +412,12 @@ button:hover {
 button:active {
   box-shadow: 0 0 0 0.2rem #007476 !important; }
 
+.games .btn-success {
+  border-color: #37a3a5 !important; }
+
+.games .btn-success:active {
+  box-shadow: 0 0 0 0.2rem #37a3a5 !important; }
+
 #seek-bar {
   width: 360px; }
 
