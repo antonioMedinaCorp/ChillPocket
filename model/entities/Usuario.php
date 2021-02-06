@@ -15,21 +15,7 @@ class Usuario {
     private $rol;
 
 
-    function __construct($id="", $user_name="", $password="", $name="", $apel1="", $apel2="", $birthdate="", $country="", $cod_post="", $phone="", $rol="") {
-        $this->id = $id;
-        $this->user_name = $user_name;
-        $this->password = $password;
-        $this->name = $name;
-        $this->apel1 = $apel1;
-        $this->apel2 = $apel2;
-        $this->birthdate = $birthdate;
-        $this->country = $country;
-        $this->cod_post = $cod_post;
-        $this->phone = $phone;
-        $this->rol = $rol;
-    }
-
-    function newUser($id, $user_name, $password, $name, $apel1, $apel2, $birthdate, $country, $cod_post, $phone, $rol){
+    function __construct($id, $user_name, $password, $name, $apel1, $apel2, $birthdate, $country, $cod_post, $phone, $rol) {
         $this->id = $id;
         $this->user_name = $user_name;
         $this->password = $password;
