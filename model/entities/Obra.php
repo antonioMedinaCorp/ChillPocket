@@ -4,6 +4,8 @@ class Obra {
 
     private $id;
     private $title;
+    private $subtitulo;
+    private $critica;
     private $type;
     private $imagen;
     private $img_min;
@@ -13,9 +15,12 @@ class Obra {
     private $genre;
     private $id_adm;
 
-    function __construct($id, $title, $type, $imagen, $img_min, $point_adm, $point_avg, $video, $genre, $id_adm) {
+    function __construct($id, $title, $subtitulo, $sinopsis, $critica, $type, $imagen, $img_min, $point_adm, $point_avg, $video, $genre, $id_adm) {
         $this->id = $id;
         $this->title = $title;
+        $this->subtitulo = $subtitulo;
+        $this->sinopsis = $sinopsis;
+        $this->critica = $critica;
         $this->type = $type;
         $this->imagen = $imagen;
         $this->img_min = $img_min;
