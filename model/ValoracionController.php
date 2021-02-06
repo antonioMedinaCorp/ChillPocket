@@ -1,6 +1,6 @@
 <?php
 
-require_once 'controllers/Conexion.php';
+require_once 'Conexion.php';
 require_once 'entities/Valoracion.php';
 
 class ValoracionController{
@@ -30,7 +30,7 @@ class ValoracionController{
 
 
     
-    public function findById_obra($obra){
+    public static function findById_obra($obra){
 
         try {
             $conex = new Conexion();
@@ -46,9 +46,36 @@ class ValoracionController{
             unset($result);
             unset($conex);
         } catch (PDOException $exc) {
-            $errores[] = $exc->getMessage();
+            echo $exc->getMessage();
             die('Error en bbdd');
         }
+
+    }
+
+    public static function findAllValoracionesByObra($obra){
+
+        try {
+            $conex = new Conexion();
+            $result = $conex->prepare("select * from valoracion WHERE id_obra=?");
+            $result->execute([$obra->id]);
+
+            if ($result->rowCount()) {
+
+                while($reg = $result->fetchObject()){
+                    $valoracion = new Valoracion($reg->id, $reg->id_usu, $reg->id_obra, $reg->point, $reg->texto);
+
+                    $ValArray[] = clone($valoracion);
+                }
+
+                return $ValArray;
+            }
+            unset($result);
+            unset($conex);
+        } catch (PDOException $exc) {
+            echo $exc->getMessage();
+            die('Error en bbdd');
+        }
+
 
     }
 
