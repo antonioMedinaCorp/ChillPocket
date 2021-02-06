@@ -8,9 +8,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 
+<meta name="keywords" content="peliculas, criticas, series, comics, cine, accion, aventura, novedad"/>
+<meta name="description" content="Criticas de peliculas, comics, libros y series, donde puedes particpar con tus comentarios"/>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap" rel="stylesheet">
 
@@ -30,8 +35,17 @@
 
 <meta name="google-site-verification" content="V-7a6SrlD6OPJlfdFX66feiYWV7Y2Co7lJ9mWzk2-QA" />
 
-<!-- Libreria para logueo con google 
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 
--->
-<script type="text/javascript" src="googleSign/"></script>
+
+
+<script src="/js/index.js"></script>
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" />
+
+<link rel="stylesheet" href="../css/quill.snow.css" />
+
+<link rel="stylesheet" href="css/mystyle.css">
+
