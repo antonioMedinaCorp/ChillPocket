@@ -8,7 +8,7 @@ if (isset($_POST['enviar']) && !empty($_POST['quill-html'])) {
   ValoracionController::setValoracion(1, 1, $_POST['rating'], $_POST['quill-html']);
 }
 
-$obra = ObraController::findByID('2');
+$obra = ObraController::findByID($_GET['id']);
 
 $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
