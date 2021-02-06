@@ -37,7 +37,7 @@ class ObraController{
 
             if ($result->rowCount()) {
                 $reg = $result->fetchObject();
-                $obra = new Obra($reg->id, $reg->title, $reg->subtitulo, $reg->critica, $reg->type, $reg->imagen, $reg->img_min, $reg->point_adm, $reg->point_avg, $reg->video, $reg->genre, $reg->id_adm);
+                $obra = new Obra($reg->id, $reg->title, $reg->subtitulo, $reg->sinopsis, $reg->critica, $reg->type, $reg->imagen, $reg->img_min, $reg->point_adm, $reg->point_avg, $reg->video, $reg->genre, $reg->id_adm);
 
                 return $obra;
             }
@@ -48,6 +48,22 @@ class ObraController{
             die('Error en bbdd');
         }
 
+    }
+
+    public static function setObra( $title, $subtitulo, $sinopsis, $critica, $type, $imagen, $img_min, $point_adm, $point_avg, $video, $genre, $id_adm){
+      
+        try {
+            $conex = new Conexion();
+            $result = $conex->query("INSERT INTO `obra` ( `title`, `subtitulo`, `sinopsis`, `critica`, `type`, `imagen`, `img_min`, `point_adm`, `point_avg`, `video`, `genre`, `id_adm`) VALUES ($title, $subtitulo, $sinopsis, $critica, $type, $imagen, $img_min, $point_adm, $point_avg, $video, $genre, $id_adm)");
+            
+
+            
+            unset($result);
+            unset($conex);
+        } catch (PDOException $exc) {
+            echo $exc->getMessage();
+            die('Error en bbdd');
+        }
     }
 
 }
