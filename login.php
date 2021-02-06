@@ -7,7 +7,6 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
 
   if($u != null){
     $_SESSION['username']= $u->username;
-
     header("Location: index.php");
   }
   
