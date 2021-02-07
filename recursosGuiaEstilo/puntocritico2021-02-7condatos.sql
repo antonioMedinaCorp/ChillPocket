@@ -74,7 +74,7 @@ CREATE TABLE `usuario` (
   `phone` varchar(45) DEFAULT NULL,
   `rol` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -83,7 +83,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'antonio@antonio.es','1234','antonio','antonio','antonio','1997-04-26','ES','14950','669669669','admin'),(2,'ana.doblado.repullo@gmail.com','1234','ana','doblado','repullo','1882-05-17','ES','29210','622686851','admin'),(3,'juan@juan.es','1234','juan','juan','juan','1882-05-17','ES','29210','622686851','usuario');
+INSERT INTO `usuario` VALUES (1,'antonio@antonio.es','1234','antonio','antonio','antonio','1997-04-26','ES','14950','669669669','admin'),(2,'ana.doblado.repullo@gmail.com','1234','ana','doblado','repullo','1882-05-17','ES','29210','622686851','admin'),(3,'juan@juan.es','1234','juan','juan','juan','1882-05-17','ES','29210','622686851','usuario'),(4,'a.dob.rep.est@iesmarquesdecomares.org','','Ana','Doblado Repullo','','1000-01-01','es','','','usuario');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -135,4 +135,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-07  0:15:38
+-- Dump completed on 2021-02-07 16:23:09
