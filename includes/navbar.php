@@ -119,7 +119,7 @@ if (isset($_POST['logout'])) {
 
                             <!-- Modal body -->
                             <div class="modal-body">
-                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/index.php'">Perfil</button>
+                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/perfilUsuario.php'">Perfil</button>
                             <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/logout.php'">Loguot</button>
                             </div>
 
