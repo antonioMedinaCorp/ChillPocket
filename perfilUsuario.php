@@ -62,7 +62,7 @@ if(isset($_POST['guardar'])){
                 <label>Email: </label>
                 </div> 
                 <div class="col-sm-8">
-                <input type="text" class="form-control form-control-user" name="username" value="<?php echo $_SESSION['user_email_address'] ?>">
+                <input type="text" class="form-control form-control-user" name="username" value="<?php echo $_SESSION['user_email_address'] ?>" disabled>
                 </div>    
 
             </div>
