@@ -9,6 +9,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
     $_SESSION['user_email_address'] = $u->user_name;
     $_SESSION['user_first_name'] = $u->name;
     $_SESSION['rol'] = $u-> rol;
+    $_SESSION['id'] = $u -> id;
     header("Location:index.php");
   }
 }
