@@ -35,7 +35,18 @@ h2 {
   color: $black;
 }
 
+.btn-primary {
+  background-color: $white !important;
+  color: $color-primero;
+}
+
 .btn-success:hover {
+  background-color: $color-segundo !important;
+  border-color: $white !important;
+  color: $white;
+}
+
+.btn-primary:hover {
   background-color: $color-segundo !important;
   border-color: $white !important;
   color: $white;

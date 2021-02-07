@@ -95,13 +95,12 @@ require_once 'entities/Usuario.php';
         public static function newUser(Usuario $u){
             try {
                 $conex = new Conexion();
-                $conex->exec("INSERT INTO usuario  VALUES ('$u->id', '$u->user_name', '$u->password', '$u->name', '$u->apel1', '$u->apel2', '$u->birthdate', '$u->country', '$u->cod_postal', '$u->phone', '$u->rol')");
-                
-                
+                $conex->exec("INSERT INTO usuario  VALUES ('$u->id', '$u->user_name', '$u->password', '$u->name', '$u->apel1', '$u->apel2', '$u->birthdate', '$u->country', '$u->cod_post', '$u->phone', '$u->rol')");
+                               
                 
             } catch (PDOException $ex) {            
                 $errores[] = $ex->getMessage();
-                die('Error en bbdd');
+                die( $ex->getMessage());
                 
             }
             unset($result);

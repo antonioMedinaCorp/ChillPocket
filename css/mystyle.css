@@ -27,7 +27,16 @@ h2 {
   background-color: #37a3a5 !important;
   color: black; }
 
+.btn-primary {
+  background-color: white !important;
+  color: #37a3a5; }
+
 .btn-success:hover {
+  background-color: #61d5d6 !important;
+  border-color: white !important;
+  color: white; }
+
+.btn-primary:hover {
   background-color: #61d5d6 !important;
   border-color: white !important;
   color: white; }

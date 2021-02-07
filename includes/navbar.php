@@ -108,7 +108,7 @@ if (isset($_POST['logout'])) {
 
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
-                    <div class="modal-dialog modal-sm">
+                    <div class="modal-dialog modal-md">
                         <div class="modal-content">
 
                             <!-- Modal Header -->
@@ -118,9 +118,12 @@ if (isset($_POST['logout'])) {
                             </div>
 
                             <!-- Modal body -->
-                            <div class="modal-body">
-                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/perfilUsuario.php'">Perfil</button>
-                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/logout.php'">Loguot</button>
+
+                            <div class="modal-body" id="center">
+                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/perfilUsuario.php'">Mis datos</button>
+                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/contribuciones.php'">Contribuciones</button>
+                            <button class="btn btn-primary"  type="submit" onclick="window.location.href='/logout.php'">Loguot</button>
+
                             </div>
 
                             <!-- Modal footer -->

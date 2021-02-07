@@ -79,6 +79,25 @@ class ValoracionController{
 
     }
 
+    public static function findAllValoracionesByIdUsuario($id){
+
+        try {
+            $conex = new Conexion();
+            $result = $conex->query("select * from valoracion WHERE id_usu='$id'");
+           
+
+            return $result;
+        
+            unset($result);
+            unset($conex);
+        } catch (PDOException $exc) {
+            echo $exc->getMessage();
+            die( $exc->getMessage());
+        }
+
+
+    }
+
     public static function setValoracion($id_usu, $id_obra, $point, $texto){
       
         try {
@@ -95,5 +114,31 @@ class ValoracionController{
         }
     }
 
+    public static function modificarValoracion(Valoracion $valor) {
+        try {
+            $conex = new Conexion();
+            $conex->exec("UPDATE valoracion SET id_usu='$valor->id_usu', id_obra='$valor->id_obra', point='$valor->point', texto='$valor->texto' WHERE id='$valor->id'");
+            
+        } catch (PDOException $ex) {
+           
+            echo 'no inserto';
+           
+            
+            //mata el programa
+        }
+        unset($result);
+        unset($conex);
+    }
+
+    public static function delete($id){
+        try{
+            $conex = new Conexion();
+            $conex -> exec("DELETE from valoracion WHERE id='$id'");
+        }catch(PDOException $ex){
+            die($ex->getMessage());
+        }
+        unset($result);
+        unset($conex);
+    }
 
 }
