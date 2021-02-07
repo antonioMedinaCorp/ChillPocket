@@ -1,10 +1,5 @@
-<?php
-if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email']) && !empty($_POST['pass'])) {
-  header('Location: index.php');
-}
-
-?>
-<?php include("includes/a_config.php"); ?>
+<?php include("includes/a_config.php");
+require_once "./model/UsuarioController.php"; ?>
 <!DOCTYPE html>
 <html>
 
@@ -18,38 +13,39 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
 
   $caracteres_permitidos = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
-  function generar_cadena($input, $longitud) {
-      $input_lenght = strlen($input);
-      $random_string = '';
-      for ($i = 0; $i < $longitud; $i++) {
-          $random_character = $input[mt_rand(0, $input_lenght - 1)];
-          $random_string .= $random_character;
-      }
-      return $random_string;
+  function generar_cadena($input, $longitud)
+  {
+    $input_lenght = strlen($input);
+    $random_string = '';
+    for ($i = 0; $i < $longitud; $i++) {
+      $random_character = $input[mt_rand(0, $input_lenght - 1)];
+      $random_string .= $random_character;
+    }
+    return $random_string;
   }
+
+  
 
   // || isset($_POST['actualizar'])
   if (!isset($_SESSION['captcha']) || isset($_POST['actualizar'])) {
-      $string_lenght = 6;
-      $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
-      $_SESSION['captcha'] = $captcha_string;
+    $string_lenght = 6;
+    $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
+    $_SESSION['captcha'] = $captcha_string;
   }
   if (isset($_POST['code'])) {
-      if ($_POST['code'] == $_SESSION['captcha']) {
-          session_destroy();
-          echo "Captcha valido";
-          
-      } else {
-          echo "Captcha incorrecto";
-         $incorrecto == true;
-      }
+    if ($_POST['code'] == $_SESSION['captcha']) {
+      $incorrecto = false;
+      session_destroy();
+      echo "Captcha valido";
+    } else {
+      echo "Captcha incorrecto de los cojones";
+      $incorrecto == true;
+    }
   }
 
-  if (isset ($_POST['registrar']) && isset ($_POST['email']) && isset ($_POST['pass']) && isset ($_POST['pass1']) &&
-  isset ($_POST['name']) && isset ($_POST['apel1']) && isset ($_POST['apel2']) && isset ($_POST['birth']) 
-  && isset ($_POST['country']) && isset ($_POST['cod_post']) && isset ($_POST['phone']) && ($_POST['code'] == $_SESSION['captcha'])) {
-    header("location:index.php");
-  }
+  
+
+
   //if (!isset($_POST['registrar']) || $captchaOK = true){
   ?>
 </head>
@@ -68,48 +64,48 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico"  required value="<?php
-                  if(isset($_POST["email"])){
-                    echo $_POST["email"];
-                  }
-                  ?>">
+                  <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico" required value="<?php
+                                                                                                                                            if (isset($_POST["email"])) {
+                                                                                                                                              echo $_POST["email"];
+                                                                                                                                            }
+                                                                                                                                            ?>">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contraseña" required >
+                  <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contraseña" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-user" name="pass1" id="pass" placeholder="Repite la contraseña" required >
+                  <input type="password" class="form-control form-control-user" name="pass1" id="pass" placeholder="Repite la contraseña" required>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="name" placeholder="Nombre de usuario" required value="<?php
-                  if(isset($_POST["name"])){
-                    echo $_POST["name"];
-                  }
-                  ?>">
+                                                                                                                                        if (isset($_POST["name"])) {
+                                                                                                                                          echo $_POST["name"];
+                                                                                                                                        }
+                                                                                                                                        ?>">
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="apel1" placeholder="Primer apellido" required value="<?php
-                  if(isset($_POST["apel1"])){
-                    echo $_POST["apel1"];
-                  }
-                  ?>">
+                                                                                                                                        if (isset($_POST["apel1"])) {
+                                                                                                                                          echo $_POST["apel1"];
+                                                                                                                                        }
+                                                                                                                                        ?>">
                 </div>
               </div>
 
               <div class="col-sm-6">
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="apel2" placeholder="Segundo apellido" required value="<?php
-                  if(isset($_POST["apel2"])){
-                    echo $_POST["apel2"];
-                  }
-                  ?>">
+                                                                                                                                        if (isset($_POST["apel2"])) {
+                                                                                                                                          echo $_POST["apel2"];
+                                                                                                                                        }
+                                                                                                                                        ?>">
                 </div>
                 <div class="form-group">
                   <input type="date" class="form-control form-control-user" name="birth" placeholder="Fecha de nacimiento" required value="<?php
-                  if(isset($_POST["birth"])){
-                    echo $_POST["birth"];
-                  }
-                  ?>">
+                                                                                                                                            if (isset($_POST["birth"])) {
+                                                                                                                                              echo $_POST["birth"];
+                                                                                                                                            }
+                                                                                                                                            ?>">
                 </div>
                 <div class="form-group">
                   <select name="country" class="form-control" id="select" size="1" required>
@@ -352,17 +348,17 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="cod_post" placeholder="Código postal" required value="<?php
-                  if(isset($_POST["cod_post"])){
-                    echo $_POST["cod_post"];
-                  }
-                  ?>">
+                                                                                                                                        if (isset($_POST["cod_post"])) {
+                                                                                                                                          echo $_POST["cod_post"];
+                                                                                                                                        }
+                                                                                                                                        ?>">
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="phone" placeholder="Teléfono" required value="<?php
-                  if(isset($_POST["phone"])){
-                    echo $_POST["phone"];
-                  }
-                  ?>">
+                                                                                                                                if (isset($_POST["phone"])) {
+                                                                                                                                  echo $_POST["phone"];
+                                                                                                                                }
+                                                                                                                                ?>">
                 </div>
               </div>
             </div>
@@ -370,9 +366,11 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
               <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
               <p class="we text-center"> <?php echo $_SESSION['captcha']; ?> </p>
               <p><input type="text" name="code" class="form-control form-control-user" required>
-               <!-- <button type="button" name="actualizar"><i class="fas fa-sync"></i></button> </p> -->
-               <p class="we text-center"><?php if (isset($_POST['code'])) echo "Captcha inocorrecto primo" ?></p>
-              
+                <!-- <button type="button" name="actualizar"><i class="fas fa-sync"></i></button> </p> -->
+              <p class="we text-center"><?php if ($incorrecto == true) {
+                                          echo "Captcha inocorrecto primo";
+                                        }else echo "puto captcha"; ?></p>
+
             </div>
 
             <button type="submit" name="registrar" class="btn btn-dark btn-user btn-block">
@@ -384,13 +382,29 @@ if (isset($_POST['registrar']) && !empty($_POST['usu']) && !empty($_POST['email'
             </div>
 
           </form>
-         
+
         </div>
       </div>
     </div>
   </div>
 
-  <?php //} ?>
+  <?php
+  if (
+    isset($_POST['registrar']) && isset($_POST['email']) && isset($_POST['pass']) && isset($_POST['pass1']) &&
+    isset($_POST['name']) && isset($_POST['apel1']) && isset($_POST['apel2']) && isset($_POST['birth'])
+    && isset($_POST['country']) && isset($_POST['cod_post']) && isset($_POST['phone']) && $incorrecto = false)
+   {
+    if ($_POST['pass'] == $_POST['pass2']) {
+      // $u1 = new Usuario();
+      // $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
+      // UsuarioController::newUser($u1);
+      // $u1 = UsuarioController::findUserByUsername($data['email']);
+      // $_SESSION['user_email_address'] = $data['email'];
+      // $_SESSION['user_first_name'] = $data['given_name'];
+      header("location:index.php");
+    }
+  }
+  ?>
 
   <script>
     // Deshabilita el envío de formularios si hay campos no válidos 
