@@ -15,10 +15,10 @@
       <img src="media/images/joker.jpg" alt="pelicula">
     </div>
     <div class="carousel-item">
-      <img src="media/images/joker.jpg" alt="serie">
+      <img src="media/images/kc.jpg" alt="serie">
     </div>
     <div class="carousel-item">
-      <img src="media/images/joker.jpg" alt="comic">
+      <img src="media/images/peli1.jpg" alt="comic">
     </div>
   </div>
 

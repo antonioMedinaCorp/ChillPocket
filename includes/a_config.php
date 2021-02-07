@@ -27,6 +27,7 @@ $google_client->setClientSecret('pI4Ib2DYhIH1ys4RsyTErrcv');
 
 //Set the OAuth 2.0 Redirect URI
 $google_client->setRedirectUri('http://localhost/index.php');
+//$google_client->setRedirectUri('http://localhost/registro.php');
 //http://localhost/registro.php
 
 //
