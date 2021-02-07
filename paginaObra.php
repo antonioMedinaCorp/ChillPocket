@@ -5,7 +5,7 @@ require_once 'model/ObraController.php';
 
 if (isset($_POST['enviar']) && !empty($_POST['quill-html'])) {
 
-  ValoracionController::setValoracion(1, 1, $_POST['rating'], $_POST['quill-html']);
+  ValoracionController::setValoracion(1, $_GET['id'], $_POST['rating'], $_POST['quill-html']);
 }
 
 $obra = ObraController::findByID($_GET['id']);
