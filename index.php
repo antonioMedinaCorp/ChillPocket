@@ -21,7 +21,7 @@ require_once "./model/UsuarioController.php";
       $data = $google_service->userinfo->get();
 
         $u = UsuarioController::findUserByUsername( $data['email']);
-        $_SESSION['id'] = $u->id;
+        //$_SESSION['id'] = $u->id;
       
         if ($u == null) {
 			//$google_client->revokeToken();
