@@ -596,3 +596,27 @@ a:hover {
 
 span {
   color: red; }
+
+#perfilForm {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: rgba(255, 255, 255, 0.918);
+  border-color: #37a3a5;
+  border-style: solid 5px;
+  text-align: center; }
+
+.columPer {
+  display: inline-block;
+  margin: 0; }
+
+#perfilButtons {
+  text-align: center; }
+
+#perfilBg {
+  background-image: url("/media/images/movies.jpg");
+  position: fixed;
+  background-repeat: repeat; }
+
+.labelEmail {
+  margin-right: 0;
+  text-align: center; }
