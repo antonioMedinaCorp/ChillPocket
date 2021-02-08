@@ -54,7 +54,10 @@ class ObraController{
       
         try {
             $conex = new Conexion();
-            $result = $conex->query("INSERT INTO `obra` ( `title`, `subtitulo`, `sinopsis`, `critica`, `type`, `imagen`, `img_min`, `point_adm`, `point_avg`, `video`, `genre`, `id_adm`) VALUES ($title, $subtitulo, $sinopsis, $critica, $type, $imagen, $img_min, $point_adm, $point_avg, $video, $genre, $id_adm)");
+            $sql = "INSERT INTO `puntocritico`.`obra` ( `title`, `subtitulo`, `sinopsis`, `critica`, `type`, `imagen`, `img_min`, `point_adm`, `point_avg`, `video`, `genre`, `id_adm`) 
+            VALUES ($title, $subtitulo, $sinopsis, $critica, $type, $imagen, $img_min, $point_adm, $point_avg, $video, $genre, $id_adm)";
+            echo $sql;
+            $result = $conex->query($sql);
             
 
             
