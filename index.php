@@ -1,6 +1,8 @@
 <?php include("includes/a_config.php");
 require_once "./model/UsuarioController.php";
 
+//echo $_SESSION['user_first_name'];
+
  //This $_GET["code"] variable value received after user has login into their Google Account redirct to PHP script then this variable value has been received
  if (isset($_GET["code"])) {
     //It will Attempt to exchange a code for an valid authentication token.
@@ -20,8 +22,10 @@ require_once "./model/UsuarioController.php";
       //Get user profile data from google
       $data = $google_service->userinfo->get();
 
+
+
         $u = UsuarioController::findUserByUsername( $data['email']);
-        //$_SESSION['id'] = $u->id;
+       
       
         if ($u == null) {
 			//$google_client->revokeToken();
@@ -38,6 +42,7 @@ require_once "./model/UsuarioController.php";
       
 		}
       else{
+        $_SESSION['id'] = $u->id;
 
       //Below you can find Get profile data and store into $_SESSION variable
       if (!empty($data['given_name'])) {
