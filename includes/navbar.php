@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['logout'])) {
     session_destroy();
+    
 }
 
 ?>
@@ -100,11 +101,20 @@ if (isset($_POST['logout'])) {
                     <a href="logout.php"></a>
                 </form>-->
             <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
-                <button class="btn btn-danger text-light" type="submit" onclick="window.location.href='/vistaAdministrador.php'">Administrador</button>
+                <button class="btn btn-danger text-light" type="submit" onclick="window.location.href='/vistaAdministrador.php'"><i class="fas fa-brain"></i>Administrador</button>
                 <?php } ?>    
             <?php if (isset($_SESSION['user_email_address'])) { ?>
 
-                <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal"><?php echo $_SESSION['user_first_name'] ?></button>
+                <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal">
+                <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
+                    <i class="fab fa-old-republic"></i>
+                <?php
+                } else{ ?>
+                    <i class="fas fa-user-check fa-1x">
+                <?php
+
+                } ?>
+                </i><?php echo $_SESSION['user_first_name']?></button>
 
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
