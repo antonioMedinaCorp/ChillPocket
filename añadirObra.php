@@ -1,12 +1,12 @@
 <?php
 require_once 'model/ObraController.php';
 if(isset($_POST['enviar'])){
-    echo $_POST['type'];
+    echo $_POST['tipo'];
 
     echo $_POST['rating'];
     echo $_POST['genre'];
 
-    ObraController::setObra($_POST['titulo'], $_POST['subtitulo'], $_POST['sinopsis'],$_POST['critica'], $_POST['type'],$_POST['imagen'], $_POST['imagen'], $_POST['rating'], 4, $_POST['video'], $_POST['genre'], 1 );
+    ObraController::setObra($_POST['titulo'], $_POST['subtitulo'], $_POST['sinopsis'],$_POST['critica'], $_POST['tipo'],$_POST['imagen'], $_POST['imagen'], $_POST['rating'], 4, $_POST['video'], $_POST['genre'], 1 );
 }
 
 ?>
@@ -37,7 +37,7 @@ if(isset($_POST['enviar'])){
                     <input type="text" class="form-control mt-2" name="subtitulo" placeholder="Subtítulo" required>
                     <input type="text" class="form-control mt-2" name="video" placeholder="Enlace del trailer" required>
                     <textarea class="form-control mt-2" name="sinopsis" placeholder="Sinopsis" required></textarea>
-                    <select name="type" class="custom-select mt-2" required>
+                    <select name="tipo" class="custom-select mt-2" required>
                         <option selected disabled>Seleccione el tipo de obra</option>
                         <option value="pelicula">Película</option>
                         <option value="serie">Serie</option>
