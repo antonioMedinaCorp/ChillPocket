@@ -781,14 +781,13 @@ span{
 }
 
 #perfilForm{
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   background-color: rgba(255, 255, 255, 0.918);
   border-color: $color-primero;
   border-style: solid 5px;
   text-align: center;
   
-
 }
 
 .columPer{
@@ -798,6 +797,7 @@ span{
 
 #perfilButtons{
   text-align: center;
+  
 }
 
 
@@ -805,8 +805,10 @@ span{
 #perfilBg{
   
   background-image: url('/media/images/movies.jpg');
-  position: fixed;
-  background-repeat: repeat;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  margin: 0;
+  justify-content: center;
 }
 
 .labelEmail{
@@ -814,3 +816,36 @@ span{
   text-align: center;
   
 }
+
+.labelPerfil{
+  margin-left: 21rem;
+  margin-top: 8px;
+}
+
+input {
+  border-color: $color-primero !important;
+}
+
+#tiltePerfil{
+  
+ margin-top: 0.3rem;    
+  
+}
+
+@media screen and (max-width: 750px) {
+  #perfilBg{    
+    justify-content: left;
+  }
+  
+  #perfilForm{
+    border-radius: 0;
+    text-align: left;    
+  }
+  .labelPerfil{
+    margin-left: 10px;
+  }
+  }
+
+
+
+
