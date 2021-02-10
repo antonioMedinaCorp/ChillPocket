@@ -404,7 +404,7 @@ require_once "./model/UsuarioController.php"; ?>
 
                   }  ?>
               <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
-              <p class="we text-center"> <?php echo $_SESSION['captcha']; ?> </p>
+              <p class="we text-center" style="font-size:x-large;"> <?php echo $_SESSION['captcha']; ?> </p>
               <p><input type="text" name="code" class="form-control form-control-user" required>
               <p class="we text-center"><?php if ($incorrecto == true) {
                                           echo "Captcha inocorrecto primo";
@@ -417,7 +417,7 @@ require_once "./model/UsuarioController.php"; ?>
             </button>
             <hr>
             <div class="text-center">
-              <a class="small" href="/login.php">¿Ya eres usuario? Entra</a>
+              <a class="small" href="/login.php" style="font-size: medium;">¿Ya eres usuario? Entra</a>
             </div>
 
           </form>
