@@ -1,3 +1,4 @@
+<?php include("includes/a_config.php"); ?>
 <?php
 
 require_once 'model/ValoracionController.php';
@@ -5,7 +6,7 @@ require_once 'model/ObraController.php';
 
 if (isset($_POST['enviar']) && !empty($_POST['quill-html'])) {
 
-  ValoracionController::setValoracion(1, $_GET['id'], $_POST['rating'], $_POST['quill-html']);
+  ValoracionController::setValoracion($_SESSION['id'], $_GET['id'], $_POST['rating'], $_POST['quill-html']);
 }
 
 $obra = ObraController::findByID($_GET['id']);
@@ -15,7 +16,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
 ?>
 
-<?php include("includes/a_config.php"); ?>
+
 <!DOCTYPE html>
 <html>
 
