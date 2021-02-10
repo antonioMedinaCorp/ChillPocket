@@ -6,14 +6,14 @@ require_once 'entities/Usuario.php';
         public static function getAllUser(){
             try {
                 $conex = new Conexion();
-                $result = $conex->prepare("select * from usuario");                
+                $result = $conex->query("select * from usuario");                
     
                 if ($result->rowCount()) {
-                    $u = new Usuario();
+                    //$u = new Usuario();
                     while($row = $result->fetchObject()){
-                        $u->newUser($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
-                        $usuarios[] = clone($u);
-                        $u = new Usuario($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
+                       // $u->newUser($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
+                       $u = new Usuario($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
+                       $usuarios[] = clone($u);
                     }
                     return $usuarios;
                 }else
@@ -21,7 +21,7 @@ require_once 'entities/Usuario.php';
                 
             } catch (PDOException $exc) {
                 $errores[] = $exc->getMessage();
-                die('Error en bbdd');
+                die('Error en bbdd'. $exc->getMessage());
             }
             unset($result);
             unset($conex);

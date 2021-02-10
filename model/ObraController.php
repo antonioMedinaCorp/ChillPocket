@@ -123,4 +123,53 @@ class ObraController{
 
     }
 
+    public static function findAllObras(){
+
+        try {
+            $conex = new Conexion();
+            $result = $conex->query("select * from obra");
+            if ($result->rowCount()) {
+
+                while($reg = $result->fetchObject()){
+                    $obra = new Obra($reg->id, $reg->title, $reg->subtitulo, $reg->sinopsis, $reg->critica, $reg->tipo, $reg->imagen, $reg->img_min, $reg->point_adm, $reg->point_avg, $reg->video, $reg->genre, $reg->id_adm);
+                    $obraArray[] = clone($obra);
+                }
+
+                return $obraArray;
+            }
+            unset($result);
+            unset($conex);
+        } catch (PDOException $exc) {
+            echo $exc->getMessage();
+            die('Error en bbdd'. $exc->getMessage());
+        }
+
+
+    }
+
+    public static function delete($id){
+        try{
+            $conex = new Conexion();
+            $conex -> exec("DELETE from obra WHERE id='$id'");
+        }catch(PDOException $ex){
+            die($ex->getMessage());
+        }
+        unset($result);
+        unset($conex);
+    }
+
+    public static function update(Obra $obra){
+        try{
+            $conex = new Conexion();
+           // $obra = new Obra($reg->id, $reg->title, $reg->subtitulo, $reg->sinopsis, $reg->critica, $reg->tipo, $reg->imagen, $reg->img_min, $reg->point_adm, $reg->point_avg, $reg->video, $reg->genre, $reg->id_adm);
+
+            $conex->exec("UPDATE obra SET title='$obra->title', subtitulo='$obra->subtitulo', sinopsis='$obra->sinopsis', critica='$obra->critica', tipo='$obra->tipo', imagen='$obra->imagen', img_min='$obra->img_min', point_adm='$obra->point_adm', point_avg='$obra->point_avg', video='$obra->video', genre='$obra->genre', id_adm='$obra->id_adm' WHERE id='$obra->id'");
+        }catch(PDOException $ex){
+            die('error con la base de datos'.$ex->getMessage());
+        }
+        unset($result);
+        unset($conex);
+
+    }
+
 }
