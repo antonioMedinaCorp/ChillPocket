@@ -54,12 +54,12 @@ if (isset($_POST['borrar'])) {
                                     <form action="" method="post">
                                     <input type="hidden" name="id" value="<?php echo $row->id; ?>">
                                         <button type="submit" class="btn btn-danger" name="borrar">
-                                            Borrar<i class="far fa-trash-alt"></i></button>
+                                            Borrar&nbsp;<i class="far fa-trash-alt"></i></button>
                                     </form>
                                 </div>
                                 <div class="col">
                                     <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal2">
-                                        Editar<i class="far fa-edit"></i></button>
+                                        Editar&nbsp;<i class="far fa-edit"></i></button>
                                 </div>
 
 

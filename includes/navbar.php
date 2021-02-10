@@ -101,7 +101,7 @@ if (isset($_POST['logout'])) {
                     <a href="logout.php"></a>
                 </form>-->
             <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
-                <button class="btn btn-danger text-light" data-toggle="modal" data-target="#myModal2" ><i class="fas fa-brain"></i>Administrador</button>
+                <button class="btn btn-danger text-light" data-toggle="modal" data-target="#myModal2" ><i class="fas fa-brain"></i>&nbsp;Administrador</button>
                 <?php } ?>    
             <?php if (isset($_SESSION['user_email_address'])) { ?>
                  <!-- The Modal -->
@@ -119,7 +119,7 @@ if (isset($_POST['logout'])) {
 
                             <div class="modal-body" id="center">
                             <button class="btn btn-outline-info"  type="submit" onclick="window.location.href='/addObra.php'">Generar obra</button>
-                            <button class="btn btn-outline-warning"  type="submit" onclick="window.location.href='/'">Lista de obras</button>
+                            <button class="btn btn-outline-warning"  type="submit" onclick="window.location.href='/listadoObras.php'">Lista de obras</button>
                             <button class="btn btn-outline-success"  type="submit" onclick="window.location.href='/'">Lista de usuarios</button>
                             
 
@@ -143,7 +143,7 @@ if (isset($_POST['logout'])) {
                 <?php
 
                 } ?>
-                </i><?php echo $_SESSION['user_first_name']?></button>
+                </i>&nbsp;<?php echo $_SESSION['user_first_name']?></button>
 
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
