@@ -50,7 +50,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
     <section class="rating">
 
-      <div class="row">
+      <div class="row ">
         <div class="stars col-6">
           <strong>Puntos Criticos: <?php echo round($obra->point_adm); ?></strong>
           <span data-stars="num4.4">
