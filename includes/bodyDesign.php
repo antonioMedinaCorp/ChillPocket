@@ -5,7 +5,7 @@
         <!-- Título de películas -->
         <div class="row mt-3">
             <div class="col-12">
-                <a href="peliculas.php">
+                <a href="listaObras.php?tipo=pelicula">
                     <h2>Películas</h2>
                 </a>
             </div>
@@ -76,7 +76,7 @@
 
         <div class="row mt-3">
             <div class="col-12">
-                <a href="series2.php">
+                <a href="listaObras.php?tipo=serie">
                     <h2>Series</h2>
                 </a>
             </div>
@@ -148,7 +148,7 @@
 
         <div class="row mt-3">
             <div class="col-12">
-                <a href="comics.php">
+                <a href="listaObras.php?tipo=comic">
                     <h2>Cómics</h2>
                 </a>
             </div>
@@ -218,7 +218,7 @@
         <!-- Título de libros -->
         <div class="row mt-3">
             <div class="col-12">
-                <a href="libros.php">
+                <a href="listaObras.php?tipo=libro">
                     <h2>Libros</h2>
                 </a>
             </div>
