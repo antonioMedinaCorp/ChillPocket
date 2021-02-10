@@ -17,39 +17,39 @@ if (isset($_POST['logout'])) {
     <div class="navbar-collapse collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle h5" href="peliculas.php" id="navbardrop" data-toggle="dropdown">
+                <a class="nav-link dropdown-toggle h5" href="listaObras.php?tipo=pelicula" id="navbardrop" data-toggle="dropdown">
                     Películas</a>
                 <div class="dropdown-menu bg-dark ">
-                    <a class="dropdown-item text-light" href="peliculas.php">Acción</a>
-                    <a class="dropdown-item" href="peliculas.php">Animación</a>
-                    <a class="dropdown-item" href="peliculas.php">Aventuras</a>
-                    <a class="dropdown-item" href="peliculas.php">Bélico</a>
-                    <a class="dropdown-item" href="peliculas.php">Comedia</a>
-                    <a class="dropdown-item" href="peliculas.php">Ciencia Ficción</a>
-                    <a class="dropdown-item" href="peliculas.php">Drama</a>
-                    <a class="dropdown-item" href="peliculas.php">Infantil</a>
-                    <a class="dropdown-item" href="peliculas.php">Terror</a>
-                    <a class="dropdown-item" href="peliculas.php">Musical</a>
-                    <a class="dropdown-item" href="peliculas.php">Romántica</a>
-                    <a class="dropdown-item" href="peliculas.php">Documental</a>
+                    <a class="dropdown-item text-light" href="listaObras.php?tipo=pelicula">Acción</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Animación</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Aventuras</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Bélico</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Comedia</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Ciencia Ficción</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Drama</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Infantil</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Terror</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Musical</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Romántica</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Documental</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle h5" href="series.php" id="navbardrop" data-toggle="dropdown">
+                <a class="nav-link dropdown-toggle h5" href="listaObras.php?tipo=serie" id="navbardrop" data-toggle="dropdown">
                     Series</a>
                 <div class="dropdown-menu bg-dark ">
-                    <a class="dropdown-item text-light" href="series.php">Acción</a>
-                    <a class="dropdown-item" href="series.php">Animación</a>
-                    <a class="dropdown-item" href="series.php">Aventuras</a>
-                    <a class="dropdown-item" href="series.php">Bélico</a>
-                    <a class="dropdown-item" href="series.php">Comedia</a>
-                    <a class="dropdown-item" href="series.php">Ciencia Ficción</a>
-                    <a class="dropdown-item" href="series.php">Drama</a>
-                    <a class="dropdown-item" href="series.php">Infantil</a>
-                    <a class="dropdown-item" href="series.php">Terror</a>
-                    <a class="dropdown-item" href="series.php">Musical</a>
-                    <a class="dropdown-item" href="series.php">Romántica</a>
-                    <a class="dropdown-item" href="series.php">Documental</a>
+                    <a class="dropdown-item text-light" href="listaObras.php?tipo=serie">Acción</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Animación</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Aventuras</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Bélico</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Comedia</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Ciencia Ficción</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Drama</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Infantil</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Terror</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Musical</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Romántica</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=serie">Documental</a>
                 </div>
             </li>
 
@@ -58,33 +58,33 @@ if (isset($_POST['logout'])) {
                 <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
                     Cómics</a>
                 <div class="dropdown-menu bg-dark ">
-                    <a class="dropdown-item text-light" href="comics.php">Aventuras</a>
-                    <a class="dropdown-item" href="comics.php">Bélico</a>
-                    <a class="dropdown-item" href="comics.php">Histórico</a>
-                    <a class="dropdown-item" href="comics.php">Ciencia ficción</a>
-                    <a class="dropdown-item" href="comics.php">Humor</a>
-                    <a class="dropdown-item" href="comics.php">Superhéroes </a>
-                    <a class="dropdown-item" href="comics.php">Infantil</a>
-                    <a class="dropdown-item" href="comics.php">Sobrenatural</a>
-                    <a class="dropdown-item" href="comics.php">Serie negra</a>
-                    <a class="dropdown-item" href="comics.php">Underground</a>
+                    <a class="dropdown-item text-light" href="listaObras.php?tipo=comic">Aventuras</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Bélico</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Histórico</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Ciencia ficción</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Humor</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Superhéroes </a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Infantil</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Sobrenatural</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Serie negra</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=comic">Underground</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle h5" href="comics.php" id="navbardrop" data-toggle="dropdown">
+                <a class="nav-link dropdown-toggle h5" href="listaObras.php?tipo=libro" id="navbardrop" data-toggle="dropdown">
                     Libros</a>
                 <div class="dropdown-menu bg-dark ">
-                    <a class="dropdown-item text-light" href="libros.php">Aventuras</a>
-                    <a class="dropdown-item" href="libros.php">Biográficos</a>
-                    <a class="dropdown-item" href="libros.php">Clásicos</a>
-                    <a class="dropdown-item" href="libros.php">Ciencia ficción</a>
-                    <a class="dropdown-item" href="libros.php">Poesía</a>
-                    <a class="dropdown-item" href="libros.php">Juvenil </a>
-                    <a class="dropdown-item" href="libros.php">Infantil</a>
-                    <a class="dropdown-item" href="libros.php">Terror</a>
-                    <a class="dropdown-item" href="libros.php">Novela negra</a>
-                    <a class="dropdown-item" href="libros.php">Romances</a>
-                    <a class="dropdown-item" href="libros.php">Viajes</a>
+                    <a class="dropdown-item text-light" href="listaObras.php?tipo=libro">Aventuras</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Biográficos</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Clásicos</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Ciencia ficción</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Poesía</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Juvenil </a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Infantil</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Terror</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Novela negra</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Romances</a>
+                    <a class="dropdown-item" href="listaObras.php?tipo=libro">Viajes</a>
                 </div>
             </li>
             <li>
