@@ -76,16 +76,23 @@ require_once "./model/UsuarioController.php";
 <body>
 <?php include("includes/navbar.php");?>
 <?php include("includes/design-top.php");?>
-
-
-
 <main>
+
+<section>
+<?php include("includes/cookies.php") ?>
+</section>
+
 <section>
 <?php include("includes/bodyDesign.php");?>
 </section>
+
+
+
 <div>
 <?php include("includes/footer.php");?>
 </div>
+
+
 
 </main>
 
