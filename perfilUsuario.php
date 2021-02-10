@@ -18,90 +18,92 @@ if(isset($_POST['guardar'])){
 <body>
 <?php include("includes/navbar.php");?>
     <?php $u = UsuarioController::findUserByUsername($_SESSION['user_email_address']); ?>
-    <div class="container-fluid row justify-content-center" id="perfilBg"> 
+    <div class="container-fluid row " id="perfilBg"> 
         
-           <div class="col-sm-8 " id="perfilForm" >
-            
-            <h1>Mi perfil</h1> 
-            
-            <form action="" method="post" enctype="multipart/form-data">
+           <div class="col-md-12 col-sm-12 col-12" id="perfilForm" >
+            <div id="tiltePerfil">                
+                <h1>Mi perfil</h1>
+            </div>
+
+             <div class="justify-content-center">
+             <form action="" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo $u->id ?>">
             <input type="hidden" name="rol" value="<?php echo $u->rol ?>"> 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Nombre: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6 col-6">
+                <label class="labelPerfil">Nombre: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                     <input type="text" class="form-control form-control-user" name="name" value="<?php echo $u->name ?>">
                 </div>    
 
             </div> 
             
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Primer apellido: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6 col-6">
+                <label class="labelPerfil">Primer apellido: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                 <input type="text" class="form-control form-control-user" name="apel1" value="<?php echo $u->apel1 ?>" >
                 </div>    
 
             </div>
 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Segundo apellido: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6 col-6">
+                <label class="labelPerfil">Segundo apellido: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                 <input type="text" class="form-control form-control-user" name="apel2" value="<?php echo $u->apel2 ?>">
                 </div>    
 
             </div>
 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Email: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6 col-6">
+                <label class="labelPerfil">Email: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                 <input type="text" class="form-control form-control-user" name="username" value="<?php echo $_SESSION['user_email_address'] ?>" disabled>
                 </div>    
 
             </div>
 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Contraseña: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6 col-6">
+                <label class="labelPerfil">Contraseña: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                 <input type="password" class="form-control form-control-user" name="password" value="<?php echo $u->password ?>">
                 </div>    
 
             </div>
 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Fecha de nacimiento: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-7 col-7">
+                <label class="labelPerfil">Fecha de nacimiento: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-5 col-5">
                 <input type="date" class="form-control form-control-user" name="birthdate" value="<?php echo $u->birthdate ?>">
                 </div>    
 
             </div>
 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Teléfono: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6 col-6">
+                <label class="labelPerfil">Teléfono: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                 <input type="text" class="form-control form-control-user" name="phone" value="<?php echo $u->phone ?>">
                 </div>    
 
             </div>
 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Pais: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6 col-6">
+                <label class="labelPerfil">Pais: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                 <select name="country" class="form-control form-control-user" id="select" size="1" >
                         <option value="<?php echo $u->country ?>" selected> <?php echo $u->country ?></option>
                         <option value="AF">Afganistán</option>
@@ -343,11 +345,11 @@ if(isset($_POST['guardar'])){
 
             </div>
 
-            <div class="row mb-1">
-                <div class="col-sm-4">
-                <label>Código postal: </label>
+            <div class="row pb-1">
+                <div class="col-md-6 col-sm-6  col-6">
+                <label class="labelPerfil">Código postal: </label>
                 </div> 
-                <div class="col-sm-8">
+                <div class="col-md-3 col-sm-6 col-6">
                 <input type="text" class="form-control form-control-user" name="cod_post" value="<?php echo $u->cod_post ?>"><br>
                 </div>    
 
@@ -357,15 +359,29 @@ if(isset($_POST['guardar'])){
                         echo "Tus datos se han actualizado correctamente";
                     }
                 ?>
-                <div class="col-sm-12 justify-content-center" >
-                <input type="submit" class="btn btn-outline-primary" name="guardar" value="Guardar">
-            </form>
-            <a href="index.php" class="btn btn-danger">Volver</a><br>
-           </div>
+                <div class="row mb-2">
+                    <div class="col-md-12 justify-content-center" >
+                    <input type="submit" class="btn btn-primary" name="guardar" value="Guardar">
+                </form>
+                <a href="index.php" class="btn btn-danger">Volver</a><br>
+                    </div>
+                </div>
                 
-            </div>   
+                
+            </div>
+             </div>    
+            
+               
              
 
         </div>
+<main>
+    <div>
+        <?php include("includes/footer.php");?>
+    </div>
+</main>
+  
+
+        
 </body>
 </html>

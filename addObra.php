@@ -1,18 +1,47 @@
+<?php include("includes/a_config.php"); ?>
 <?php
 require_once 'model/ObraController.php';
+$saveCorretly = false;
 if(isset($_POST['enviar'])){
-    echo $_POST['tipo'];
+   /*echo $_POST['tipo'];
 
-    echo $_POST['rating'];
-    echo $_POST['genre'];
+    echo $_POST['rating']."<br>";
+    echo $_POST['genre']."<br>";
+    echo $_POST['foto']."<br>";
+    echo $_FILES;
+    foreach($_FILES as $value){
+        echo $value;
+    }
+    echo $_FILES['foto']['tmp_name']."<br>";
+    echo $_FILES['foto']['name']."<br>";
+    echo $_FILES['foto']."<br>";
+*/
+    // $string = "$_POST[title]";
+    // $expr = '/(?<=\s|^)[a-z]/i';
+    // preg_match_all($expr, $string, $matches);
+    // $result = implode('', $matches[0]);
+    // $result = strtoupper($result);
 
-    ObraController::setObra($_POST['titulo'], $_POST['subtitulo'], $_POST['sinopsis'],$_POST['critica'], $_POST['tipo'],$_POST['imagen'], $_POST['imagen'], $_POST['rating'], 4, $_POST['video'], $_POST['genre'], 1 );
+    if(is_uploaded_file($_FILES['foto']['tmp_name'])){
+        //echo "Archivo ". $_FILES['foto']['name'] ." subido con éxtio.\n";
+        //echo "Monstrar contenido\n";
+        //readfile($_FILES['foto']['tmp_name']);
+        
+        $fich_unic=time()."-".$_FILES['foto']['name'];
+        $ruta="./media/images/".$fich_unic;
+        //para copiar el fichero en la carpeta usamos la funciçon move_uploaded_file
+        move_uploaded_file($_FILES['foto']['tmp_name'], $ruta);
+
+    ObraController::setObra($_POST['titulo'], $_POST['subtitulo'], $_POST['sinopsis'],$_POST['critica'], $_POST['tipo'],$ruta, $ruta, $_POST['rating'], 4, $_POST['video'], $_POST['genre'], $_SESSION['id'] );
+    $saveCorretly = true;
+    }else{
+        echo 'ERROR al cargar la imagen';
+    }
 }
 
 ?>
 
 
-<?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
 <html>
 
@@ -24,15 +53,16 @@ if(isset($_POST['enviar'])){
 
     <?php include("includes/navbar.php"); ?>
 
-
-
-
     <div class="container ">
+        <?php if($saveCorretly == true){ ?>
+            <h3><span>Guardado correctamente!!</span></h3>
+        <?php } ?>
 
-        <form class="form-group" action="" method="post">
+        <form class="form-group" action="" method="post" enctype="multipart/form-data">
 
             <div class="row mb-2">
                 <div class="col-sm-6 mt-5 mx-auto">
+                    <input type="text" class="form-control mt-2" name="id_creator" value="<?php echo $_SESSION['id'];?>" disabled>
                     <input type="text" class="form-control mt-2" name="titulo" placeholder="Título" required>
                     <input type="text" class="form-control mt-2" name="subtitulo" placeholder="Subtítulo" required>
                     <input type="text" class="form-control mt-2" name="video" placeholder="Enlace del trailer" required>
@@ -72,10 +102,10 @@ if(isset($_POST['enviar'])){
                     </select>
 
                     <label class="form-label" for="imagen">Seleccionar imagen</label>
-                    <input type="file" class="btn btn-light" id="imagen" name="imagen" required/>
+                    <input  type="file" name="foto">
 
                     <div class="col-md-5 mt-2">
-                    <h4>Puntuación:</h4>
+                        <h4>Puntuación:</h4>
                         <span class="star-cb-group">
                             <input type="radio" id="rating-5" name="rating" value="5" />
                             <label for="rating-5"></i></label>
@@ -87,7 +117,6 @@ if(isset($_POST['enviar'])){
                             <label for="rating-2"></label>
                             <input type="radio" id="rating-1" name="rating" value="1" class="star-cb-clear" />
                             <label for="rating-1"></label>
-
                         </span>
                     </div>
 

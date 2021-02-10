@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['logout'])) {
     session_destroy();
+    
 }
 
 ?>
@@ -100,11 +101,49 @@ if (isset($_POST['logout'])) {
                     <a href="logout.php"></a>
                 </form>-->
             <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
-                <button class="btn btn-danger text-light" type="submit" onclick="window.location.href='/vistaAdministrador.php'">Administrador</button>
+                <button class="btn btn-danger text-light" data-toggle="modal" data-target="#myModal2" ><i class="fas fa-brain"></i>Administrador</button>
                 <?php } ?>    
             <?php if (isset($_SESSION['user_email_address'])) { ?>
+                 <!-- The Modal -->
+                 <div class="modal fade" id="myModal2">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
 
-                <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal"><?php echo $_SESSION['user_first_name'] ?></button>
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">¿Qué piensas hacer hoy admin?</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+
+                            <div class="modal-body" id="center">
+                            <button class="btn btn-outline-info"  type="submit" onclick="window.location.href='/addObra.php'">Generar obra</button>
+                            <button class="btn btn-outline-warning"  type="submit" onclick="window.location.href='/'">Lista de obras</button>
+                            <button class="btn btn-outline-success"  type="submit" onclick="window.location.href='/'">Lista de usuarios</button>
+                            
+
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal">
+                <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
+                    <i class="fab fa-old-republic"></i>
+                <?php
+                } else{ ?>
+                    <i class="fas fa-user-check fa-1x">
+                <?php
+
+                } ?>
+                </i><?php echo $_SESSION['user_first_name']?></button>
 
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">

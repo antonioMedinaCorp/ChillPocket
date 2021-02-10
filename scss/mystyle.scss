@@ -781,14 +781,13 @@ span{
 }
 
 #perfilForm{
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   background-color: rgba(255, 255, 255, 0.918);
   border-color: $color-primero;
   border-style: solid 5px;
   text-align: center;
   
-
 }
 
 .columPer{
@@ -798,6 +797,7 @@ span{
 
 #perfilButtons{
   text-align: center;
+  
 }
 
 
@@ -805,8 +805,10 @@ span{
 #perfilBg{
   
   background-image: url('/media/images/movies.jpg');
-  position: fixed;
-  background-repeat: repeat;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  margin: 0;
+  justify-content: center;
 }
 
 .labelEmail{
@@ -814,3 +816,75 @@ span{
   text-align: center;
   
 }
+
+.labelPerfil{
+  margin-left: 21rem;
+  margin-top: 8px;
+}
+
+input {
+  border-color: $color-primero !important;
+}
+
+#tiltePerfil{
+  
+ margin-top: 0.3rem;    
+  
+}
+
+@media screen and (max-width: 750px) {
+  #perfilBg{    
+    justify-content: left;
+  }
+  
+  #perfilForm{
+    border-radius: 0;
+    text-align: left;    
+  }
+  .labelPerfil{
+    margin-left: 10px;
+  }
+}
+
+  //COOKIE ALERT CSS
+  .cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    color: $white;
+    
+}
+
+.cookiealert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+ #linkCookies:hover{
+  color: $white !important;
+}
+
+#linkCookies {
+  color: $color-primero !important;
+}
+
+
+
+

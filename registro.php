@@ -7,9 +7,11 @@ require_once "./model/UsuarioController.php"; ?>
   <?php include("includes/head-tag-contents.php"); ?>
   <?php
 
-  session_destroy();
-  session_start();
+  //session_destroy();
+  //session_start();
   $incorrecto = false;
+  $existeUsu = false;
+  $mensaje = "";
 
   $caracteres_permitidos = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
@@ -24,26 +26,54 @@ require_once "./model/UsuarioController.php"; ?>
     return $random_string;
   }
 
-  
+  if (isset($_POST['registrar']) && $_POST['pass'] == $_POST['pass2'] && $incorrecto == false ) {
+    $u = UsuarioController::findUserByUsername($_POST['email']);
+    if($u != null){
+      $existeUsu = true;
+    }else{
+      $existeUsu = false;
+    }
+
+    if($existeUsu == false){
+      $u1 = new Usuario();
+      $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
+      UsuarioController::newUser($u1);
+      $u1 = UsuarioController::findUserByUsername($_POST['email']);
+      $_SESSION['id'] = $u1->id;
+      $_SESSION['user_email_address'] = $_POST['email'];
+      $_SESSION['user_first_name'] = $_POST['name'];
+      echo $_POST['name'];
+      echo $_SESSION['user_first_name'];
+      header("location:index.php");
+    }else{
+        $mensaje = "El usuario ya existe en sistema";
+    }
+    
+  }
 
   // || isset($_POST['actualizar'])
-  if (!isset($_SESSION['captcha']) || isset($_POST['actualizar'])) {
+  if (!isset($_SESSION['captcha'])) {
     $string_lenght = 6;
     $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
     $_SESSION['captcha'] = $captcha_string;
   }
   if (isset($_POST['code'])) {
+
     if ($_POST['code'] == $_SESSION['captcha']) {
       $incorrecto = false;
-      session_destroy();
+      
       echo "Captcha valido";
     } else {
       echo "Captcha incorrecto de los cojones";
-      $incorrecto == true;
+      $incorrecto = true;
+      session_destroy();
     }
   }
 
-  
+
+  //session_destroy();
+  //session_start();
+
 
 
   //if (!isset($_POST['registrar']) || $captchaOK = true){
@@ -58,6 +88,10 @@ require_once "./model/UsuarioController.php"; ?>
         <div class="p-4">
           <div class="text-center pb-4">
             <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png"></a>
+          
+          </div>
+          <div class="text-center pb-3">
+            <h3 class="">Formulario de registro</h3>
           </div>
           <form class="user needs-validation" action="" method="post" novalidate>
 
@@ -74,7 +108,7 @@ require_once "./model/UsuarioController.php"; ?>
                   <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contraseña" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-user" name="pass1" id="pass" placeholder="Repite la contraseña" required>
+                  <input type="password" class="form-control form-control-user" name="pass2" id="pass" placeholder="Repite la contraseña" required>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="name" placeholder="Nombre de usuario" required value="<?php
@@ -82,6 +116,7 @@ require_once "./model/UsuarioController.php"; ?>
                                                                                                                                           echo $_POST["name"];
                                                                                                                                         }
                                                                                                                                         ?>">
+                  
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="apel1" placeholder="Primer apellido" required value="<?php
@@ -363,13 +398,17 @@ require_once "./model/UsuarioController.php"; ?>
               </div>
             </div>
             <div class="form-group">
+            <?php if ($existeUsu){?>
+                  <p><span><?php echo $mensaje ?></span></p>
+                  <?php
+
+                  }  ?>
               <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
               <p class="we text-center"> <?php echo $_SESSION['captcha']; ?> </p>
               <p><input type="text" name="code" class="form-control form-control-user" required>
-                <!-- <button type="button" name="actualizar"><i class="fas fa-sync"></i></button> </p> -->
               <p class="we text-center"><?php if ($incorrecto == true) {
                                           echo "Captcha inocorrecto primo";
-                                        }else echo "puto captcha"; ?></p>
+                                        }?></p>
 
             </div>
 
@@ -389,21 +428,7 @@ require_once "./model/UsuarioController.php"; ?>
   </div>
 
   <?php
-  if (
-    isset($_POST['registrar']) && isset($_POST['email']) && isset($_POST['pass']) && isset($_POST['pass1']) &&
-    isset($_POST['name']) && isset($_POST['apel1']) && isset($_POST['apel2']) && isset($_POST['birth'])
-    && isset($_POST['country']) && isset($_POST['cod_post']) && isset($_POST['phone']) && $incorrecto = false)
-   {
-    if ($_POST['pass'] == $_POST['pass2']) {
-      // $u1 = new Usuario();
-      // $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
-      // UsuarioController::newUser($u1);
-      // $u1 = UsuarioController::findUserByUsername($data['email']);
-      // $_SESSION['user_email_address'] = $data['email'];
-      // $_SESSION['user_first_name'] = $data['given_name'];
-      header("location:index.php");
-    }
-  }
+
   ?>
 
   <script>
