@@ -42,7 +42,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     <?php echo $obra->sinopsis; ?>
 
 
-    <iframe width="560" height="315" src="<?php echo $obra->video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <?php echo $obra->video; ?>
 
     <h4>Crítica</h4>
     <?php echo $obra->critica; ?>
@@ -78,9 +78,11 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     <section id="valoraciones">
       <div class="row">
 <?php 
-    foreach($valoraciones as $val){
+if(!empty($valoraciones)){
+  foreach($valoraciones as $val){
 
-      echo '<div class="col-md-6 pt-2 jus">';
+    echo '<div class="col-md-6 pt-2 jus">';
+  
 ?>
       <div class="card bg-light">
         <div class="card-title">
@@ -94,7 +96,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
       echo '</div>';
 
     }
-
+  }
 ?>
         
       </div>
@@ -105,8 +107,8 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     <hr width=70%>
 
     <section>
-
-      <form action="" method="POST" id="formCritica">
+<?php if(isset($_SESSION['id'])){ ?>
+  <form action="" method="POST" id="formCritica">
         <div class="row">
           <div class=" w-100 d-flex flex-row ">
 
@@ -156,6 +158,9 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
       </form>
 
+<?php
+} ?>
+      
 
     </section>
 
