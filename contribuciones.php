@@ -29,8 +29,10 @@ if (isset($_POST['borrar'])) {
     <div class="container" id="center">
 
         <?php
+
+        
         $valoraciones = ValoracionController::findAllValoracionesByIdUsuario($_SESSION['id']);
-        if ($valoraciones->rowCount() > 0) {
+        if ($valoraciones->rowCount()) {
             while ($row = $valoraciones->fetchObject()) {
         ?>
                 <div class="login-container mt-2 mb-2 rounded">
