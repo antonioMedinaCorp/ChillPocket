@@ -50,7 +50,7 @@ if(isset($_POST['enviar'])){
                     Título: <input type="text" class="form-control mt-2" name="titulo"  value="<?php echo $obra->title;?>">
                     Subtítulo: <input type="text" class="form-control mt-2" name="subtitulo"  value="<?php echo $obra->subtitulo;?>">
                     Vídeo: <input type="text" class="form-control mt-2" name="video"  value="<?php echo $obra->video;?>">
-                    Sinopsis: <textarea class="form-control mt-2" name="sinopsis"  value="<?php echo $obra->sinopsis;?>"></textarea>
+                    Sinopsis: <textarea class="form-control mt-2" name="sinopsis" ><?php echo $obra->sinopsis;?></textarea>
                     <select name="tipo" class="custom-select mt-2" required>
                         <option  value="<?php echo $obra->tipo;?>"><?php echo $obra->tipo;?></option>
                         <option value="pelicula">Película</option>
