@@ -64,6 +64,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
             <button type="submit" class="btn btn-dark btn-user btn-block" name="entrar" id="btnEntrar">
               Entrar
             </button>
+            <!-- Botón de google -->
             <button type="submit" class="btn btn-danger btn-user btn-block justify-content-center" name="entrarG" id="btnEntrar">
               <?php echo $login_button; ?>
             </button>

@@ -1,48 +1,7 @@
 <?php include("includes/a_config.php");
+//echo phpinfo();
 require_once "./model/UsuarioController.php";
-
-if (isset($_GET["code"])) {
-  //Intentará intercambiar un código por un token de autenticación válido.
-  $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
-
-  //Esta condición verificará que haya algún error durante la obtención del token de autenticación. Si no se produce ningún error, se ejecutará si el bloque de código /
-  if (!isset($token['error'])) {
-    //Establecer el token de acceso utilizado para las solicitudes
-    $google_client->setAccessToken($token['access_token']);
-
-    // Almacene el valor "access_token" en la variable $ _SESSION para uso futuro.
-    $_SESSION['access_token'] = $token['access_token'];
-
-    //Crea el Object of Google Service OAuth 2 class
-    $google_service = new Google_Service_Oauth2($google_client);
-
-    //Get user profile data from google
-    $data = $google_service->userinfo->get();
-
-    //Below you can find Get profile data and store into $_SESSION variable
-    if (!empty($data['given_name'])) {
-      $_SESSION['user_first_name'] = $data['given_name'];
-    }
-
-    if (!empty($data['family_name'])) {
-      $_SESSION['user_last_name'] = $data['family_name'];
-    }
-
-    if (!empty($data['email'])) {
-      $_SESSION['user_email_address'] = $data['email'];
-    }
-
-    if (!empty($data['gender'])) {
-      $_SESSION['user_gender'] = $data['gender'];
-    }
-
-    if (!empty($data['picture'])) {
-      $_SESSION['user_image'] = $data['picture'];
-    }
-  }
-}
-
-?>
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -50,36 +9,24 @@ if (isset($_GET["code"])) {
   <?php include("includes/head-tag-contents.php"); ?>
   <?php
 
+  //session_destroy();
+  //session_start();
   $incorrecto = false;
   $existeUsu = false;
   $mensaje = "";
 
-  $caracteres_permitidos = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  
+  
 
-  function generar_cadena($input, $longitud)
-  {
-    $input_lenght = strlen($input);
-    $random_string = '';
-    for ($i = 0; $i < $longitud; $i++) {
-      $random_character = $input[mt_rand(0, $input_lenght - 1)];
-      $random_string .= $random_character;
-    }
-    return $random_string;
-  }
-
-
-
-
-
-  if (isset($_POST['registrar']) && $_POST['pass'] == $_POST['pass2'] && $incorrecto == false) {
+  if (isset($_POST['registrar']) && $_POST['pass'] == $_POST['pass2'] && $incorrecto == false ) {
     $u = UsuarioController::findUserByUsername($_POST['email']);
-    if ($u != null) {
+    if($u != null){
       $existeUsu = true;
-    } else {
+    }else{
       $existeUsu = false;
     }
 
-    if ($existeUsu == false) {
+    if($existeUsu == false){
       $u1 = new Usuario();
       $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
       UsuarioController::newUser($u1);
@@ -87,10 +34,13 @@ if (isset($_GET["code"])) {
       $_SESSION['id'] = $u1->id;
       $_SESSION['user_email_address'] = $_POST['email'];
       $_SESSION['user_first_name'] = $_POST['name'];
+      echo $_POST['name'];
+      echo $_SESSION['user_first_name'];
       header("location:index.php");
-    } else {
-      $mensaje = "El usuario ya existe en sistema";
+    }else{
+        $mensaje = "El usuario ya existe en sistema";
     }
+    
   }
 
   // || isset($_POST['actualizar'])
@@ -98,12 +48,23 @@ if (isset($_GET["code"])) {
     $string_lenght = 6;
     $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
     $_SESSION['captcha'] = $captcha_string;
+
+    for($i = 0; $i < $string_length; $i++) {
+      $letter_space = 170/$string_length;
+      $initial = 15;
+       
+      imagettftext($image, 24, rand(-15, 15), $initial + $i*$letter_space, rand(25, 45), $textcolors[rand(0, 1)], $fonts[array_rand($fonts)], $captcha_string[$i]);
+    }
+     
+    header('Content-type: image/png');
+    imagepng($image);
+    imagedestroy($image);
   }
   if (isset($_POST['code'])) {
 
     if ($_POST['code'] == $_SESSION['captcha']) {
       $incorrecto = false;
-
+      
       echo "Captcha valido";
     } else {
       echo "Captcha incorrecto de los cojones";
@@ -130,7 +91,7 @@ if (isset($_GET["code"])) {
         <div class="p-4">
           <div class="text-center pb-4">
             <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png"></a>
-
+          
           </div>
           <div class="text-center pb-3">
             <h3 class="">Formulario de registro</h3>
@@ -143,8 +104,6 @@ if (isset($_GET["code"])) {
                   <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico" required value="<?php
                                                                                                                                             if (isset($_POST["email"])) {
                                                                                                                                               echo $_POST["email"];
-                                                                                                                                            } else {
-                                                                                                                                              echo $data['email'];
                                                                                                                                             }
                                                                                                                                             ?>">
                 </div>
@@ -158,18 +117,14 @@ if (isset($_GET["code"])) {
                   <input type="text" class="form-control form-control-user" name="name" placeholder="Nombre de usuario" required value="<?php
                                                                                                                                         if (isset($_POST["name"])) {
                                                                                                                                           echo $_POST["name"];
-                                                                                                                                        } else {
-                                                                                                                                          $data['given_name'];
                                                                                                                                         }
                                                                                                                                         ?>">
-
+                  
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="apel1" placeholder="Primer apellido" required value="<?php
                                                                                                                                         if (isset($_POST["apel1"])) {
                                                                                                                                           echo $_POST["apel1"];
-                                                                                                                                        } else {
-                                                                                                                                          echo  $data['family_name'];
                                                                                                                                         }
                                                                                                                                         ?>">
                 </div>
@@ -446,17 +401,18 @@ if (isset($_GET["code"])) {
               </div>
             </div>
             <div class="form-group">
-              <?php if ($existeUsu) { ?>
-                <p><span><?php echo $mensaje ?></span></p>
-              <?php
+            <?php if ($existeUsu){?>
+                  <p><span><?php echo $mensaje ?></span></p>
+                  <?php
 
-              }  ?>
+                  }  ?>
               <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
               <p class="we text-center" style="font-size:x-large;"> <?php echo $_SESSION['captcha']; ?> </p>
+              <img src="<?php echo imagepng($image); ?>" alt="">
               <p><input type="text" name="code" class="form-control form-control-user" required>
               <p class="we text-center"><?php if ($incorrecto == true) {
                                           echo "Captcha inocorrecto primo";
-                                        } ?></p>
+                                        }?></p>
 
             </div>
 
