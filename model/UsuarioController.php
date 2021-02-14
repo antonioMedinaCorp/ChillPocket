@@ -30,7 +30,9 @@ require_once 'entities/Usuario.php';
         public static function findUserByUsername($username){
             try {
                 $conex = new Conexion();
-                $result = $conex->query("SELECT * FROM usuario where user_name = '$username'");
+                $result = $conex->prepare('SELECT * FROM usuario where user_name = ?');
+                $result->bindParam(1, $username);
+                $result->execute();
                 if ($result->rowCount()) {
                     
                     $row = $result->fetchObject();
@@ -50,7 +52,11 @@ require_once 'entities/Usuario.php';
         public static function findUserByUsernameAndPass($username, $pass){
             try {
                 $conex = new Conexion();
-                $result = $conex->query("SELECT * FROM usuario where user_name = '$username' and password='$pass'");
+                $md5Pass = md5($pass);
+                $result = $conex->prepare("SELECT * FROM usuario where user_name =? and password=? ");
+                $result->bindParam(1, $username);
+                $result->bindParam(2, $md5Pass);
+                $result->execute();
                 if ($result->rowCount()) {
                     
                     $row = $result->fetchObject();
@@ -70,8 +76,18 @@ require_once 'entities/Usuario.php';
         public static function editUser(Usuario $u){
             try {
                 $conex = new Conexion();
-                $conex->query("UPDATE usuario SET password = '$u->password', name = '$u->name', apel1 = '$u->apel1', apel2 = '$u->apel2', birthdate = '$u->birthdate', country = '$u->country', cod_post = '$u->cod_post', phone = '$u->phone' WHERE id='$u->id'");
-                
+                $md5Pass = md5($u->password);
+                $ps = $conex->prepare("UPDATE usuario SET password = ? , name = ?, apel1 = ?, apel2 = ?, birthdate = ?, country = ?, cod_post = ?, phone = '$u->phone' WHERE id=?");
+                $ps->bindParam(1, $md5Pass);
+                $ps->bindParam(2, $u->name);
+                $ps->bindParam(3, $u->apel1);
+                $ps->bindParam(4, $u->apel2);
+                $ps->bindParam(5, $u->birthdate);
+                $ps->bindParam(6, $u->country);
+                $ps->bindParam(7, $u->cod_post);
+                $ps->bindParam(8, $u->phone);
+                $ps->bindParam(9, $u->id);
+                $ps->execute();
             } catch (PDOException $ex) {
                 $errores[] = $ex->getMessage();
                 die('Error en bbdd');
@@ -95,8 +111,22 @@ require_once 'entities/Usuario.php';
         public static function newUser(Usuario $u){
             try {
                 $conex = new Conexion();
-                $conex->exec("INSERT INTO usuario  VALUES ('$u->id', '$u->user_name', '$u->password', '$u->name', '$u->apel1', '$u->apel2', '$u->birthdate', '$u->country', '$u->cod_post', '$u->phone', '$u->rol')");
-                               
+                $md5Pass = md5($u->password);
+                $ps = $conex->prepare("INSERT INTO usuario  VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+                $ps->bindParam(1, $u->id);
+                $ps->bindParam(2, $u->user_name);
+                $ps->bindParam(3, $md5Pass);
+                $ps->bindParam(4, $u->name);
+                $ps->bindParam(5, $u->apel1);
+                $ps->bindParam(6, $u->apel2);
+                $ps->bindParam(7, $u->birthdate);
+                $ps->bindParam(8, $u->country);
+                $ps->bindParam(9, $u->cod_post);
+                $ps->bindParam(10, $u->phone);
+                $ps->bindParam(11, $u->rol);
+                $ps->execute();
+                
+                
                 
             } catch (PDOException $ex) {            
                 $errores[] = $ex->getMessage();
