@@ -33,7 +33,45 @@ require_once "./model/UsuarioController.php";
        
       
 
- 
+
+        if ($u == null) {
+			//$google_client->revokeToken();
+			//session_destroy();
+			//header('location:registro.php');
+			//$conex->exec("INSERT INTO usuario  VALUES ('$u->id', '$u->user_name', '$u->password', '$u->name', '$u->apel1', '$u->apel2', '$u->birthdate', '$u->country', '$u->cod_postal', '$u->phone', '$u->rol')");
+			$u1 = new Usuario();
+			$u1 -> newUser(0, $data['email'], null, $data['given_name'], $data['family_name'], null, '1000-01-01', $data['locale'], null, null, 'usuario');
+			UsuarioController::newUser($u1);
+			$u1 = UsuarioController::findUserByUsername( $data['email']);
+			$_SESSION['user_email_address'] = $data['email'];
+			$_SESSION['user_first_name'] = $data['given_name'];
+      $_SESSION['id'] = $u1->id;
+		}
+      else{
+        $_SESSION['id'] = $u->id;
+
+      //Below you can find Get profile data and store into $_SESSION variable
+      if (!empty($data['given_name'])) {
+        $_SESSION['user_first_name'] = $data['given_name'];
+      }
+
+      if (!empty($data['family_name'])) {
+        $_SESSION['user_last_name'] = $data['family_name'];
+      }
+
+      if (!empty($data['email'])) {
+        $_SESSION['user_email_address'] = $data['email'];
+      }
+
+      if (!empty($data['gender'])) {
+        $_SESSION['user_gender'] = $data['gender'];
+      }
+
+      if (!empty($data['picture'])) {
+        $_SESSION['user_image'] = $data['picture'];
+      }
+    }
+
   
 
 
