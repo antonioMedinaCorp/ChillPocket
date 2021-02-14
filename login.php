@@ -5,13 +5,9 @@ require_once "./model/UsuarioController.php";
 if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass'])) {
 
   $md5pass = md5($_POST['pass']);
-  echo $_POST['username'];
-  echo $md5pass;
 
   $u = UsuarioController::findUserByUsernameAndPass($_POST['username'], $md5pass);
 
-
-  echo 'despues de la llamada al controlador';
 
   if ($u != null) {
     echo 'el usuario no es nulo';
@@ -20,9 +16,6 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
     $_SESSION['rol'] = $u-> rol;
     $_SESSION['id'] = $u -> id;
     header("Location:index.php");
-  }
-  else{
-    echo 'el usuario es nulo';
   }
 }
 
