@@ -1,5 +1,6 @@
 <?php include("includes/a_config.php");
 require_once "./model/UsuarioController.php";
+include "captcha/recaptchalib.php";
 
 if (isset($_GET["code"])) {
   //Intentará intercambiar un código por un token de autenticación válido.
