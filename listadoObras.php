@@ -20,12 +20,36 @@ if(isset($_POST['borrar'])){
 </head>
 
 <body>
-<?php //echo $_SESSION['obra']." iloooo el de la sesión <br>";
-//echo $_POST['id']. "soy el del post"; ?>
+<?php 
+$limit = 5;
+$total_pages= ObraController::calculoDeRowsPorPaginas($limit);
+if(!isset($_GET['page'])){
+    $page = 1;
+} else {
+    $page = $_GET['page'];
+    
+} 
+explode(" ", $page);
+    
+    if($page==1){
+        $start = ($page-1)*$limit;
+    }else
+    $start = ($page[0]-1)*$limit;
+
+ 
+ 
+
+ $obras = ObraController::obrasPorPagina($start, $limit);
+ $no = $page > 1 ? $start+1 : 1;
+
+?>
     <div class="container-fluid">
         <?php include("includes/navbar.php"); ?>
 
         <main>
+        <div class="d-flex justify-content-center mt-2 mb-2">
+                <h2>Lista de obras</h2>
+            </div>
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
@@ -37,8 +61,7 @@ if(isset($_POST['borrar'])){
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    $obras = ObraController::findAllObras();
+                    <?php                   
                     foreach ($obras as $value) { ?>
                         <tr>
                             <th scope="row"><?php echo $value->id; ?></th>
@@ -53,6 +76,15 @@ if(isset($_POST['borrar'])){
 
                 </tbody>
             </table>
+            <ul class="pagination paginationLists">
+                <li class="page-item"><a class="page-link" href="?page=1">First</a></li>
+        
+                    <?php for($p=1; $p<=$total_pages; $p++){?>
+                        
+                        <li class="<?= $page == $p ? 'active' : ''; ?>"><a class="page-link" href="<?= '?page='.$p; ?> page-item"><?= $p; ?></a></li>
+                    <?php }?>
+                <li class="page-item"><a class="page-link" href="?page=<?= $total_pages; ?>">Last</a></li>
+            </ul>
             
         </main>
         <div>

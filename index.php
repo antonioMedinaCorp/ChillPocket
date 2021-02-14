@@ -1,6 +1,8 @@
 <?php include("includes/a_config.php");
 require_once "./model/UsuarioController.php";
 
+
+
 //echo $_SESSION['user_first_name'];
 
  //This $_GET["code"] variable value received after user has login into their Google Account redirct to PHP script then this variable value has been received
@@ -39,7 +41,6 @@ require_once "./model/UsuarioController.php";
 			$_SESSION['user_email_address'] = $data['email'];
 			$_SESSION['user_first_name'] = $data['given_name'];
       $_SESSION['id'] = $u1->id;
-      
 		}
       else{
         $_SESSION['id'] = $u->id;

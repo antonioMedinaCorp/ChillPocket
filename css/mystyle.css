@@ -672,3 +672,10 @@ input {
 
 #linkCookies {
   color: #37a3a5 !important; }
+
+#table {
+  margin-left: 0;
+  width: 100%; }
+
+.paginationLists {
+  justify-content: center; }
