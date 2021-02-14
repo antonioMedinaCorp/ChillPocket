@@ -30,19 +30,25 @@ if (isset($_POST['borrar'])) {
 
         <?php
 
-        
+
         $valoraciones = ValoracionController::findAllValoracionesByIdUsuario($_SESSION['id']);
         if ($valoraciones->rowCount()) {
             while ($row = $valoraciones->fetchObject()) {
         ?>
-                <div class="login-container mt-2 mb-2 rounded">
                     <div class="card text-center w-100">
-                        <div class="card-body">
-                            <?php
-                            $titulo = ObraController::findByID($row->id_obra);
+                <?php
+                $titulo = ObraController::findByID($row->id_obra);
 
-                            ?>
-                            <h4 class="card-title"><?php echo $titulo->title; ?></h4>
+                ?>
+                <div class="container">
+                    <div class="card text-center w-100 mt-2">
+                        <div class="card-img-top bg-dark h-25">
+                            <div class="card-title text-light h4">
+                                <?php echo $titulo->title ?>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
                             <p class="card-text">
                                 <?php echo $row->point; ?>
                             </p>
@@ -52,7 +58,7 @@ if (isset($_POST['borrar'])) {
                             <div class="row">
                                 <div class="col">
                                     <form action="" method="post">
-                                    <input type="hidden" name="id" value="<?php echo $row->id; ?>">
+                                        <input type="hidden" name="id" value="<?php echo $row->id; ?>">
                                         <button type="submit" class="btn btn-danger" name="borrar">
                                             Borrar&nbsp;<i class="far fa-trash-alt"></i></button>
                                     </form>

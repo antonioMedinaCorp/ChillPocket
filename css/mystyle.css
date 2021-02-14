@@ -672,3 +672,6 @@ input {
 
 #linkCookies {
   color: #37a3a5 !important; }
+
+.valoracion {
+  min-height: 10rem; }

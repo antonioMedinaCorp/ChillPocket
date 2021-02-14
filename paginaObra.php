@@ -9,6 +9,11 @@ if (isset($_POST['enviar']) && !empty($_POST['quill-html'])) {
   ValoracionController::setValoracion($_SESSION['id'], $_GET['id'], $_POST['rating'], $_POST['quill-html']);
 }
 
+if (isset($_POST['borrarValoracion'])) {
+  ValoracionController::delete($_POST['valoracionId']);
+}
+
+
 $obra = ObraController::findByID($_GET['id']);
 
 $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
@@ -43,7 +48,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     <?php echo $obra->sinopsis; ?>
 
 
-    
+
     <iframe width="560" height="315" src="<?php echo $obra->video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <h4>Crítica</h4>
@@ -79,38 +84,53 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
     <section id="valoraciones">
       <div class="row">
-<?php 
-if(!empty($valoraciones)){
-  foreach($valoraciones as $val){
+        <?php
+        if (!empty($valoraciones)) {
+          foreach ($valoraciones as $val) {
 
-    echo '<div class="col-md-6 pt-2 jus">';
-  
-?>
-      <div class="card bg-light">
-        <div class="card-title">
-        Puntuación: <?php echo $val->point?>
-        </div>
-        <div class="card-body ">
-        <?php echo $val->texto?>
-        </div>
+            echo '<div class="col-md-6 pt-2 jus">';
+
+        ?>
+            <div class="card bg-light h-100 valoracion">
+            <div class="card-img-top bg-dark h-25">
+            <div class="card-title text-light">
+                Puntuación: <?php echo $val->point ?>
+              </div>
+            </div>
+
+              <div class="card-body ">
+                <?php echo $val->texto ?>
+                <?php
+                
+                if ($val->id_usu == $_SESSION['id'] || $_SESSION['rol'] == 'admin') {
+                ?>
+                  <form action="" method="post">
+                    <input type="hidden" name="valoracionId" value="<?php echo $val->id ?>">
+                    <button type="submit" name="borrarValoracion" class="btn btn-danger">Eliminar &nbsp;<i class="fas fa-trash-alt"></i></button>
+                  </form>
+                <?php
+                }
+                ?>
+
+
+            </div>
       </div>
-<?php
-      echo '</div>';
+  <?php
+            echo '</div>';
+          }
+        }
+  ?>
 
-    }
-  }
-?>
-        
-      </div>
+  </div>
 
 
-    </section>
+  </section>
 
-    <hr width=70%>
-
-    <section>
-<?php if(isset($_SESSION['id'])){ ?>
-  <form action="" method="POST" id="formCritica">
+  <hr width=70%>
+  <!-- VALORACIONES -->
+  <section>
+    <?php if (isset($_SESSION['id'])) { ?>
+      <form action="" method="POST" id="formCritica">
         <div class="row">
           <div class=" w-100 d-flex flex-row ">
 
@@ -160,11 +180,12 @@ if(!empty($valoraciones)){
 
       </form>
 
-<?php
-} ?>
-      
+    <?php
+    } ?>
 
-    </section>
+
+  </section><!-- END VALORACIONES -->
+
 
 
   </div>
