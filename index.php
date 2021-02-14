@@ -1,4 +1,6 @@
-<?php include("includes/a_config.php");
+<?php
+
+include("includes/a_config.php");
 require_once "./model/UsuarioController.php";
 
 // echo $_SESSION['user_first_name'];
