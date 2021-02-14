@@ -14,8 +14,8 @@
 class Conexion extends PDO {
 
     private $dsn = "mysql:host=localhost;dbname=puntocritico;charset=utf8mb4";
-    private $usu = "root";
-    private $pass = "1234";
+    private $usu = "puntousuario";
+    private $pass = "Examen16+";
     private $opciones = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
     public function __construct() {
