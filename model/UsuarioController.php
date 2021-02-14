@@ -61,7 +61,6 @@ class UsuarioController
             $result->execute([$username, $pass]);
             if ($result->rowCount()) {
 
-            echo "Usuario encontrado";
             $row = $result->fetchObject();
 
             $u = new Usuario($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
