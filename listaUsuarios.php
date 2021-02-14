@@ -30,6 +30,12 @@ require_once './model/UsuarioController.php';
 
     $usuarios = UsuarioController::usuariosPorPagina($start, $limit);
     $no = $page > 1 ? $start+1 : 1;
+    
+
+    if (isset($_POST['borrar'])) {
+        UsuarioController::deleteUser($_POST['borrar']);
+        header("Location: /listaUsuarios.php");
+    }
 
  ?>
     <div class="container-fluid">

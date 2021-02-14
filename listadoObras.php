@@ -9,6 +9,7 @@ if (isset($_POST['editar'])) {
 
 if (isset($_POST['borrar'])) {
     ObraController::delete($_POST['borrar']);
+    header("Location: /listadoObras.php");
 }
 ?>
 
@@ -47,10 +48,9 @@ explode(" ", $page);
 
     <div class="container-fluid">
         <?php include("includes/navbar.php"); ?>
-        <h1>Listado de obras actualmente disponibles</h1>
         <main>
         <div class="d-flex justify-content-center mt-2 mb-2">
-                <h2>Lista de obras</h2>
+                <h2>Listado de obras actualmente disponibles</h2>
             </div>
             <table class="table">
                 <thead class="thead-dark">
