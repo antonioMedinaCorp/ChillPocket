@@ -54,6 +54,8 @@ if (isset($_GET["code"])) {
   $existeUsu = false;
   $mensaje = "";
 
+
+
   $caracteres_permitidos = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
   function generar_cadena($input, $longitud)
@@ -160,7 +162,7 @@ if (isset($_GET["code"])) {
                                                                                                                                         if (isset($_POST["name"])) {
                                                                                                                                           echo $_POST["name"];
                                                                                                                                         } else {
-                                                                                                                                          $data['given_name'];
+                                                                                                                                          echo $data['given_name'];
                                                                                                                                         }
                                                                                                                                         ?>">
 

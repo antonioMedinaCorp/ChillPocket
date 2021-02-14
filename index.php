@@ -33,6 +33,7 @@ require_once "./model/UsuarioController.php";
        
       
 
+
         if ($u == null) {
 			//$google_client->revokeToken();
 			//session_destroy();
@@ -70,6 +71,7 @@ require_once "./model/UsuarioController.php";
         $_SESSION['user_image'] = $data['picture'];
       }
     }
+
   
 
 
