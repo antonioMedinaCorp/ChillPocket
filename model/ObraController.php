@@ -172,4 +172,39 @@ class ObraController{
 
     }
 
+    public static function calculoDeRowsPorPaginas($limit){
+        try {
+            $conex = new Conexion();
+            $result = $conex->query("select * from obra");  
+            $result->execute();                
+            $total_results = $result->rowCount();
+            $total_pages = ceil($total_results/5);
+            return $total_pages;            
+            
+        } catch (PDOException $exc) {
+            $errores[] = $exc->getMessage();
+            die('Error en bbdd'. $exc->getMessage());
+        }
+        unset($result);
+        unset($conex);
+    }
+
+    public static function obrasPorPagina($start, $limit){
+        try {
+            $conex = new Conexion();
+            $result = $conex->prepare("SELECT * FROM obra ORDER BY id ASC LIMIT $start, $limit");  
+           $result->execute();
+           $result->setFetchMode(PDO::FETCH_OBJ);
+           return $result->fetchAll();
+            
+               
+            
+        } catch (PDOException $exc) {
+            $errores[] = $exc->getMessage();
+            die('Error en bbdd'. $exc->getMessage());
+        }
+        unset($result);
+        unset($conex);
+    }
+
 }

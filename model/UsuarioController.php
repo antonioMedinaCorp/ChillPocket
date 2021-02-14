@@ -12,7 +12,7 @@ require_once 'entities/Usuario.php';
                     //$u = new Usuario();
                     while($row = $result->fetchObject()){
                        // $u->newUser($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
-                       $u = new Usuario($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_postal, $row->phone, $row->rol);
+                       $u = new Usuario($row->id, $row->user_name, $row->password, $row->name, $row->apel1, $row->apel2, $row->birthdate, $row->country, $row->cod_post, $row->phone, $row->rol);
                        $usuarios[] = clone($u);
                     }
                     return $usuarios;
@@ -138,6 +138,42 @@ require_once 'entities/Usuario.php';
 
         }
 
+        public static function calculoDeRowsPorPaginas($limit){
+            try {
+                $conex = new Conexion();
+                $result = $conex->query("select * from usuario");  
+                $result->execute();                
+                $total_results = $result->rowCount();
+                $total_pages = ceil($total_results/$limit);
+                return $total_pages;            
+                
+            } catch (PDOException $exc) {
+                $errores[] = $exc->getMessage();
+                die('Error en bbdd'. $exc->getMessage());
+            }
+            unset($result);
+            unset($conex);
+        }
 
+        public static function usuariosPorPagina($start, $limit){
+            try {
+                $conex = new Conexion();
+                $result = $conex->prepare("SELECT * FROM usuario ORDER BY id ASC LIMIT $start, $limit");  
+               $result->execute();
+               $result->setFetchMode(PDO::FETCH_OBJ);
+               return $result->fetchAll();
+                
+                   
+                
+            } catch (PDOException $exc) {
+                $errores[] = $exc->getMessage();
+                die('Error en bbdd'. $exc->getMessage());
+            }
+            unset($result);
+            unset($conex);
+        }
     }
+
+
+    
 ?>

@@ -120,7 +120,7 @@ if (isset($_POST['logout'])) {
                             <div class="modal-body" id="center">
                             <button class="btn btn-outline-info"  type="submit" onclick="window.location.href='/addObra.php'">Generar obra</button>
                             <button class="btn btn-outline-warning"  type="submit" onclick="window.location.href='/listadoObras.php'">Lista de obras</button>
-                            <button class="btn btn-outline-success"  type="submit" onclick="window.location.href='/'">Lista de usuarios</button>
+                            <button class="btn btn-outline-success"  type="submit" onclick="window.location.href='/listaUsuarios.php'">Lista de usuarios</button>
                             
 
                             </div>
