@@ -86,8 +86,7 @@ if (isset($_GET["code"])) {
 
     if ($existeUsu == false) {
       $u1 = new Usuario();
-      $md5Pass = md5($_POST['pass']);
-      $u1->newUser(0, $_POST['email'], $md5Pass, $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
+      $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
       UsuarioController::newUser($u1);
       $u1 = UsuarioController::findUserByUsername($_POST['email']);
       $_SESSION['id'] = $u1->id;
