@@ -29,8 +29,6 @@ $google_client->setClientSecret('pI4Ib2DYhIH1ys4RsyTErrcv');
 //$google_client->setRedirectUri('http://localhost/index.php');
 $google_client->setRedirectUri('http://localhost/registro.php');
 
-CREATE USER 'puntousuario'@'%' IDENTIFIED BY 'Examen16+';
-
 //
 $google_client->addScope('email');
 
