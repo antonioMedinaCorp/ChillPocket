@@ -30,7 +30,6 @@ $google_client->setClientSecret('pI4Ib2DYhIH1ys4RsyTErrcv');
 $google_client->setRedirectUri('http://localhost/registro.php');
 
 
-
 //
 $google_client->addScope('email');
 
