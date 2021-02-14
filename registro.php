@@ -2,6 +2,8 @@
 require_once "./model/UsuarioController.php";
 include "captcha/recaptchalib.php";
 
+
+
 if (isset($_GET["code"])) {
   //Intentará intercambiar un código por un token de autenticación válido.
   $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
@@ -459,7 +461,7 @@ if (isset($_GET["code"])) {
               <p class="we text-center" style="font-size:x-large;"> <?php echo $_SESSION['captcha']; ?> </p>
               <p><input type="text" name="code" class="form-control form-control-user" required>
               <p class="we text-center"><?php if ($incorrecto == true) {
-                                          echo "Captcha inocorrecto primo";
+                                          echo "Captcha inocorrecto";
                                         } ?></p>
 
             </div>
