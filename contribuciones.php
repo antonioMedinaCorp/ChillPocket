@@ -35,7 +35,6 @@ if (isset($_POST['borrar'])) {
         if ($valoraciones->rowCount()) {
             while ($row = $valoraciones->fetchObject()) {
         ?>
-                    <div class="card text-center w-100">
                 <?php
                 $titulo = ObraController::findByID($row->id_obra);
 
