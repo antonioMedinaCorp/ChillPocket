@@ -99,7 +99,7 @@ if (isset($_GET["code"])) {
     }
   }
 
-  // || isset($_POST['actualizar'])
+  
   if (!isset($_SESSION['captcha'])) {
     $string_lenght = 6;
     $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
@@ -118,13 +118,6 @@ if (isset($_GET["code"])) {
     }
   }
 
-
-  //session_destroy();
-  //session_start();
-
-
-
-  //if (!isset($_POST['registrar']) || $captchaOK = true){
   ?>
 </head>
 
@@ -149,7 +142,7 @@ if (isset($_GET["code"])) {
                   <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico" required value="<?php
                                                                                                                                             if (isset($_POST["email"])) {
                                                                                                                                               echo $_POST["email"];
-                                                                                                                                            } else {
+                                                                                                                                            } if (isset($data['email'])) {
                                                                                                                                               echo $data['email'];
                                                                                                                                             }
                                                                                                                                             ?>">
@@ -164,7 +157,7 @@ if (isset($_GET["code"])) {
                   <input type="text" class="form-control form-control-user" name="name" placeholder="Nombre de usuario" required value="<?php
                                                                                                                                         if (isset($_POST["name"])) {
                                                                                                                                           echo $_POST["name"];
-                                                                                                                                        } else {
+                                                                                                                                        } if (isset($data['given_name'])) {
                                                                                                                                           echo $data['given_name'];
                                                                                                                                         }
                                                                                                                                         ?>">
@@ -174,7 +167,7 @@ if (isset($_GET["code"])) {
                   <input type="text" class="form-control form-control-user" name="apel1" placeholder="Primer apellido" required value="<?php
                                                                                                                                         if (isset($_POST["apel1"])) {
                                                                                                                                           echo $_POST["apel1"];
-                                                                                                                                        } else {
+                                                                                                                                        } if (isset($data['family_name'])) {
                                                                                                                                           echo  $data['family_name'];
                                                                                                                                         }
                                                                                                                                         ?>">
