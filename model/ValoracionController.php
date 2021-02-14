@@ -2,11 +2,12 @@
 
 require_once 'Conexion.php';
 require_once 'entities/Valoracion.php';
+require_once 'ObraController.php';
 
 class ValoracionController{
 
 
-    public function findByID($id){
+    public static function findByID($id){
 
         try {
             $conex = new Conexion();
@@ -133,7 +134,17 @@ class ValoracionController{
     public static function delete($id){
         try{
             $conex = new Conexion();
-            $conex -> exec("DELETE from valoracion WHERE id='$id'");
+
+            $valoracion = ValoracionController::findByID($id);
+
+            $avg = $conex->exec('select avg(point) from valoracion where id_obra='.$valoracion->id_obra);
+
+            $conex->exec("UPDATE obra o SET `point_avg` = " . $avg ." WHERE (`id` = " . $valoracion->id_obra . ");");
+
+
+            $conex -> exec("DELETE from valoracion WHERE id=" . $valoracion->id_obra);
+
+            
         }catch(PDOException $ex){
             die($ex->getMessage());
         }
