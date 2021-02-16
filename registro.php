@@ -59,20 +59,6 @@ if (isset($_GET["code"])) {
 
 
 
-  $caracteres_permitidos = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-
-  function generar_cadena($input, $longitud)
-  {
-    $input_lenght = strlen($input);
-    $random_string = '';
-    for ($i = 0; $i < $longitud; $i++) {
-      $random_character = $input[mt_rand(0, $input_lenght - 1)];
-      $random_string .= $random_character;
-    }
-    return $random_string;
-  }
-
-
 
 
 
@@ -99,11 +85,11 @@ if (isset($_GET["code"])) {
   }
 
   
-  if (!isset($_SESSION['captcha'])) {
-    $string_lenght = 6;
-    $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
-    $_SESSION['captcha'] = $captcha_string;
-  }
+  //if (!isset($_SESSION['captcha'])) {
+  //  $string_lenght = 6;
+  //  $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
+  //  $_SESSION['captcha'] = $captcha_string;
+  //}
   if (isset($_POST['code'])) {
 
     if ($_POST['code'] == $_SESSION['captcha']) {
@@ -450,7 +436,7 @@ if (isset($_GET["code"])) {
 
               }  ?>
               <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
-              <p class="we text-center" style="font-size:x-large;"> <?php echo $_SESSION['captcha']; ?> </p>
+              <p class="we text-center" style="font-size:x-large;"><img src="generatecaptcha.php"></p>
               <p><input type="text" name="code" class="form-control form-control-user" required>
               <p class="we text-center"><?php if ($incorrecto == true) {
                                           echo "Captcha inocorrecto";
