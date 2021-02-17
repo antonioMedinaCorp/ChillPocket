@@ -4,6 +4,7 @@ include("includes/a_config.php");
 require_once "./model/UsuarioController.php";
 //include "captcha/recaptchalib.php";
 
+$control = '';
 
 if (isset($_GET["code"])) {
   //Intentará intercambiar un código por un token de autenticación válido.
@@ -46,7 +47,11 @@ if (isset($_GET["code"])) {
   }
 }
 
-$control = UsuarioController::findUserByUsername($_SESSION['user_email_address']);
+if (isset($_SESSION['user_email_address'])){
+  $control = UsuarioController::findUserByUsername($_SESSION['user_email_address']);
+  
+}
+
 if ($control != null) {
   header("location:index.php");
 } else {
