@@ -80,7 +80,11 @@ require_once "./model/UsuarioController.php";
 	<?php include("includes/head-tag-contents.php");?>
 </head>
 <body>
-<?php include("includes/navbar.php");?>
+<?php include("includes/navbar.php");
+// prueba
+echo ' llega hasta aquí? '. $_SESSION['user_email_address'];
+
+?>
 <?php include("includes/design-top.php");?>
 <main>
 

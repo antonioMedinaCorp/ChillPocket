@@ -1,9 +1,10 @@
-<?php include("includes/a_config.php");
+<?php 
+include("includes/a_config.php");
 require_once "./model/UsuarioController.php";
 ?>
 <?php
-if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass'])) {
 
+if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass'])) {
   $md5pass = md5($_POST['pass']);
 
   $u = UsuarioController::findUserByUsernameAndPass($_POST['username'], $md5pass);
@@ -69,13 +70,12 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
             <button type="submit" class="btn btn-dark btn-user btn-block" name="entrar">
               Entrar
             </button>
-            
-            <!-- Botón de google -->
-            <button type="submit" class="btn btn-danger btn-user btn-block justify-content-center" name="entrarG" id="btnEntrar">
-              <?php echo $login_button; ?>
-            </button>
 
           </form>
+          <!-- Botón de google -->
+          <button type="submit" class="btn btn-danger btn-g btn-block justify-content-center" name="entrarG" id="btnEntrar">
+              <?php echo $login_button; ?>
+            </button>
           <hr>
           <div class="text-center">
             <a class="small" href="forgot-password.html">¿Has olvidado tu contrase&ntilde;a?</a>

@@ -202,6 +202,12 @@ form.user .btn-user {
   border-radius: 10rem;
   padding: 0.75rem 1rem; }
 
+.btn-g {
+  font-size: 0.8rem;
+  border-radius: 12rem;
+  padding: 0.75rem 1rem;
+  margin-top: 1em; }
+
 .txt-register {
   font-family: 'Montserrat', sans-serif; }
 
@@ -673,7 +679,6 @@ input {
 #linkCookies {
   color: #37a3a5 !important; }
 
-
 #table {
   margin-left: 0;
   width: 100%; }
@@ -683,4 +688,3 @@ input {
 
 .valoracion {
   min-height: 10rem; }
-
