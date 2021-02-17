@@ -14,7 +14,7 @@
         <div class="row">
 
             <div class="col-md-3 p-3">
-                <a href="theJoker.php">
+                <a href="paginaObra.php?id=102">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/joker.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
