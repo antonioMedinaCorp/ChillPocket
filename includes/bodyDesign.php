@@ -28,13 +28,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theJoker.php">
+                <a href="paginaObra.php?id=105">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/tenet.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de película</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">Tenet</h5>
+                                <p class="card-text">Viajes en el tiempo y polis</p>
                             </div>
                         </div>
                     </div>
@@ -42,13 +42,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theJoker.php">
+                <a href="paginaObra.php?id=106">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/soul.jpeg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de película</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">Soul</h5>
+                                <p class="card-text">Lo último de Disney</p>
                             </div>
                         </div>
                     </div>
@@ -56,13 +56,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theJoker.php">
+                <a href="paginaObra.php?id=107">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/peli2.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/theProffesor.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de película</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">The proffesor and the madman</h5>
+                                <p class="card-text">El peso de las palabras</p>
                             </div>
                         </div>
                     </div>
