@@ -85,13 +85,13 @@
         <div class="row">
 
             <div class="col-md-3 p-3">
-                <a href="theUmbrellaAc.php">
+                <a href="paginaObra.php?id=108">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">The stranger thing</h5>
+                                <p class="card-text">Terror en los 80</p>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theUmbrellaAc.php">
+                <a href="paginaObra.php?id=104">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/serie2.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
@@ -113,13 +113,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theUmbrellaAc.php">
+                <a href="paginaObra.php?id=109">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/seri1.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/theWither.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">The witcher</h5>
+                                <p class="card-text">Brujos y otros seres</p>
                             </div>
                         </div>
                     </div>
@@ -128,13 +128,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theUmbrellaAc.php">
+                <a href="paginaObra.php?id=110">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/serie2.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">The Umbrella Academy</h5>
-                                <p class="card-text">Hermanos con poderes?</p>
+                                <h5 class="card-title">The man in the high castle</h5>
+                                <p class="card-text">Futuro distópicos</p>
                             </div>
                         </div>
                     </div>
