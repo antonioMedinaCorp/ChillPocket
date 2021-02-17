@@ -908,5 +908,39 @@ input {
   min-height: 10rem;
 }
 
+.cookieMonth{
+  position: fixed;  
+    bottom: 10rem;
+    right: 40%;
+    left: 40%;
+    z-index: 999;
+    width: 20%;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 0;
+    transition: all 500ms ease-out;
+    color: $white;
+
+}
+
+.cookieMonth.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.cookieMonth a {
+  text-decoration: underline
+}
+
+.cookieMonth .acceptcookieMonth {
+  margin-left: 10px;
+  vertical-align: baseline;
+}
+
+.cruzCookies{
+  float: right;
+  color: red;
+}
 
 

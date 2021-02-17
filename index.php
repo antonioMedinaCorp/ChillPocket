@@ -89,8 +89,12 @@ echo ' llega hasta aquí? '. $_SESSION['user_email_address'];
 <main>
 
 <section>
+<?php include("includes/cookieMonth.php") ?>
+</section>
+<section>
 <?php include("includes/cookies.php") ?>
 </section>
+
 
 <section>
 <?php include("includes/bodyDesign.php");?>
