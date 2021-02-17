@@ -30,7 +30,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=105">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/tenet.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">Tenet</h5>
@@ -157,7 +157,7 @@
         <div class="row">
 
             <div class="col-md-3 p-3">
-                <a href="theKingdom.php">
+                <a href="paginaObra.php?id=101">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
@@ -171,13 +171,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theKingdom.php">
+                <a href="paginaObra.php?id=111">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/comic2.jpeg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">La liga de los hombres extraoridinarios</h5>
+                                <p class="card-text">Clásicos de la literatura en el cómic</p>
                             </div>
                         </div>
                     </div>
@@ -185,13 +185,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theKingdom.php">
+                <a href="paginaObra.php?id=112">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Kingdom Coming</h5>
-                                <p class="card-text">El legado de los héroes</p>
+                                <h5 class="card-title">Flashpoing</h5>
+                                <p class="card-text">Nuevo origen del universo DC</p>
                             </div>
                         </div>
                     </div>
@@ -199,13 +199,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="theKingdom.php">
+                <a href="paginaObra.php?id=113">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/comic2.jpeg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/capucha.jpeg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">Capucha Roja</h5>
+                                <p class="card-text">Cuando Robin se emancipa</p>
                             </div>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
         <div class="row">
 
             <div class="col-md-3 p-3">
-                <a href="principito.php">
+                <a href="paginaObra.php?id=103">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/portadaPrincipito(2).jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
@@ -241,13 +241,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="principito.php">
+                <a href="paginaObra.php?id=115">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/Tolkien.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">El señor de los anillos</h5>
+                                <p class="card-text">Viaja a la tierra media</p>
                             </div>
                         </div>
                     </div>
@@ -255,13 +255,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="principito.php">
+                <a href="paginaObra.php?id=116">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/libro1.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/lospilaresjpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">Los pilares de la tierra</h5>
+                                <p class="card-text">Obra maestra de Follet</p>
                             </div>
                         </div>
                     </div>
@@ -269,13 +269,13 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="principito.php">
+                <a href="paginaObra.php?id=114">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/libro2.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/el-fuego-invisible.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">Título de la serie</h5>
-                                <p class="card-text">Subtítulo</p>
+                                <h5 class="card-title">El fuego invisible</h5>
+                                <p class="card-text">Premio Planeta 2017</p>
                             </div>
                         </div>
                     </div>
