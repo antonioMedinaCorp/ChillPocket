@@ -103,7 +103,8 @@ if (isset($_POST['logout'])) {
             <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
                 <button class="btn btn-danger text-light" data-toggle="modal" data-target="#myModal2" ><i class="fas fa-brain"></i>&nbsp;Administrador</button>
                 <?php } ?>    
-            <?php if (isset($_SESSION['user_email_address'])) { ?>
+            <?php //echo session_status(); 
+            if (isset($_SESSION['user_email_address'])) { ?>
                  <!-- The Modal -->
                  <div class="modal fade" id="myModal2">
                     <div class="modal-dialog modal-md">

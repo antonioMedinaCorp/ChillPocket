@@ -1,7 +1,8 @@
-<?php include("includes/a_config.php");
+<?php 
+include("includes/a_config.php");
+
 require_once "./model/UsuarioController.php";
 include "captcha/recaptchalib.php";
-
 
 
 if (isset($_GET["code"])) {
@@ -45,7 +46,17 @@ if (isset($_GET["code"])) {
   }
 }
 
-?>
+$control = UsuarioController::findUserByUsername($_SESSION['user_email_address']);
+if ($control != null){
+  header("location:index.php");
+}else{
+  ?>
+  
+  
+  
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -57,10 +68,18 @@ if (isset($_GET["code"])) {
   $existeUsu = false;
   $mensaje = "";
 
-
-
-
-
+  if (isset($_POST['captcha'])) {
+    echo 'el captcha post   '.$_POST['captcha'];
+    echo 'el captcha seson  '.$_SESSION['captcha_text'];
+    if ( $_SESSION['captcha_text'] == $_POST['captcha']) {
+      $incorrecto = false;
+      echo "Captcha valido";
+    } else {
+      echo "Captcha incorrecto de los cojones";
+      $incorrecto = true;
+      session_destroy();
+    }
+  }
 
   if (isset($_POST['registrar']) && $_POST['pass'] == $_POST['pass2'] && $incorrecto == false) {
     $u = UsuarioController::findUserByUsername($_POST['email']);
@@ -74,34 +93,15 @@ if (isset($_GET["code"])) {
       $u1 = new Usuario();
       $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
       UsuarioController::newUser($u1);
-      $u1 = UsuarioController::findUserByUsername($_POST['email']);
       $_SESSION['id'] = $u1->id;
-      $_SESSION['user_email_address'] = $_POST['email'];
-      $_SESSION['user_first_name'] = $_POST['name'];
+      $_SESSION['user_email_address'] = $u1->user_name;
+      $_SESSION['user_first_name'] = $u1->name;
       header("location:index.php");
     } else {
       $mensaje = "El usuario ya existe en sistema";
     }
   }
 
-  
-  //if (!isset($_SESSION['captcha'])) {
-  //  $string_lenght = 6;
-  //  $captcha_string = generar_cadena($caracteres_permitidos, $string_lenght);
-  //  $_SESSION['captcha'] = $captcha_string;
-  //}
-  if (isset($_POST['code'])) {
-
-    if ($_POST['code'] == $_SESSION['captcha']) {
-      $incorrecto = false;
-
-      echo "Captcha valido";
-    } else {
-      echo "Captcha incorrecto de los cojones";
-      $incorrecto = true;
-      session_destroy();
-    }
-  }
 
   ?>
 </head>
@@ -437,7 +437,7 @@ if (isset($_GET["code"])) {
               }  ?>
               <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
               <p class="we text-center" style="font-size:x-large;"><img src="generatecaptcha.php"></p>
-              <p><input type="text" name="code" class="form-control form-control-user" required>
+              <p><input type="text" name="captcha" class="form-control form-control-user" required>
               <p class="we text-center"><?php if ($incorrecto == true) {
                                           echo "Captcha inocorrecto";
                                         } ?></p>
@@ -485,3 +485,5 @@ if (isset($_GET["code"])) {
   </script>
 
 </body>
+</html>
+<?php }?>
