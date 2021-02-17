@@ -82,7 +82,7 @@ require_once "./model/UsuarioController.php";
 <body>
 <?php include("includes/navbar.php");
 // prueba
-echo ' llega hasta aquí? '. $_SESSION['user_email_address'];
+//echo ' llega hasta aquí? '. $_SESSION['user_email_address'];
 
 ?>
 <?php include("includes/design-top.php");?>
