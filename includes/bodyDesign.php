@@ -58,7 +58,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=107">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/theProffesor.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/theProffesor.jpeg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">The proffesor and the madman</h5>
@@ -115,7 +115,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=109">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/theWither.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/theWitcher.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">The witcher</h5>
@@ -257,7 +257,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=116">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/lospilaresjpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/lospilares.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">Los pilares de la tierra</h5>
