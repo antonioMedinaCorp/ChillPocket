@@ -18,13 +18,9 @@ require_once './model/UsuarioController.php';
     } else {
         $page = $_GET['page'];
         
-    } 
-    explode(" ", $page);
-        
-        if($page==1){
-            $start = ($page-1)*$limit;
-        }else
-        $start = ($page[0]-1)*$limit;
+    }    
+     $start = ($page-1)*$limit;
+       
     
     
 
@@ -83,7 +79,7 @@ require_once './model/UsuarioController.php';
         
                     <?php for($p=1; $p<=$total_pages; $p++){?>
                         
-                        <li class="<?= $page == $p ? 'active' : ''; ?>"><a class="page-link" href="<?= '?page='.$p; ?> page-item"><?= $p; ?></a></li>
+                        <li class="<?= $page == $p ? 'active' : ''; ?>"><a class="page-link" href="<?= '?page='.$p; ?>"><?= $p; ?></a></li>
                     <?php }?>
                 <li class="page-item"><a class="page-link" href="?page=<?= $total_pages; ?>">Last</a></li>
             </ul>
