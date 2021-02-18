@@ -45,15 +45,17 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
   <div class="container" id="center">
     <h4>Sinopsis</h4>
+    <div class="mb-2">
     <?php echo $obra->sinopsis; ?>
-
+    </div>
 
 
     <iframe width="560" height="315" src="<?php echo $obra->video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <h4>Crítica</h4>
+    <div class="mt-2 mb-2">
     <?php echo $obra->critica; ?>
-
+    </div>
 
     <section class="rating">
 
