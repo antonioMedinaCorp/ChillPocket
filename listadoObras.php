@@ -23,7 +23,7 @@ if (isset($_POST['borrar'])) {
 <body>
 
 <?php 
-$limit = 5;
+$limit = 50;
 $total_pages= ObraController::calculoDeRowsPorPaginas($limit);
 if(!isset($_GET['page'])){
     $page = 1;
@@ -88,7 +88,7 @@ explode(" ", $page);
         
                     <?php for($p=1; $p<=$total_pages; $p++){?>
                         
-                        <li class="<?= $page == $p ? 'active' : ''; ?>"><a class="page-link" href="<?= '?page='.$p; ?> page-item"><?= $p; ?></a></li>
+                        <li class="<?= $page == $p ? 'active' : ''; ?>"><a class="page-link" href="<?='?page='.$p;?> page-item"><?= $p; ?></a></li>
                     <?php }?>
                 <li class="page-item"><a class="page-link" href="?page=<?= $total_pages; ?>">Last</a></li>
             </ul>
