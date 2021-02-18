@@ -63,21 +63,32 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
         <div class="stars col-6">
           <strong>Puntos Criticos: <?php echo round($obra->point_adm); ?></strong>
           <span data-stars="num4.4">
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+            <?php
+            $counterADM = 0;
+            for ($i = 0; $i < $obra->point_adm; $i++) {
+              echo '<i class="fas fa-star"></i>';
+              $counterADM++;
+            }
+            for ($i = $counterADM; $i < 5; $i++) {
+              echo '<i class="far fa-star"></i>';
+            }
+            ?>
           </span>
         </div>
         <div class="stars users col-6">
           <strong>Puntos Usuarios: <?php echo round($obra->point_avg); ?> </strong>
           <span data-stars="num4">
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="fas fa-star" aria-hidden="true"></i>
-            <i class="far fa-star" aria-hidden="true"></i>
-            <i class="far fa-star" aria-hidden="true"></i>
+            <?php
+            $counterAVG = 0;
+            for ($i = 0; $i < $obra->point_avg; $i++) {
+              echo '<i class="fas fa-star"></i>';
+              $counterAVG++;
+            }
+            for ($i = $counterAVG; $i < 5; $i++) {
+              echo '<i class="far fa-star"></i>';
+            }
+
+            ?>
           </span>
         </div>
       </div>
@@ -85,6 +96,8 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     </section>
 
     <section id="valoraciones">
+    
+            <h4>Valoraciones</h4>
       <div class="row">
         <?php
         if (!empty($valoraciones)) {
@@ -96,7 +109,17 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
             <div class="card bg-light h-100 valoracion">
               <div class="card-img-top bg-dark h-25">
                 <div class="card-title text-light">
-                  Puntuación: <?php echo $val->point ?>
+                  Puntuación:
+                  <?php
+                  $counterVAL = 0;
+                  for ($i = 0; $i < $val->point; $i++) {
+                    echo '<i class="fas fa-star"></i>';
+                    $counterVAL++;
+                  }
+                  for ($i = $counterVAL; $i < 5; $i++) {
+                    echo '<i class="far fa-star"></i>';
+                  }
+                  ?>
                 </div>
               </div>
 
@@ -107,10 +130,15 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
                 if (isset($_SESSION['id']) && isset($_SESSION['rol'])) {
                   if ($val->id_usu == $_SESSION['id'] || $_SESSION['rol'] == 'admin') {
                 ?>
-                    <form action="" method="post">
-                      <input type="hidden" name="valoracionId" value="<?php echo $val->id ?>">
-                      <button type="submit" name="borrarValoracion" class="btn btn-danger">Eliminar &nbsp;<i class="fas fa-trash-alt"></i></button>
-                    </form>
+                    <div class="row">
+                      <div class="col-md-4 ml-auto">
+                        <form action="" method="post">
+                          <input type="hidden" name="valoracionId" value="<?php echo $val->id ?>">
+                          <button type="submit" name="borrarValoracion" class="btn btn-danger ml-auto">Eliminar &nbsp;<i class="fas fa-trash-alt"></i></button>
+                        </form>
+                      </div>
+                    </div>
+
                 <?php
                   }
                 }
@@ -133,6 +161,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     <hr width=70%>
     <!-- VALORACIONES -->
     <section>
+      
       <?php if (isset($_SESSION['id'])) { ?>
         <form action="" method="POST" id="formCritica">
           <div class="row">
