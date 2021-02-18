@@ -23,7 +23,7 @@ if (isset($_POST['borrar'])) {
 <body>
 
 <?php 
-$limit = 10;
+$limit = 5;
 $total_pages= ObraController::calculoDeRowsPorPaginas($limit);
 if(!isset($_GET['page'])){
     $page = 1;
