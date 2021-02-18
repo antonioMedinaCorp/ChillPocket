@@ -98,7 +98,9 @@ if(isset($_POST['enviar'])){
 
             <input type="hidden" name="critica" id="quill-html">
             <div class="quill-container w-50 mx-auto  ">
-                <div id="quillObra" style="height: 500px;"></div>
+                <div id="quillObra" style="height: 500px;" >
+                    <?php echo $obra->$critica; ?>
+                </div>
             </div>
 
             <div class="row pt-5 pb-5">
