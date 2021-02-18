@@ -63,7 +63,7 @@ if (isset($_POST['borrar'])) {
                                     </form>
                                 </div>
                                 <div class="col">
-                                    <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal2">
+                                    <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal3">
                                         Editar&nbsp;<i class="far fa-edit"></i></button>
                                 </div>
 
@@ -71,7 +71,7 @@ if (isset($_POST['borrar'])) {
                             </div>
 
                             <!-- The Modal -->
-                            <div class="modal fade" id="myModal2">
+                            <div class="modal fade" id="myModal3">
                                 <div class="modal-dialog modal-md">
                                     <div class="modal-content">
 
