@@ -86,8 +86,19 @@ class ValoracionController{
             $conex = new Conexion();
             $result = $conex->query("select * from valoracion WHERE id_usu='$id'");
            
+            
+            if ($result->rowCount()) {
 
-            return $result;
+                while($reg = $result->fetchObject()){
+                    $valoracion = new Valoracion($reg->id, $reg->id_usu, $reg->id_obra, $reg->point, $reg->texto);
+
+                    $ValArray[] = clone($valoracion);
+                }
+
+                return $ValArray;
+            }
+
+            //return $result;
         
             unset($result);
             unset($conex);

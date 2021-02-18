@@ -32,11 +32,13 @@ if (isset($_POST['borrar'])) {
 
 
         $valoraciones = ValoracionController::findAllValoracionesByIdUsuario($_SESSION['id']);
-        if ($valoraciones->rowCount()) {
-            while ($row = $valoraciones->fetchObject()) {
+        
+            foreach($valoraciones as $v){
+                $valoracion = $v;
+           // while ($row = $valoraciones->fetchObject()) {
         ?>
                 <?php
-                $titulo = ObraController::findByID($row->id_obra);
+                $titulo = ObraController::findByID($valoracion->id_obra);
 
                 ?>
                 <div class="container">
@@ -49,29 +51,33 @@ if (isset($_POST['borrar'])) {
                         <div class="card-body">
 
                             <p class="card-text">
-                                <?php echo $row->point; ?>
+                                <?php echo $valoracion->point; ?>
                             </p>
                             <p class="card-text">
-                                <?php echo $row->texto; ?>
+                                <?php echo $valoracion->texto; ?>
                             </p>
                             <div class="row">
                                 <div class="col">
                                     <form action="" method="post">
-                                        <input type="hidden" name="id" value="<?php echo $row->id; ?>">
+                                        <input type="hidden" name="id" value="<?php echo $titulo->id; ?>">
                                         <button type="submit" class="btn btn-danger" name="borrar">
                                             Borrar&nbsp;<i class="far fa-trash-alt"></i></button>
                                     </form>
                                 </div>
                                 <div class="col">
-                                    <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal2">
-                                        Editar&nbsp;<i class="far fa-edit"></i></button>
+                                
+                                        <input type="hidden" name="id" value="<?php echo $titulo->id; ?>">
+                                        <button type="button" class="btn btn-success text-light" data-toggle="modal" data-target="#myModal<?php echo $valoracion->id?>">
+                                            Editar&nbsp;<i class="far fa-edit"></i></button>
+                                    
+
                                 </div>
 
 
                             </div>
 
                             <!-- The Modal -->
-                            <div class="modal fade" id="myModal2">
+                            <div class="modal fade" id="myModal<?php echo $valoracion->id?>">
                                 <div class="modal-dialog modal-md">
                                     <div class="modal-content">
 
@@ -84,14 +90,14 @@ if (isset($_POST['borrar'])) {
                                         <!-- Modal body -->
                                         <div class="modal-body" id="center">
                                             <form action="" method="post">
-                                                <input type="hidden" name="id" value="<?php echo $row->id; ?>">
+                                              <input type="hidden" name="id" value="<?php echo $valoracion->id; ?>">           
                                                 <input type="hidden" name="id_usu" value="<?php echo $_SESSION['id']; ?>">
-                                                <input type="hidden" name="id_obra" value="<?php echo $row->id_obra; ?>">
+                                                <input type="hidden" name="id_obra" value="<?php echo $valoracion->id_obra; ?>">
                                                 <div class="form-group">
-                                                    <input type="number" name="point" value="<?php echo $row->point; ?>">
+                                                    <input type="number" name="point" value="<?php echo $valoracion->point; ?>">
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="text" name="texto" value="<?php echo $row->texto; ?>">
+                                                    <input type="text" name="texto" value="<?php echo $valoracion->texto; ?>">
                                                 </div>
                                                 <button type="submit" class="btn btn-success  text-light" name="editar">Editar</button>
 
@@ -113,7 +119,7 @@ if (isset($_POST['borrar'])) {
 
         <?php
             }
-        }
+        
 
 
         ?>
@@ -122,6 +128,7 @@ if (isset($_POST['borrar'])) {
     <div>
         <?php include("includes/footer.php"); ?>
     </div>
+
 </body>
 
 </html>
