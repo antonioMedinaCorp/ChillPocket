@@ -46,7 +46,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
   <div class="container" id="center">
     <h4>Sinopsis</h4>
     <div class="mb-2">
-    <?php echo $obra->sinopsis; ?>
+      <?php echo $obra->sinopsis; ?>
     </div>
 
 
@@ -54,7 +54,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
     <h4>Crítica</h4>
     <div class="mt-2 mb-2">
-    <?php echo $obra->critica; ?>
+      <?php echo $obra->critica; ?>
     </div>
 
     <section class="rating">
@@ -94,99 +94,101 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
         ?>
             <div class="card bg-light h-100 valoracion">
-            <div class="card-img-top bg-dark h-25">
-            <div class="card-title text-light">
-                Puntuación: <?php echo $val->point ?>
+              <div class="card-img-top bg-dark h-25">
+                <div class="card-title text-light">
+                  Puntuación: <?php echo $val->point ?>
+                </div>
               </div>
-            </div>
 
               <div class="card-body ">
                 <?php echo $val->texto ?>
                 <?php
-                
-                if ($val->id_usu == $_SESSION['id'] || $_SESSION['rol'] == 'admin') {
+
+                if (isset($_SESSION['id']) && isset($_SESSION['rol'])) {
+                  if ($val->id_usu == $_SESSION['id'] || $_SESSION['rol'] == 'admin') {
                 ?>
-                  <form action="" method="post">
-                    <input type="hidden" name="valoracionId" value="<?php echo $val->id ?>">
-                    <button type="submit" name="borrarValoracion" class="btn btn-danger">Eliminar &nbsp;<i class="fas fa-trash-alt"></i></button>
-                  </form>
+                    <form action="" method="post">
+                      <input type="hidden" name="valoracionId" value="<?php echo $val->id ?>">
+                      <button type="submit" name="borrarValoracion" class="btn btn-danger">Eliminar &nbsp;<i class="fas fa-trash-alt"></i></button>
+                    </form>
                 <?php
+                  }
                 }
                 ?>
 
 
+              </div>
             </div>
-      </div>
-  <?php
+        <?php
             echo '</div>';
           }
         }
-  ?>
+        ?>
 
-  </div>
+      </div>
 
 
-  </section>
+    </section>
 
-  <hr width=70%>
-  <!-- VALORACIONES -->
-  <section>
-    <?php if (isset($_SESSION['id'])) { ?>
-      <form action="" method="POST" id="formCritica">
-        <div class="row">
-          <div class=" w-100 d-flex flex-row ">
+    <hr width=70%>
+    <!-- VALORACIONES -->
+    <section>
+      <?php if (isset($_SESSION['id'])) { ?>
+        <form action="" method="POST" id="formCritica">
+          <div class="row">
+            <div class=" w-100 d-flex flex-row ">
 
-            <div class="col-md-12">
-              <div class="row w-75 mx-auto pl-5">
-                <div class="col-md-4">
-                  <h3>Deja tu opinión</h3>
+              <div class="col-md-12">
+                <div class="row w-75 mx-auto pl-5">
+                  <div class="col-md-4">
+                    <h3>Deja tu opinión</h3>
+                  </div>
+
+                  <div class="col-md-5 ml-auto pl-5">
+
+                    <span class="star-cb-group">
+                      <input type="radio" id="rating-5" name="rating" value="5" />
+                      <label for="rating-5"></i></label>
+                      <input type="radio" id="rating-4" name="rating" value="4" />
+                      <label for="rating-4"></label>
+                      <input type="radio" id="rating-3" name="rating" value="3" />
+                      <label for="rating-3"></label>
+                      <input type="radio" id="rating-2" name="rating" value="2" />
+                      <label for="rating-2"></label>
+                      <input type="radio" id="rating-1" name="rating" value="1" class="star-cb-clear" />
+                      <label for="rating-1"></label>
+
+                    </span>
+                  </div>
                 </div>
 
-                <div class="col-md-5 ml-auto pl-5">
 
-                  <span class="star-cb-group">
-                    <input type="radio" id="rating-5" name="rating" value="5" />
-                    <label for="rating-5"></i></label>
-                    <input type="radio" id="rating-4" name="rating" value="4" />
-                    <label for="rating-4"></label>
-                    <input type="radio" id="rating-3" name="rating" value="3" />
-                    <label for="rating-3"></label>
-                    <input type="radio" id="rating-2" name="rating" value="2" />
-                    <label for="rating-2"></label>
-                    <input type="radio" id="rating-1" name="rating" value="1" class="star-cb-clear" />
-                    <label for="rating-1"></label>
-
-                  </span>
+                <div class="mx-auto" style="max-width: 700px;">
+                  <div id="editorCriticas" style="height: 350px;">
+                  </div>
                 </div>
               </div>
+            </div>
 
 
-              <div class="mx-auto" style="max-width: 700px;">
-                <div id="editorCriticas" style="height: 350px;">
-                </div>
-              </div>
+          </div>
+
+          <input type="hidden" name="quill-html" id="quill-html">
+          <div class="row pt-5 pb-5">
+            <div class="col-md-12 ">
+              <span class="h4">Enviar opinión</span>
+              <button type="submit" name="enviar" class="btn btn-success text-light ml-5" onclick="submitCriticaConQuill()">Guardar</button>
             </div>
           </div>
 
 
-        </div>
+        </form>
 
-        <input type="hidden" name="quill-html" id="quill-html">
-        <div class="row pt-5 pb-5">
-          <div class="col-md-12 ">
-            <span class="h4">Enviar opinión</span>
-            <button type="submit" name="enviar" class="btn btn-success text-light ml-5" onclick="submitCriticaConQuill()">Guardar</button>
-          </div>
-        </div>
+      <?php
+      } ?>
 
 
-      </form>
-
-    <?php
-    } ?>
-
-
-  </section><!-- END VALORACIONES -->
+    </section><!-- END VALORACIONES -->
 
 
 

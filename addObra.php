@@ -62,7 +62,7 @@ if(isset($_POST['enviar'])){
 
             <div class="row mb-2">
                 <div class="col-sm-6 mt-5 mx-auto">
-                    <input type="text" class="form-control mt-2" name="id_creator" value="<?php echo $_SESSION['id'];?>" disabled>
+                    <input type="hidden"  name="id_creator" value="<?php echo $_SESSION['id'];?>">
                     <input type="text" class="form-control mt-2" name="titulo" placeholder="Título" required>
                     <input type="text" class="form-control mt-2" name="subtitulo" placeholder="Subtítulo" required>
                     <input type="text" class="form-control mt-2" name="video" placeholder="Enlace del trailer" required>
