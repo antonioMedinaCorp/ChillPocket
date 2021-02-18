@@ -171,12 +171,12 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="paginaObra.php?id=111">
+                <a href="paginaObra.php?id=155">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/comic2.jpeg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
-                                <h5 class="card-title">La liga de los hombres extraoridinarios</h5>
+                                <h5 class="card-title">V de Vendetta</h5>
                                 <p class="card-text">Clásicos de la literatura en el cómic</p>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=112">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
+                        <img class="card-img-top img-fluid" src=media/images/flashpoint-portada.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">Flashpoing</h5>
@@ -201,7 +201,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=113">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/capucha.jpeg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/btCapR.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">Capucha Roja</h5>
