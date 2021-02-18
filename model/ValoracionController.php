@@ -103,8 +103,8 @@ class ValoracionController{
       
         try {
             $conex = new Conexion();
-            $result = $conex->query("insert into valoracion (id_usu, id_obra, point, texto) values ($id_usu,$id_obra,$point,'$texto')");
-            
+            $result = $conex->prepare("insert into valoracion (id_usu, id_obra, point, texto) values (?,?,?,?)");
+            $result->execute([$id_usu, $id_obra, $point, $texto]);
 
             
             unset($result);
