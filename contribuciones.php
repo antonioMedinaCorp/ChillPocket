@@ -65,11 +65,11 @@ if (isset($_POST['borrar'])) {
                                     </form>
                                 </div>
                                 <div class="col">
-                                    <form action="" method="post">
+                                
                                         <input type="hidden" name="id" value="<?php echo $titulo->id; ?>">
-                                        <button type="button" class="btn btn-success text-light" data-toggle="modal" data-target="#myModal3">
+                                        <button type="button" class="btn btn-success text-light" data-toggle="modal" data-target="#myModal<?php echo $valoracion->id?>">
                                             Editar&nbsp;<i class="far fa-edit"></i></button>
-                                    </form>
+                                    
 
                                 </div>
 
@@ -77,7 +77,7 @@ if (isset($_POST['borrar'])) {
                             </div>
 
                             <!-- The Modal -->
-                            <div class="modal fade" id="myModal3">
+                            <div class="modal fade" id="myModal<?php echo $valoracion->id?>">
                                 <div class="modal-dialog modal-md">
                                     <div class="modal-content">
 
