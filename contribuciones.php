@@ -90,8 +90,7 @@ if (isset($_POST['borrar'])) {
                                         <!-- Modal body -->
                                         <div class="modal-body" id="center">
                                             <form action="" method="post">
-                                            <!--<input type="hidden" name="id" value="<?php echo $valoracion->id; ?>">-->
-                                                
+                                              <input type="hidden" name="id" value="<?php echo $valoracion->id; ?>">           
                                                 <input type="hidden" name="id_usu" value="<?php echo $_SESSION['id']; ?>">
                                                 <input type="hidden" name="id_obra" value="<?php echo $valoracion->id_obra; ?>">
                                                 <div class="form-group">
