@@ -43,7 +43,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     </div>
   </div>
 
-  <div class="container" id="center">
+  <div class="container mb-5" id="center">
     <h4>Sinopsis</h4>
     <div class="mb-2">
       <?php echo $obra->sinopsis; ?>
