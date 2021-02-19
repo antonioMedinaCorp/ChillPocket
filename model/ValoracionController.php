@@ -114,8 +114,8 @@ class ValoracionController{
       
         try {
             $conex = new Conexion();
-            $result = $conex->query("insert into valoracion (id_usu, id_obra, point, texto) values ($id_usu,$id_obra,$point,'$texto')");
-            
+            $result = $conex->prepare("insert into valoracion (id_usu, id_obra, point, texto) values (?,?,?,?)");
+            $result->execute([$id_usu, $id_obra, $point, $texto]);
 
             
             unset($result);
@@ -145,15 +145,21 @@ class ValoracionController{
     public static function delete($id){
         try{
             $conex = new Conexion();
+            $conex2 = new Conexion(); 
+            $conex3 = new Conexion();
 
             $valoracion = ValoracionController::findByID($id);
 
-            $avg = $conex->exec('select avg(point) from valoracion where id_obra='.$valoracion->id_obra);
-
-            $conex->exec("UPDATE obra o SET `point_avg` = " . $avg ." WHERE (`id` = " . $valoracion->id_obra . ");");
-
-
             $conex -> exec("DELETE from valoracion WHERE id=" . $valoracion->id_obra);
+
+            $avg = $conex2->exec('select avg(point) from valoracion where id_obra='.$valoracion->id_obra);
+
+            $avgRound = round($avg);
+
+            $conex3->exec("UPDATE obra o SET `point_avg` =" . $avgRound ." WHERE (`id` =" . $valoracion->id_obra . ");");
+
+
+            
 
             
         }catch(PDOException $ex){
