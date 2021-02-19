@@ -157,7 +157,7 @@
         <div class="row">
 
             <div class="col-md-3 p-3">
-                <a href="paginaObra.php?id=101">
+                <a href="paginaObra.php?id=180">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/comic.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
