@@ -128,7 +128,7 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="paginaObra.php?id=110">
+                <a href="paginaObra.php?id=177">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/tMIHC.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
