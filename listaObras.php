@@ -51,7 +51,7 @@ $linkIndex = 0;
 
       
     ?>
-      <div class="row mt-5 pb-5 mb-5">
+      <div class="row mt-5">
 
 
         <div class="col-sm-12">
@@ -133,9 +133,7 @@ $linkIndex = 0;
 
 
   </div> <!-- DIV CONTAINER -->
-<div>
-  
-</div>
+
   <?php include("includes/footer.php"); ?>
 
 </body>
