@@ -224,7 +224,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
   </div>
 
 
-  <div>
+  <div  class="pt-5">
     <?php include("includes/footer.php"); ?>
   </div>
   <!-- Initialize Quill editor -->
