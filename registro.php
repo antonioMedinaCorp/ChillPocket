@@ -100,7 +100,7 @@ if ($control != null) {
         $_SESSION['user_email_address'] = $usuario->user_name;
         $_SESSION['user_first_name'] = $usuario->name;
         $_SESSION['rol'] = $usuario->rol;
-       // header("location:index.php");
+        header("location:index.php");
 
       } else {
         $mensaje = "El usuario ya existe en sistema";
