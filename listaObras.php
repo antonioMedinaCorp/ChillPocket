@@ -132,10 +132,10 @@ $linkIndex = 0;
 
 
 
-<?php include("includes/footer.php"); ?>
+    <?php include("includes/footer.php"); ?>
   </div> <!-- DIV CONTAINER -->
 
-  <?php include("includes/footer.php"); ?>
+  
 
 </body>
 
