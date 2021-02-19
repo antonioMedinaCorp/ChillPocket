@@ -11,6 +11,7 @@ function generate_string($input, $strength = 10)
     }
     return $random_string;
 }
+
 $image = imagecreatetruecolor(200, 50);
 imageantialias($image, true);
 $colors = [];
@@ -20,6 +21,7 @@ $blue = rand(125, 175);
 for ($i = 0; $i < 5; $i++) {
     $colors[] = imagecolorallocate($image, $red - 20 * $i, $green - 20 * $i, $blue - 20 * $i);
 }
+
 imagefill($image, 0, 0, $colors[0]);
 for ($i = 0; $i < 10; $i++) {
     imagesetthickness($image, rand(2, 10));
@@ -32,6 +34,7 @@ $textcolors = [$black, $white];
 $fonts = [dirname(__FILE__) . '\fonts\Acme-Regular.ttf', dirname(__FILE__) . '\fonts\Ubuntu-Regular.ttf'];
 $string_length = 6;
 $captcha_string = generate_string($permitted_chars, $string_length);
+
 $_SESSION['captcha_text'] = $captcha_string;
 for ($i = 0; $i < $string_length; $i++) {
     $letter_space = 170 / $string_length;
