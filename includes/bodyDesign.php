@@ -28,7 +28,7 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="paginaObra.php?id=105">
+                <a href="paginaObra.php?id=174">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/peli1.jpg alt="">
                         <div class="card-img-overlay d-flex flex-column">
@@ -56,7 +56,7 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="paginaObra.php?id=107">
+                <a href="paginaObra.php?id=176">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/professor.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
@@ -229,7 +229,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=103">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/portadaPrincipito(2).jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/EP.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">El principito</h5>
@@ -243,7 +243,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=115">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/Tolkien.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/ESDLA.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">El señor de los anillos</h5>
@@ -257,7 +257,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=116">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/lospilares.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/LPDLT.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">Los pilares de la tierra</h5>
@@ -271,7 +271,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=114">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/el-fuego-invisible.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/EFI.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">El fuego invisible</h5>

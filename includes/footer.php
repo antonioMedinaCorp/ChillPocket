@@ -1,4 +1,4 @@
-<footer class="footer bg-dark">
+<footer class="footer bg-dark fixed-bottom">
   <div class="container">
     <ul class="nav justify-content-center">
 
