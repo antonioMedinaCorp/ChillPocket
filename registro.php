@@ -94,12 +94,14 @@ if ($control != null) {
         $u1 = new Usuario();
         $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
         UsuarioController::newUser($u1);
+
         $usuario = UsuarioController::findUserByUsername($_POST['email']);
         $_SESSION['id'] = $usuario->id;
         $_SESSION['user_email_address'] = $usuario->user_name;
         $_SESSION['user_first_name'] = $usuario->name;
         $_SESSION['rol'] = $usuario->rol;
         header("location:index.php");
+
       } else {
         $mensaje = "El usuario ya existe en sistema";
       }
