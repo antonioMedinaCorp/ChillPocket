@@ -96,13 +96,13 @@ require_once "./model/UsuarioController.php";
 </section>
 
 
-<section>
+<section class="pb-5 mb-5">
 <?php include("includes/bodyDesign.php");?>
 </section>
 
 
 
-<div>
+<div class="pt-5">
 <?php include("includes/footer.php");?>
 </div>
 
