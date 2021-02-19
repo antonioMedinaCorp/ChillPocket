@@ -241,7 +241,7 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="paginaObra.php?id=115">
+                <a href="paginaObra.php?id=179">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/ESDLA.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
@@ -269,7 +269,7 @@
             </div>
 
             <div class="col-md-3 p-3">
-                <a href="paginaObra.php?id=114">
+                <a href="paginaObra.php?id=178">
                     <div class="card text-white text-bold">
                         <img class="card-img-top img-fluid" src=media/images/EFI.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
