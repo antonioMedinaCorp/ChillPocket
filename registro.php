@@ -94,11 +94,14 @@ if ($control != null) {
         $u1 = new Usuario();
         $u1->newUser(0, $_POST['email'], $_POST['pass'], $_POST['name'], $_POST['apel1'], $_POST['apel2'], $_POST['birth'], $_POST['country'], $_POST['cod_post'], $_POST['phone'], 'usuario');
         UsuarioController::newUser($u1);
-        $_SESSION['id'] = $u1->id;
-        $_SESSION['user_email_address'] = $u1->user_name;
-        $_SESSION['user_first_name'] = $u1->name;
-        $_SESSION['rol'] = $u1->rol;
-        header("location:index.php");
+
+        $usuario = UsuarioController::findUserByUsername($_POST['email']);
+        $_SESSION['id'] = $usuario->id;
+        $_SESSION['user_email_address'] = $usuario->user_name;
+        $_SESSION['user_first_name'] = $usuario->name;
+        $_SESSION['rol'] = $usuario->rol;
+       // header("location:index.php");
+
       } else {
         $mensaje = "El usuario ya existe en sistema";
       }
@@ -107,7 +110,7 @@ if ($control != null) {
 
     ?>
   </head>
-
+<?php  echo 'el id es '. $_SESSION['id']; ?>
   <body class="bg-login">
     <div class="container">
       <div class="row mt-2  login-container">
@@ -445,9 +448,6 @@ if ($control != null) {
                   <img src="generatecaptcha.php" alt="CAPTCHA"  class="captcha-image">
                   <i class="fas fa-sync-alt refresh-captcha"></i>
                 </p>
-
-                <!--<img src="includes/generatecaptcha.php" alt="CAPTCHA" class="captcha-image"><i class="fas fa-redo refresh-captcha"></i>
--->
 
                 <p><input type="text" name="captcha" class="form-control form-control-user" required>
                 <p class="we text-center"><?php if ($incorrecto == true) {
