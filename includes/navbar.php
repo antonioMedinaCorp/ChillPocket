@@ -20,6 +20,7 @@ if (isset($_POST['logout'])) {
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle h5" href="listaObras.php?tipo=pelicula" id="navbardrop" data-toggle="dropdown">
                     Películas</a>
+<!-- 
                 <div class="dropdown-menu bg-dark ">
                     <a class="dropdown-item text-light" href="listaObras.php?tipo=pelicula">Acción</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Animación</a>
@@ -34,10 +35,13 @@ if (isset($_POST['logout'])) {
                     <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Romántica</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=pelicula">Documental</a>
                 </div>
+-->
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle h5" href="listaObras.php?tipo=serie" id="navbardrop" data-toggle="dropdown">
                     Series</a>
+
+                    <!-- 
                 <div class="dropdown-menu bg-dark ">
                     <a class="dropdown-item text-light" href="listaObras.php?tipo=serie">Acción</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=serie">Animación</a>
@@ -52,12 +56,15 @@ if (isset($_POST['logout'])) {
                     <a class="dropdown-item" href="listaObras.php?tipo=serie">Romántica</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=serie">Documental</a>
                 </div>
+                -->
             </li>
 
             <!-- Menú desplegable -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">
                     Cómics</a>
+
+                    <!-- 
                 <div class="dropdown-menu bg-dark ">
                     <a class="dropdown-item text-light" href="listaObras.php?tipo=comic">Aventuras</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=comic">Bélico</a>
@@ -70,10 +77,12 @@ if (isset($_POST['logout'])) {
                     <a class="dropdown-item" href="listaObras.php?tipo=comic">Serie negra</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=comic">Underground</a>
                 </div>
+                -->
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle h5" href="listaObras.php?tipo=libro" id="navbardrop" data-toggle="dropdown">
                     Libros</a>
+                    <!-- 
                 <div class="dropdown-menu bg-dark ">
                     <a class="dropdown-item text-light" href="listaObras.php?tipo=libro">Aventuras</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=libro">Biográficos</a>
@@ -87,6 +96,7 @@ if (isset($_POST['logout'])) {
                     <a class="dropdown-item" href="listaObras.php?tipo=libro">Romances</a>
                     <a class="dropdown-item" href="listaObras.php?tipo=libro">Viajes</a>
                 </div>
+                -->
             </li>
             <li>
                 <a href="juegos.php" class="nav-link h5" id="navbardrop">Juegos</a>
