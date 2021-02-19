@@ -80,7 +80,7 @@ class UsuarioController
         try {
             $conex = new Conexion();
             $md5Pass = md5($u->password);
-            $ps = $conex->prepare("UPDATE usuario SET password = ? , name = ?, apel1 = ?, apel2 = ?, birthdate = ?, country = ?, cod_post = ?, phone = '$u->phone' WHERE id=?");
+            $ps = $conex->prepare("UPDATE usuario SET password = ? , name = ?, apel1 = ?, apel2 = ?, birthdate = ?, country = ?, cod_post = ?, phone = ? WHERE id=?");
             $ps->bindValue(1, $md5Pass);
             $ps->bindValue(2, $u->name);
             $ps->bindValue(3, $u->apel1);
@@ -93,7 +93,7 @@ class UsuarioController
             $ps->execute();
         } catch (PDOException $ex) {
             $errores[] = $ex->getMessage();
-            die('Error en bbdd');
+            die('Error en bbdd'.  $ex->getMessage());
         }
         unset($result);
         unset($conex);
@@ -106,7 +106,7 @@ class UsuarioController
             $result = $conex->query("DELETE FROM usuario WHERE id='$id'");
         } catch (PDOException $ex) {
             $errores[] = $ex->getMessage();
-            die('Error en bbdd');
+            die($ex->getMessage().' Error en bbdd');
         }
         unset($result);
         unset($conex);

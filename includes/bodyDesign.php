@@ -58,7 +58,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=107">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/theProffesor.jpeg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/professor.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">The proffesor and the madman</h5>
@@ -130,7 +130,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=110">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/serie2.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/tMIHC.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">The man in the high castle</h5>
@@ -187,7 +187,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=112">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/flashpoint-portada.jpg alt="">
+                        <img class="card-img-top img-fluid" src=media/images/FP.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">Flashpoing</h5>
@@ -201,7 +201,7 @@
             <div class="col-md-3 p-3">
                 <a href="paginaObra.php?id=113">
                     <div class="card text-white text-bold">
-                        <img class="card-img-top img-fluid" src=media/images/btCapR.png alt="">
+                        <img class="card-img-top img-fluid" src=media/images/BCR.png alt="">
                         <div class="card-img-overlay d-flex flex-column">
                             <div class="mt-auto">
                                 <h5 class="card-title">Capucha Roja</h5>
