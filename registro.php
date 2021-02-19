@@ -71,7 +71,7 @@ if ($control != null) {
 
     if (isset($_POST['captcha'])) {
       echo 'el captcha post   ' . $_POST['captcha'];
-      echo 'el captcha seson  ' . $_SESSION['captcha_text'];
+      echo 'el captcha sesion  ' . $_SESSION['captcha_text'];
       if ($_SESSION['captcha_text'] == $_POST['captcha']) {
         $incorrecto = false;
         echo "Captcha valido";
@@ -442,7 +442,7 @@ if ($control != null) {
                 <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
                 <p class="we text-center" style="font-size:x-large;">
                   <img src="generatecaptcha.php" alt="CAPTCHA"  class="captcha-image">
-                  <i class="fas fa-sync-alt" id="refresh-captcha"></i>
+                  <i class="fas fa-sync-alt refresh-captcha"></i>
                 </p>
 
                 <!--<img src="includes/generatecaptcha.php" alt="CAPTCHA" class="captcha-image"><i class="fas fa-redo refresh-captcha"></i>
@@ -497,9 +497,9 @@ if ($control != null) {
 
       // PARA EL BOTÓN REFRESCAR
 
-      //var refreshButton = document.querySelector(".refresh-captcha");
+      var refreshButton = document.querySelector(".refresh-captcha");
       //var refreshButton = document.getElementById('refresh-captcha');
-      var refreshButton = document.querySelector("#refresh-captcha");
+      //var refreshButton = document.querySelector("#refresh-captcha");
       refreshButton.onclick = function() {
         document.querySelector(".captcha-image").src = 'generatecaptcha.php?' + Date.now();
       }
