@@ -50,8 +50,8 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     </div>
 
     <div class="row">
-      <div class="col-md-12">
-      <iframe src="<?php echo $obra->video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="col-md-12 embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="<?php echo $obra->video; ?>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     
