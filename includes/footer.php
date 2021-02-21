@@ -1,5 +1,5 @@
 <div class="mt-5 mb-5"></div>
-<footer class="footer bg-dark fixed-bottom">
+<footer class="footer bg-dark fixed-bottom pt-1 pb-1">
   <div class="container">
     <ul class="nav justify-content-center">
 
