@@ -22,9 +22,9 @@ $linkIndex = 0;
 <body>
 
   
-
+<?php include("includes/navbar.php"); ?>
   <div class="container">
-  <?php include("includes/navbar.php"); ?>
+
     <h2>
     
     <?php
@@ -132,10 +132,10 @@ $linkIndex = 0;
 
 
 
-    <?php include("includes/footer.php"); ?>
+    
   </div> <!-- DIV CONTAINER -->
 
-  
+  <?php include("includes/footer.php"); ?>
 
 </body>
 
