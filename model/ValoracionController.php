@@ -166,7 +166,6 @@ class ValoracionController
     {
         try {
             $conex = new Conexion();
-            $conex2 = new Conexion();
             $conex3 = new Conexion();
 
             $valoracion = ValoracionController::findByID($id);

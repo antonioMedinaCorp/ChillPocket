@@ -100,8 +100,12 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     </section>
 
     <section id="valoraciones">
-    
-            <h4>Valoraciones</h4>
+    <?php
+    if(!empty($valoraciones) || isset($_SESSION['id']) ){
+      echo '<h4>Valoraciones</h4>';
+    }
+    ?>
+            
       <div class="row">
         <?php
         if (!empty($valoraciones)) {
