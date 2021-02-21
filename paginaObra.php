@@ -49,8 +49,12 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
       <?php echo $obra->sinopsis; ?>
     </div>
 
-
-    <iframe width="560" height="315" src="<?php echo $obra->video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="row">
+      <div class="col-md-12">
+      <iframe width="560" height="315" src="<?php echo $obra->video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
 
     <h4>Crítica</h4>
     <div class="mt-2 mb-2">
