@@ -181,7 +181,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
                     <h3>Deja tu opinión</h3>
                   </div>
 
-                  <div class="col-md-5 ml-auto pl-5">
+                  <div class="col-sm-6 ml-auto pl-5">
 
                     <span class="star-cb-group">
                       <input type="radio" id="rating-5" name="rating" value="5" />
