@@ -1,8 +1,14 @@
 <?php
+require_once "./model/UsuarioController.php";
 if (isset($_POST['logout'])) {
     session_destroy();
     
 }
+if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
+    $u = UsuarioController::findUserByUsername($_SESSION['user_email_address']);
+    $_SESSION['rol'] = $u->rol;
+}
+
 
 ?>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
