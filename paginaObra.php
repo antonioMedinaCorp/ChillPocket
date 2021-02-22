@@ -49,8 +49,12 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
       <?php echo $obra->sinopsis; ?>
     </div>
 
-
-    <iframe width="560" height="315" src="<?php echo $obra->video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="row">
+      <div class="col-md-12 embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="<?php echo $obra->video; ?>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
 
     <h4>Crítica</h4>
     <div class="mt-2 mb-2">
@@ -96,8 +100,12 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
     </section>
 
     <section id="valoraciones">
-    
-            <h4>Valoraciones</h4>
+    <?php
+    if(!empty($valoraciones) || isset($_SESSION['id']) ){
+      echo '<h4>Valoraciones</h4>';
+    }
+    ?>
+            
       <div class="row">
         <?php
         if (!empty($valoraciones)) {
@@ -173,7 +181,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
                     <h3>Deja tu opinión</h3>
                   </div>
 
-                  <div class="col-md-5 ml-auto pl-5">
+                  <div class="col-sm-6 ml-auto pl-5">
 
                     <span class="star-cb-group">
                       <input type="radio" id="rating-5" name="rating" value="5" />
