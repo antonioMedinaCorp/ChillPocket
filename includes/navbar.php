@@ -6,6 +6,8 @@ if (isset($_POST['logout'])) {
 }
 if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
     $u = UsuarioController::findUserByUsername($_SESSION['user_email_address']);
+    
+    $_SESSION['id'] = $u->id;
     $_SESSION['rol'] = $u->rol;
 }
 
