@@ -26,7 +26,7 @@
   
   <!-- Left and right controls -->
   <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-    <span class="carousel-control-prev-icon"><span class=”sr-only”>Anterior</span></span>
+    <span class="carousel-control-prev-icon"><span class="sr-only">Anterior</span></span>
   </a>
   <a class="carousel-control-next" href="#myCarousel" data-slide="next">
     <span class="carousel-control-next-icon"><span class="sr-only">Siguiente</span></span>
