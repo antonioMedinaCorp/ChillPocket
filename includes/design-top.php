@@ -29,7 +29,7 @@
     <span class="carousel-control-prev-icon"><span class=”sr-only”>Anterior</span></span>
   </a>
   <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-    <span class="carousel-control-next-icon"></span><span class="sr-only">Siguiente</span>
+    <span class="carousel-control-next-icon"><span class="sr-only">Siguiente</span></span>
   </a>
 </div>
 
