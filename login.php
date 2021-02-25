@@ -24,7 +24,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <?php include("includes/head-tag-contents.php");

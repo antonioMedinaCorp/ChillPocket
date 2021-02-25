@@ -2,7 +2,7 @@
 require_once './model/UsuarioController.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <?php include("includes/head-tag-contents.php"); ?>

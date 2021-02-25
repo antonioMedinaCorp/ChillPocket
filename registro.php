@@ -59,7 +59,7 @@ if ($control != null) {
 
 
   <!DOCTYPE html>
-  <html>
+  <html lang="en">
 
   <head>
     <?php include("includes/head-tag-contents.php"); ?>
