@@ -23,7 +23,7 @@ $valoraciones = ValoracionController::findAllValoracionesByObra($obra);
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <?php include("includes/head-tag-contents.php"); ?>
