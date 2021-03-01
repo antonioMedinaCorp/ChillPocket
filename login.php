@@ -32,7 +32,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
   //This is for check user has login into system by using Google account, if User not login into system then it will execute if block of code and make code for display Login link for Login using Google account.
   if (!isset($_SESSION['access_token'])) {
     //Create a URL to obtain user authorization
-    $login_button = '<a class="text-a" href="' . $google_client->createAuthUrl() . '"><div class="g-signin2" data-width="100" data-height="75" data-longtitle="true">Entra con<img src="https://img.icons8.com/clouds/100/000000/google-logo.png" class="g-signin3"/></div></a>';
+    $login_button = '<a class="text-a" href="' . $google_client->createAuthUrl() . '"><div class="g-signin2" data-width="100" data-height="75" data-longtitle="true">Entra con<img src="https://img.icons8.com/clouds/100/000000/google-logo.png" class="g-signin3" alt="Botón para entrar con google"/></div></a>';
   }
 
   ?>
