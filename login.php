@@ -45,7 +45,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
       <div class="col-lg-4 col-md-12 col-sm-12 " id="fill-round-div">
         <div class="p-5">
           <div class="text-center pb-4">
-            <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png"></a>
+            <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png" alt="Logo de Punto Crítico"></a>
           </div>
 
           <form class="user" action="" method="POST">
@@ -55,9 +55,11 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
                     echo $_POST["username"];
                   }
                   ?>">
+                  <span class="sr-only">Introducir email</span>
             </div>
             <div class="form-group">
               <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contrase&ntilde;a">
+              <span class="sr-only">Introducir password</span>
             </div>
             <span>
               <?php if (isset($_POST["username"])) {
