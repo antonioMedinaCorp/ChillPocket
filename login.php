@@ -50,7 +50,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
 
           <form class="user" action="" method="POST">
             <div class="form-group">
-              <input type="email" class="form-control form-control-user" name="username" id="usuOrEmail" aria-describedby="emailHelp" placeholder="Usuario o correo electr&oacute;nico" value="<?php
+              <input type="email" class="form-control form-control-user" name="username" id="usuOrEmail"  placeholder="Usuario o correo electr&oacute;nico" value="<?php
                   if (isset($_POST["username"])) {
                     echo $_POST["username"];
                   }
