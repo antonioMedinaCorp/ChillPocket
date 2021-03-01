@@ -183,7 +183,7 @@ if ($control != null) {
                                                                                                                                               ?>">
                   </div>
                   <div class="form-group">
-                    <select name="country" class="form-control" id="select" size="1" required>
+                    <select name="country" class="form-control" aria-label="Introducir pais" id="select" size="1" required>
                       <option value=" " selected> Selecciona un país</option>
                       <option value="AF">Afganistán</option>
                       <option value="AL">Albania</option>
