@@ -118,7 +118,7 @@ if ($control != null) {
         <div class="col-lg-6 col-md-12 col-sm-12 " id="fill-round-div">
           <div class="p-4">
             <div class="text-center pb-4">
-              <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png"></a>
+              <a href="/index.php"> <img id="logo-login" src="media/images/LogoSinFondoRecortado.png" alt="Logo de punto crítico"></a>
 
             </div>
             <div class="text-center pb-2">
@@ -129,7 +129,7 @@ if ($control != null) {
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <input type="email" class="form-control form-control-user" name="email" placeholder="Correo electrónico" required value="<?php
+                    <input type="email" class="form-control form-control-user" name="email" aria-label="Introducir email" placeholder="Correo electrónico" required value="<?php
                                                                                                                                               if (isset($_POST["email"])) {
                                                                                                                                                 echo $_POST["email"];
                                                                                                                                               }
@@ -139,13 +139,13 @@ if ($control != null) {
                                                                                                                                               ?>">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contraseña" required>
+                    <input type="password" class="form-control form-control-user" name="pass" aria-label="Introducir contraseña" id="pass" placeholder="Contraseña" required>
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-user" name="pass2" id="pass" placeholder="Repite la contraseña" required>
+                    <input type="password" class="form-control form-control-user" name="pass2" id="pass" aria-label="Introducir contraseña otra vez" placeholder="Repite la contraseña" required>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" name="name" placeholder="Nombre de usuario" required value="<?php
+                    <input type="text" class="form-control form-control-user" name="name" aria-label="Introducir nombre" placeholder="Nombre de usuario" required value="<?php
                                                                                                                                           if (isset($_POST["name"])) {
                                                                                                                                             echo $_POST["name"];
                                                                                                                                           }
@@ -156,7 +156,7 @@ if ($control != null) {
 
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" name="apel1" placeholder="Primer apellido" required value="<?php
+                    <input type="text" class="form-control form-control-user" name="apel1" aria-label="Introducir primer apellido" placeholder="Primer apellido" required value="<?php
                                                                                                                                           if (isset($_POST["apel1"])) {
                                                                                                                                             echo $_POST["apel1"];
                                                                                                                                           }
@@ -169,14 +169,14 @@ if ($control != null) {
 
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" name="apel2" placeholder="Segundo apellido" required value="<?php
+                    <input type="text" class="form-control form-control-user" name="apel2" aria-label="Introducir segundo apellido" placeholder="Segundo apellido" required value="<?php
                                                                                                                                           if (isset($_POST["apel2"])) {
                                                                                                                                             echo $_POST["apel2"];
                                                                                                                                           }
                                                                                                                                           ?>">
                   </div>
                   <div class="form-group">
-                    <input type="date" class="form-control form-control-user" name="birth" placeholder="Fecha de nacimiento" required value="<?php
+                    <input type="date" class="form-control form-control-user" name="birth" aria-label="Introducir fecha de nacimiento" placeholder="Fecha de nacimiento" required value="<?php
                                                                                                                                               if (isset($_POST["birth"])) {
                                                                                                                                                 echo $_POST["birth"];
                                                                                                                                               }
@@ -422,14 +422,14 @@ if ($control != null) {
                     </select>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" name="cod_post" placeholder="Código postal" required value="<?php
+                    <input type="text" class="form-control form-control-user" name="cod_post" aria-label="Introducir código postal" placeholder="Código postal" required value="<?php
                                                                                                                                           if (isset($_POST["cod_post"])) {
                                                                                                                                             echo $_POST["cod_post"];
                                                                                                                                           }
                                                                                                                                           ?>">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" name="phone" placeholder="Teléfono" required value="<?php
+                    <input type="text" class="form-control form-control-user" name="phone" aria-label="Introducir teléfono" placeholder="Teléfono" required value="<?php
                                                                                                                                   if (isset($_POST["phone"])) {
                                                                                                                                     echo $_POST["phone"];
                                                                                                                                   }
@@ -449,7 +449,7 @@ if ($control != null) {
                   <i class="fas fa-sync-alt refresh-captcha"></i>
                 </p>
 
-                <p><input type="text" name="captcha" class="form-control form-control-user" required>
+                <p><input type="text" name="captcha" aria-label="Introducir el captcha de la imagen" class="form-control form-control-user" required>
                 <p class="we text-center"><?php if ($incorrecto == true) {
                                             echo "Captcha inocorrecto";
                                           } ?></p>
