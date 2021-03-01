@@ -58,7 +58,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
                   <span class="sr-only">Introducir email</span>
             </div>
             <div class="form-group">
-              <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contrase&ntilde;a" alt="campo para password">
+              <input type="password" class="form-control form-control-user" name="pass" id="pass" placeholder="Contrase&ntilde;a" aria-label="Introducir contraseña">
               <span class="sr-only">Introducir password</span>
             </div>
             <span>
