@@ -16,10 +16,10 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
 <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
     <!-- Para introducir el logo-->
     <a class="navbar-brand" href="index.php">
-        <img src="media/images/LogoSinFondoRecortado.png" alt="Logo" id="imgNav">
+        <img src="media/images/LogoSinFondoRecortado.png" alt="logo de la pagina" id="imgNav">
     </a>
     <!-- Para colapsar el menú en un botón al disminuir la pantalla en dispositivos pequeños Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="menu button">
         <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Lo siguiente se mostrará colapsado en dispositivos pequeños (navbar-expand-md) -->
@@ -84,7 +84,7 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
                     </div>
                 </div>
 
-                <button class="btn btn-success text-light" data-toggle="modal" data-target="#myModal">
+                <button class="btn btn-success text-light font-weight-bold" data-toggle="modal" data-target="#myModal">
                 <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
                     <i class="fab fa-old-republic"></i>
                 <?php
@@ -126,7 +126,7 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
 
             <?php } else {
             ?>
-                <button class="btn btn-success text-light" type="submit" onclick="window.location.href='/login.php'">Login</button>
+                <button class="btn btn-success text-light " type="submit" onclick="window.location.href='/login.php'"><span class="h3">Login</span></button>
             <?php
             } ?>
 
