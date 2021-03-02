@@ -709,8 +709,9 @@ input {
 
 .cookieMonth .acceptcookieMonth {
   margin-left: 10px;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  font-size: 24px; }
 
 .cruzCookies {
   float: right;
-  color: red; }
+  color: white; }
