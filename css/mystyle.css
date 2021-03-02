@@ -403,10 +403,8 @@ form.user .btn-user {
   opacity: .9; }
 
 button {
-  background: #2B8182;
   border: 0;
   border-color: #007476 !important;
-  color: #EEE;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
