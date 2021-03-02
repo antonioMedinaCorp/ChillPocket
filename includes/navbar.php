@@ -50,7 +50,7 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
         <!--Búsqueda-->
         <div class="ml-auto">
             <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
-                <button class="btn btn-danger text-light" data-toggle="modal" data-target="#myModal2" ><i class="fas fa-brain"></i>&nbsp;Administrador</button>
+                <button class="btn btn-danger text-white" data-toggle="modal" data-target="#myModal2" ><i class="fas fa-brain"></i>&nbsp;Administrador</button>
                 <?php } ?>    
             <?php //echo session_status(); 
             if (isset($_SESSION['user_email_address'])) { ?>
@@ -84,7 +84,7 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
                     </div>
                 </div>
 
-                <button class="btn btn-success text-light font-weight-bold" data-toggle="modal" data-target="#myModal">
+                <button class="btn btn-success text-white" data-toggle="modal" data-target="#myModal">
                 <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
                     <i class="fab fa-old-republic"></i>
                 <?php
@@ -126,7 +126,7 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
 
             <?php } else {
             ?>
-                <button class="btn btn-success text-light " type="submit" onclick="window.location.href='/login.php'"><span class="h3">Login</span></button>
+                <button class="btn btn-success text-white" type="submit" onclick="window.location.href='/login.php'"><span class="h5">Login</span></button>
             <?php
             } ?>
 
