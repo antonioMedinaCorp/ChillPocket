@@ -49,7 +49,7 @@ if (isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])) {
         <!--Búsqueda-->
         <div class="ml-auto">
             <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin") { ?>
-                <button class="btn btn-danger text-white" data-toggle="modal" data-target="#myModal2"><i class="fas fa-brain"></i>&nbsp;Administrador</button>
+                <button class="btn btn-danger text-white" data-toggle="modal" data-target="#myModal2"><i class="fas fa-brain"></i>&nbsp; <span class="h5"> Administrador </span></button>
             <?php } ?>
             <?php //echo session_status(); 
             if (isset($_SESSION['user_email_address'])) { ?>
