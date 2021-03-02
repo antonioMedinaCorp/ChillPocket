@@ -2,11 +2,10 @@
 require_once "./model/UsuarioController.php";
 if (isset($_POST['logout'])) {
     session_destroy();
-    
 }
-if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
+if (isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])) {
     $u = UsuarioController::findUserByUsername($_SESSION['user_email_address']);
-    
+
     $_SESSION['id'] = $u->id;
     $_SESSION['rol'] = $u->rol;
 }
@@ -36,7 +35,7 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
 
             <!-- Menú desplegable -->
             <li class="nav-item">
-                <a class="nav-link  h5" href="listaObras.php?tipo=comic" id="navbardrop" >
+                <a class="nav-link  h5" href="listaObras.php?tipo=comic" id="navbardrop">
                     Cómics</a>
             </li>
             <li>
@@ -49,13 +48,13 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
         </ul>
         <!--Búsqueda-->
         <div class="ml-auto">
-            <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
-                <button class="btn btn-danger text-white" data-toggle="modal" data-target="#myModal2" ><i class="fas fa-brain"></i>&nbsp;Administrador</button>
-                <?php } ?>    
+            <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin") { ?>
+                <button class="btn btn-danger text-white" data-toggle="modal" data-target="#myModal2"><i class="fas fa-brain"></i>&nbsp;Administrador</button>
+            <?php } ?>
             <?php //echo session_status(); 
             if (isset($_SESSION['user_email_address'])) { ?>
-                 <!-- The Modal -->
-                 <div class="modal fade" id="myModal2">
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal2">
                     <div class="modal-dialog modal-md">
                         <div class="modal-content">
 
@@ -68,10 +67,10 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
                             <!-- Modal body -->
 
                             <div class="modal-body" id="center">
-                            <button class="btn btn-outline-info"  type="submit" onclick="window.location.href='/addObra.php'">Generar obra</button>
-                            <button class="btn btn-outline-warning"  type="submit" onclick="window.location.href='/listadoObras.php'">Lista de obras</button>
-                            <button class="btn btn-outline-success"  type="submit" onclick="window.location.href='/listaUsuarios.php'">Lista de usuarios</button>
-                            
+                                <button class="btn btn-outline-info" type="submit" onclick="window.location.href='/addObra.php'">Generar obra</button>
+                                <button class="btn btn-outline-warning" type="submit" onclick="window.location.href='/listadoObras.php'">Lista de obras</button>
+                                <button class="btn btn-outline-success" type="submit" onclick="window.location.href='/listaUsuarios.php'">Lista de usuarios</button>
+
 
                             </div>
 
@@ -85,15 +84,17 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
                 </div>
 
                 <button class="btn btn-success text-white" data-toggle="modal" data-target="#myModal">
-                <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin"){?>
-                    <i class="fab fa-old-republic"></i>
-                <?php
-                } else{ ?>
-                    <i class="fas fa-user-check fa-1x">
-                <?php
+                    <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] == "admin") { ?>
+                        <i class="fab fa-old-republic"></i>
+                    <?php
+                    } else { ?>
+                        <i class="fas fa-user-check fa-1x">
+                        <?php
 
-                } ?>
-                </i>&nbsp;<?php echo $_SESSION['user_first_name']?></button>
+                    } ?>
+                        </i>&nbsp;<span class="h5"> <?php echo $_SESSION['user_first_name'] ?> </span>
+
+                </button>
 
                 <!-- The Modal -->
                 <div class="modal fade" id="myModal">
@@ -109,9 +110,9 @@ if(isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])){
                             <!-- Modal body -->
 
                             <div class="modal-body" id="center">
-                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/perfilUsuario.php'">Mis datos</button>
-                            <button class="btn btn-success text-light"  type="submit" onclick="window.location.href='/contribuciones.php'">Contribuciones</button>
-                            <button class="btn btn-primary"  type="submit" onclick="window.location.href='/logout.php'">Loguot</button>
+                                <button class="btn btn-success text-light" type="submit" onclick="window.location.href='/perfilUsuario.php'">Mis datos</button>
+                                <button class="btn btn-success text-light" type="submit" onclick="window.location.href='/contribuciones.php'">Contribuciones</button>
+                                <button class="btn btn-primary" type="submit" onclick="window.location.href='/logout.php'">Loguot</button>
 
                             </div>
 
