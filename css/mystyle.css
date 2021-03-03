@@ -712,11 +712,12 @@ input {
 
 .cruzCookies {
   float: right;
-
-  color: red; }
-
-*:focus {
-  border-style: 2px solid #61d5d6; }
-
   color: white; }
 
+*:focus {
+  outline: 2px solid #61d5d6 !important; }
+
+/* Selecciona cualquier <input> cuando se enfoca */
+input:focus {
+  outline: 5px solid #61d5d6 !important;
+  box-shadow: 0 0 10px black !important; }

@@ -942,5 +942,15 @@ input {
 }
 
 *:focus{
-  border-style: 2px solid $color-segundo;
+  outline: 2px solid $color-segundo  !important ;
 }
+
+/* Selecciona cualquier <input> cuando se enfoca */
+input:focus {
+  //color: black !important;
+  outline: 5px solid $color-segundo !important;
+  box-shadow: 0 0 10px black !important;
+}
+
+
+
