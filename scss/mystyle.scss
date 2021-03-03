@@ -31,7 +31,7 @@ h2 {
 }
 
 .btn-success {
-  background-color: $color-primero !important;
+  background-color: #2B8182 !important;
   color: $black;
 }
 
@@ -514,11 +514,10 @@ form.user .btn-user {
 }
 
 button {
-  background: $color-tercero;
+ 
   border: 0;
   border-color: $color-tercero !important;
 
-  color: #EEE;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
@@ -536,7 +535,7 @@ button {
 button:hover {
   cursor: pointer;
 }
-
+ 
 button:active {
   box-shadow: 0 0 0 0.2rem $color-tercero !important;
 }
@@ -932,11 +931,14 @@ input {
 .cookieMonth .acceptcookieMonth {
   margin-left: 10px;
   vertical-align: baseline;
+  font-size: 24px;
+  
 }
 
 .cruzCookies{
   float: right;
-  color: red;
+  color: $white;
+  
 }
 
 *:focus{
