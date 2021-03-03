@@ -941,4 +941,6 @@ input {
   
 }
 
-
+*:focus{
+  border-style: 2px solid $color-segundo;
+}
