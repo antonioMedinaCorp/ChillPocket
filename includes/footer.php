@@ -26,23 +26,23 @@
   <div class="container">
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a href="nav-link">
-          <i class="fab fa-twitter fa-2x"></i>
+        <a href="https://twitter.com/" title="Visítanos en twitter">
+          <i class="fab fa-twitter fa-2x" ></i>
         </a>
       </li>
       <li class="nav-item" id="withMargin">
-        <a href="nav-link">
-          <i class="fab fa-instagram  fa-2x"></i>
+        <a href="https://www.instagram.com/" title="Visítanos en instagram">
+          <i class="fab fa-instagram  fa-2x" ></i>
         </a>
       </li>
       <li class="nav-item" id="withMargin">
-        <a href="nav-link">
-          <i class="fab fa-facebook-square  fa-2x" aria-hidden="true"></i>
+        <a href="https://www.facebook.com/" title="Visítanos en facebook" >
+          <i class="fab fa-facebook-square  fa-2x" aria-hidden="true" ></i>
         </a>
       </li>
       <li class="nav-item" id="withMargin">
-        <a href="nav-link">
-          <i class="fas fa-share-alt  fa-2x"></i>
+        <a href="nav-link" title="Compartir">
+          <i class="fas fa-share-alt  fa-2x" ></i>
         </a>
       </li>
     </ul>
