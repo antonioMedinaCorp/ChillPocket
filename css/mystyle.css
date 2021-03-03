@@ -714,3 +714,6 @@ input {
 .cruzCookies {
   float: right;
   color: red; }
+
+*:focus {
+  border-style: 2px solid #61d5d6; }
