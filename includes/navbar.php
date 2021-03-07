@@ -15,7 +15,7 @@ if (isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])) {
 <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
     <!-- Para introducir el logo-->
     <a class="navbar-brand" href="index.php">
-        <img src="media/images/LogoSinFondoRecortado.png" alt="logo de la pagina" id="imgNav">
+        <img src="media/images/LogoSinFondoRecortado.png" alt="logo de la pagina" id="imgNav" accesskey="i">
     </a>
     <!-- Para colapsar el menú en un botón al disminuir la pantalla en dispositivos pequeños Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="menu button">
@@ -25,25 +25,23 @@ if (isset($_SESSION['user_email_address']) && !isset($_SESSION['rol'])) {
     <div class="navbar-collapse collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link h5" href="listaObras.php?tipo=pelicula" id="navbardrop">
+                <a class="nav-link h5" href="listaObras.php?tipo=pelicula" id="navbardrop" accesskey="p">
                     Películas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link h5" href="listaObras.php?tipo=serie" id="navbardrop">
+                <a class="nav-link h5" href="listaObras.php?tipo=serie" id="navbardrop" accesskey="s">
                     Series</a>
             </li>
-
-            <!-- Menú desplegable -->
             <li class="nav-item">
-                <a class="nav-link  h5" href="listaObras.php?tipo=comic" id="navbardrop">
+                <a class="nav-link  h5" href="listaObras.php?tipo=comic" id="navbardrop" accesskey="c">
                     Cómics</a>
             </li>
             <li>
-                <a class="nav-link h5" href="listaObras.php?tipo=libro" id="navbardrop">
+                <a class="nav-link h5" href="listaObras.php?tipo=libro" id="navbardrop" accesskey="l">
                     Libros</a>
             </li>
             <li>
-                <a href="juegos.php" class="nav-link h5" id="navbardrop">Juegos</a>
+                <a href="juegos.php" class="nav-link h5" id="navbardrop" accesskey="j">Juegos</a>
             </li>
         </ul>
         <!--Búsqueda-->
