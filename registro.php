@@ -110,7 +110,7 @@ if ($control != null) {
 
     ?>
   </head>
-<?php  echo 'el id es '. $_SESSION['id']; ?>
+<?php // echo 'el id es '. $_SESSION['id']; ?>
   <body class="bg-login">
     <div class="container">
       <div class="row mt-2  login-container">
@@ -445,8 +445,8 @@ if ($control != null) {
                 }  ?>
                 <p>Introduce los caracteres que verás a continuación distinguiendo entre mayúsculas y minúsculas:</p>
                 <p class="we text-center" style="font-size:x-large;">
-                  <img src="generatecaptcha.php" alt="CAPTCHA"  class="captcha-image">
-                  <i class="fas fa-sync-alt refresh-captcha"></i>
+                  <img src="generatecaptcha.php" alt="CAPTCHA"  class="captcha-image" id="captcha">
+                  <i class="fas fa-sync-alt refresh-captcha" tabindex="0" accesskey="c"></i>
                 </p>
 
                 <p><input type="text" name="captcha" aria-label="Introducir el captcha de la imagen" class="form-control form-control-user" required>
