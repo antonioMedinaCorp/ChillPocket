@@ -73,7 +73,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
 
           </form>
           <!-- Botón de google -->
-          <button type="submit" class="btn btn-danger btn-g btn-block justify-content-center" name="entrarG" id="btnEntrar">
+          <button type="submit" class="btn btn-danger btn-g btn-block justify-content-center" name="entrarG" id="btnEntrar" accesskey="g">
           <span class="sr-only">Botón para entrar con google</span>
               <?php echo $login_button; ?>
             </button>
@@ -82,7 +82,7 @@ if (isset($_POST['entrar']) && !empty($_POST['username']) && !empty($_POST['pass
             <a class="small" href="forgot-password.html">¿Has olvidado tu contrase&ntilde;a?</a>
           </div>
           <div class="text-center">
-            <a class="small" href="registro.php">¡Regístrate!</a>
+            <a class="small" href="registro.php" accesskey="r">¡Regístrate!</a>
           </div>
         </div>
       </div>

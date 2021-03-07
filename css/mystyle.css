@@ -721,3 +721,7 @@ input {
 input:focus {
   outline: 5px solid #61d5d6 !important;
   box-shadow: 0 0 10px black !important; }
+
+i:focus {
+  outline: 5px solid #61d5d6 !important;
+  box-shadow: 0 0 10px black !important; }

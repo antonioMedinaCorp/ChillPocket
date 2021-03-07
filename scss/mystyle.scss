@@ -952,5 +952,13 @@ input:focus {
   box-shadow: 0 0 10px black !important;
 }
 
+i:focus{
+  //color: black !important;
+  outline: 5px solid $color-segundo !important;
+  box-shadow: 0 0 10px black !important;
+}
+
+
+
 
 
